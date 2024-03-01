@@ -91,6 +91,7 @@ legend {
 
 body {
   font-family: "Geologica", sans-serif;
+  color: #2a4056;
 }
 
 .h1 {
@@ -98,7 +99,6 @@ body {
   font-size: 60px;
   line-height: 1.2;
   font-weight: 700;
-  color: #2A4056;
 }
 
 .h2 {
@@ -106,7 +106,6 @@ body {
   font-size: 46px;
   line-height: 1.04;
   font-weight: 700;
-  color: #2A4056;
 }
 .h2--light {
   color: #fff;
@@ -153,8 +152,8 @@ body {
 }
 
 .header__nav {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 24px;
+  padding-bottom: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,4 +173,54 @@ body {
   font-weight: 300;
   line-height: 1.55;
   color: #2a4056;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 74px;
+}
+
+.header__content {
+  position: relative;
+  height: 564px;
+  background-image: url("./../img/header/header-bg.svg");
+  background-position: right top;
+  background-size: 928px 564px;
+  background-repeat: no-repeat;
+}
+
+.header__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  max-width: 657px;
+}
+
+.header__title {
+  margin-bottom: 24px;
+}
+.header__title span {
+  font-family: "Geologica", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.11;
+}
+
+.header__desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.11;
+}
+.header__desc p:first-child::after {
+  margin-left: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2a4056;
 }/*# sourceMappingURL=main.css.map */
