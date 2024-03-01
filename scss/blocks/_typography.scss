@@ -1,0 +1,19 @@
+.h1 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 60px;
+    line-height: 1.2; //72px
+    font-weight: 700;
+    color: #2A4056;
+}
+
+.h2 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 46px;
+    line-height: 1.04; // 48px
+    font-weight: 700;
+    color: #2A4056;
+
+    &--light {
+        color: #fff;
+    }
+}
