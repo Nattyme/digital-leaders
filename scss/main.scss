@@ -3,8 +3,11 @@
 
 // base
 @import "./base/reset";
+@import "./base/vars";
+@import "./base/containers";
 @import "./base/base";
 
 //blocks
 @import "./blocks/typography";
 @import "./blocks/components";
+@import "./blocks/buttons";

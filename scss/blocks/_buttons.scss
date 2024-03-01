@@ -1,0 +1,36 @@
+.btn-solid {
+    display: inline-block;
+    height: 56px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 16px;
+    background: rgb(41, 63, 85);
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 18px;
+    line-height: 56px;
+    font-weight: 500;
+    color: #fff;
+
+    &--grad {
+        box-shadow: $btn-shadow;
+        background: $btn-grad;    
+    }
+}
+
+.btn-reg {
+    display: inline-block;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 40px;
+
+    border: 1px solid rgb(42, 64, 86);
+    border-radius: 11.43px;
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    color: rgb(42, 64, 86);
+}
+
