@@ -1,8 +1,40 @@
 .grad-border {
     display: inline;
-   
-    background-image: linear-gradient(90.00deg, rgb(0, 230, 134),rgb(0, 230, 210),rgb(0, 191, 230));
-    background-position: center bottom; // x y
+
+    background-image: linear-gradient(90.00deg, rgb(0, 230, 134), rgb(0, 230, 210), rgb(0, 191, 230));
     background-size: 100% 12px;
     background-repeat: no-repeat;
+}
+
+.section-bg {
+    position: relative;
+
+    // &::before {
+    //     z-index: -1;
+    //     position: absolute;
+    //     content: "";
+    //     left: 0px;
+    //     bottom: 0;
+    //     width: 600px;
+    //     height: 600px;
+
+    //     background-image: url('./../img/decor-svg/circle-cyan.svg');
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    // }
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        content: "";
+        width: 600px;
+        height: 600px;
+        transform: translateX(50%);
+
+        background-image: url('./../../img/decor-svg/circle-green.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header-top">
+    <header class="header-top section-bg">
         <div class="container">
             <div class="header__nav">
 
@@ -33,29 +33,64 @@
     <!--// header -->
 
     <section class="header">
+        <div class="container ">
+            <!-- content -->
+            <div class="header__content">
+                <div class="header__text">
+                    <span>Форум</span>
+                    <div class="header__title">
+                        <h1 class="h1">Лидеры цифрового развития 2024</h1>
+                    </div>
 
-        <!-- content -->
-        <div class="header__main">
-            <div class="container">
-                <div class="header__content">
-                    <div class="header__text">
-                        <div class="header__title">
-                            <h1 class="h1"><span>Форум</span><br>Лидеры цифрового развития 2024</h1>
-                        </div>
-
-                        <div class="header__desc">
-                            <p>20—21 сентября</p>
-                            <p>Алтай, Манжерок</p>
-                        </div>
+                    <div class="header__desc">
+                        <p>20—21 сентября</p>
+                        <p>Алтай, Манжерок</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--// content -->
+            <!--// content -->
 
-        <!-- timer -->
-        <div class="header__timer"></div>
-        <!--// timer -->
+            <!-- timer -->
+            <div class="timer">
+                <div class="timer-count">
+                    <div class="timer-count__text">
+                        <p>До начала регистрации:</p>
+                    </div>
+
+                    <div id="month" class="month"></div>
+                    <div class="countdown" id="countdown">
+                        <div class="time">
+                            <span id="days">38</span>
+                            <small>д</small>
+                        </div>
+                        <div class="time">
+                            <span id="hours">10</span>
+                            <small>ч</small>
+                        </div>
+                        <div class="time">
+                            <span id="minutes">27</span>
+                            <small>мин</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="timer__form">
+
+                    <!-- form -->
+                    <div class="form">
+                        <legend class="form__title">
+                            Оставьте электронную почту, а мы напомним о начале регистрации и будем держать в курсе новостей
+                        </legend>
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Электронная почта">
+                            <input class="btn-solid btn-solid--grad" type="button" value="Подписаться на новости">
+                        </div>
+                       
+                    </div>
+                    <!--// form -->
+                </div>
+            </div>
+            <!--// timer -->
+        </div>
     </section>
 
 </body>
