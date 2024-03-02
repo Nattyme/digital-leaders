@@ -1,12 +1,37 @@
 .form {
     padding-top: 32px;
 }
+
 .form__title {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #2a4056;
 }
+
 .form__group {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
 }
+
 .form__input {
+    height: 56px;
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid rgb(198, 217, 236);
+    border-radius: 16px;
+
+    &::placeholder {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #8599ad;
+    }
 }
+
 .btn-solid {
 }
 .btn-solid--grad {

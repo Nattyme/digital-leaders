@@ -10,11 +10,12 @@
     font-size: 18px;
     line-height: 56px;
     font-weight: 500;
-    color: #fff;
+    color: #2a4056;
 
     &--grad {
         box-shadow: $btn-shadow;
-        background: $btn-grad;    
+        background: $btn-grad;
+        color: #fff;
     }
 }
 
@@ -32,5 +33,10 @@
     font-weight: 500;
     line-height: 40px;
     color: #2a4056;
-}
 
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
