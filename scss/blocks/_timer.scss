@@ -1,0 +1,54 @@
+.timer {
+    padding: 40px 96px 48px;
+    border-radius: 24px;
+    border: 1px solid #2a4056;
+    background-color: #fff;
+}
+
+.timer-count {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e4edf6;
+}
+
+.timer-count__text {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.11; //40px
+    color: #2a4056;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    font-size: 54px;
+    line-height: 1.18;
+
+    &:not(:last-child) {
+        position: relative;
+
+        &::after {
+            padding-left: 13px;
+            padding-right: 13px;
+
+            content: ":";
+            font-size: 54px;
+            color: #79a6d2;
+        }
+    }
+}
+
+.time__value {}
+
+.time__unit {
+    padding-left: 12px;
+}
+
+
+.timer__form {}
