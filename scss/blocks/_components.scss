@@ -7,6 +7,12 @@
     background-repeat: no-repeat;
 }
 
+.grad-text {
+    background-image: $value-grad;
+    background-clip: text;
+    color: transparent;
+}
+
 .section-bg {
     position: relative;
 

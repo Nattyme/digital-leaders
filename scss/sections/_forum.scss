@@ -74,8 +74,26 @@
     width: 216px;
 }
 
-.stat-grid {}
+.stat-grid li {
+    font-family: "Unbounded", sans-serif;
+    &:not(:last-child) {
+        margin-bottom: 48px;
+    }
+   
+}
 
-.stat-grid__value {}
+.stat-grid__value {
+    margin-bottom: 4px;
 
-.stat-grid__text {}
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.04; // 48px
+    text-align: left;
+}
+
+.stat-grid__text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.33; //32px
+    color: #2a4056;
+}

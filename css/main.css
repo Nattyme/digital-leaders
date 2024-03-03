@@ -145,6 +145,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.grad-text {
+  background-image: linear-gradient(90deg, rgb(0, 230, 134), rgb(0, 230, 210), rgb(0, 191, 230));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
 .section-bg {
   position: relative;
 }
@@ -445,4 +452,26 @@ body {
 
 .forum__stat {
   width: 216px;
+}
+
+.stat-grid li {
+  font-family: "Unbounded", sans-serif;
+}
+.stat-grid li:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.stat-grid__value {
+  margin-bottom: 4px;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.04;
+  text-align: left;
+}
+
+.stat-grid__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #2a4056;
 }/*# sourceMappingURL=main.css.map */
