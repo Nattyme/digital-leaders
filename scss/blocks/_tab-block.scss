@@ -26,6 +26,9 @@
     &:nth-child(n + 2) {
         width: 352px;
     }
+    &:last-child {
+        flex-grow: 1;
+    }
 }
 
 .tab-block__time {
@@ -42,13 +45,9 @@
     color: #2a4056;
 }
 
-.tab-block__list {
-
-}
-
 .tab-block__line {
     position: relative;
-    padding-left: 28px;
+    padding-left: 32px;
 
     font-weight: 300;
     color: #2a4056;

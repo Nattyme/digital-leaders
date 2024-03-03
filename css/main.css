@@ -357,6 +357,9 @@ body {
 .tab-block__column:nth-child(n+2) {
   width: 352px;
 }
+.tab-block__column:last-child {
+  flex-grow: 1;
+}
 
 .tab-block__time {
   color: #2a4056;
@@ -374,7 +377,7 @@ body {
 
 .tab-block__line {
   position: relative;
-  padding-left: 28px;
+  padding-left: 32px;
   font-weight: 300;
   color: #2a4056;
 }
