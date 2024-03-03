@@ -333,6 +333,14 @@ body {
   background-image: linear-gradient(90deg, rgb(0, 230, 134), rgb(0, 230, 210), rgb(0, 191, 230));
 }
 
+.tab-block {
+  display: none;
+}
+
+.tab-block--active {
+  display: block;
+}
+
 .tab-block__row {
   display: flex;
 }

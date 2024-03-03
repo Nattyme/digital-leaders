@@ -1,6 +1,10 @@
-.tab-block {}
+.tab-block {
+    display: none;
+}
 
-.tab-block--active {}
+.tab-block--active {
+    display: block;
+}
 
 .tab-block__row {
     display: flex;
