@@ -298,6 +298,40 @@ body {
   color: #8599ad;
 }
 
+.tab__nav {
+  display: flex;
+  border-bottom: 1px solid #c6d9ec;
+}
+
+.tab__btn {
+  position: relative;
+  padding-bottom: 16px;
+  font-family: "Geologica", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.11;
+  color: #2a4056;
+  background-image: transparent;
+}
+.tab__btn:not(:last-child) {
+  margin-right: 40px;
+}
+.tab__btn--active {
+  background-image: linear-gradient(90deg, rgb(0, 230, 134), rgb(0, 230, 210), rgb(0, 191, 230));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.tab__btn--active::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(90deg, rgb(0, 230, 134), rgb(0, 230, 210), rgb(0, 191, 230));
+}
+
 .header__nav {
   padding-top: 24px;
   padding-bottom: 14px;
@@ -491,7 +525,6 @@ body {
   font-family: "Unbounded", sans-serif;
   font-weight: 700;
   line-height: 1.04;
-  text-align: left;
 }
 
 .stat-grid__text {
@@ -506,4 +539,14 @@ body {
   min-height: 500px;
   position: relative;
   background-image: url("./../../img/speakers/speakers-bg.svg");
+}
+
+.program {
+  padding-top: 120px;
+  padding-bottom: 67px;
+}
+
+.program__header {
+  margin-bottom: 80px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

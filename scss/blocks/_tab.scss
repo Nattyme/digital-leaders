@@ -1,0 +1,47 @@
+.tab {}
+
+.tab__nav {
+    display: flex;
+    border-bottom: 1px solid #c6d9ec;
+}
+
+.tab__btn {
+    position: relative;
+    padding-bottom: 16px;
+
+    font-family: "Geologica", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.11;
+    color: #2a4056;
+    background-image: transparent;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &--active {
+        background-image: $tab-btn-grad;
+        background-clip: text;
+        color: transparent;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -1px;
+
+            width: 100%;
+            height: 3px;
+            background-image: $tab-btn-grad;
+        }
+    }
+}
+
+.tab__btn--active {}
+
+.tab__content {}
+
+.tab__block {}
+
+.tab__block--active {}

@@ -99,8 +99,6 @@
     width: 216px;
 }
 
-.stat-grid {}
-
 .stat-grid li {
     padding-right: 5px;
     &:not(:last-child) {
@@ -116,7 +114,6 @@
     font-family: "Unbounded", sans-serif;
     font-weight: 700;
     line-height: 1.04; // 48px
-    text-align: left;
 }
 
 .stat-grid__text {
