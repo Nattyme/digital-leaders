@@ -1,9 +1,9 @@
 .tab-block {
     display: none;
-}
 
-.tab-block--active {
-    display: block;
+    &--active {
+        display: block;
+    }
 }
 
 .tab-block__row {

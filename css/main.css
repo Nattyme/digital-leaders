@@ -336,7 +336,6 @@ body {
 .tab-block {
   display: none;
 }
-
 .tab-block--active {
   display: block;
 }

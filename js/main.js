@@ -1,44 +1,35 @@
-//Определяем действующие элементы на странице
-const days = document.querySelector('#days'); //Ищем место для дней
-const hours = document.querySelector('#hours'); // Ищем место для часов
-const minutes = document.querySelector('#minutes'); // Ищем место для минут
-const countdown = document.querySelector('#countdown'); // Ищем счетчик 
 
-// Делаем расчеты
-// const deadline = new Date(2024, 20, 09); // берем текущий год и время
+// Поиск элементов на странице:
+// 1. Кнопки
+const tabButtons = document.querySelectorAll(".tab__btn");
+// 2. Блоки с контентом
+const tabBlocks = document.querySelectorAll(".tab-block");
 
-function updateCounter () {
-    // текущая дата и время
-    const currentTime = new Date(); 
-    // разница в миллисекундах
-    const difference =  deadline - currentTime; 
+// Обходим коллекцию кнопок через forEach
+tabButtons.forEach(function (item) {
+	// Для каждой кнопки запускаем прослушку события клик
+	item.addEventListener('click', function () {
+		const currentButton = item; // Кнопка по которой мы кликнули
+		const blockIdSelector = currentButton.getAttribute("data-tab");
+		const currentBlock = document.querySelector(blockIdSelector);
 
+		// Снимаем активный класс со всех кнопок
+		tabButtons.forEach(function (item) {
+			item.classList.remove("tab__btn--active");
+		});
 
-//Перевод в сек>минуты>часы>сутки, округление
-const daysLeft = Math.floor(difference / 1000 / 60 / 60 / 24); 
+		// Снимаем активный класс со всех блоков
+		tabBlocks.forEach(function (item) {
+			item.classList.remove("tab-block--active");
+		})
 
-//  Всего часов осталось. Далее берем остаток от деления на 24(преобразование в дни) и получаем часы неполного дня
-const hoursLeft = Math.floor(difference / 1000 / 60 / 60) % 24;
+		// Добавляем активный класс к кнопке по которой кликнули
+		currentButton.classList.add("tab__btn--active");
 
+		// Добавляем активный класс к блоку который нужно показать
+		currentBlock.classList.add("tab-block--active");
+	});
+})
 
-//  Всего минут осталось. Далее берем остаток от деления на 60(преобразование в минуты) и получаем минуты неполного дня
-const minutesLeft = Math.floor(difference / 1000 / 60 ) % 60;
-
-//  Всего сек осталось. Далее берем остаток от деления на 60(преобразование в сек) и получаем сек неполного дня
-const secLeft = Math.floor(difference / 1000) % 60;
-
-// Подставляем нужные значения на страницу
-days.innerText = daysLeft < 10 ? '0' + daysLeft : daysLeft;
-hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
-minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
-seconds.innerText = secLeft < 10 ? '0' + secLeft : secLeft;
-}
-
-updateCounter();
-// Запускаем расчет 1 раз в секунду (каждую секунду обновляется время и дата)
-setInterval(updateCounter, 1000);
-
-setTimeout(function(){
-    preloader.remove();
-    countdown.style.display = 'flex';
-}, 1000);
+// Делаем "фейковый" клик по первой кнопке
+// document.querySelector('.tab__nav-button').click();
