@@ -13,44 +13,46 @@
     justify-content: space-between;
 }
 
-.forum__speakers {}
+.forum__speakers {
+    width: 252px;
+}
 
 .forum__img-wrapper {
-    position: relative;
-    display: flex;
-    width: 308px;
-    height: 320px;
+    margin-bottom: 24px;
+   
+    width: 235px;
+    height: 244px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.forum__img:nth-child(odd) {
-    position: absolute;
-    top: 0;
-    left: 0;
+.forum__note {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6; //24px
+    color: #2a4056;
+}
+
+.forum__text {
+    width: 503px;
+}
+
+.forum__desc {
+    margin-bottom: 48px;
+    
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.33; //32px
+    color: #2a4056;
+}
+
+.forum__stat {
     width: 216px;
-    height: 264px;
-    overflow: hidden;
-    object-fit: cover;
 }
-
-.forum__img:nth-child(even) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 149px;
-    height: 182px;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-.clip-img {}
-
-.forum__note {}
-
-.forum__text {}
-
-.forum__desc {}
-
-.forum__stat {}
 
 .stat-grid {}
 
