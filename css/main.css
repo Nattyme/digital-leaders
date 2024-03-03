@@ -418,6 +418,22 @@ body {
 .forum__text {
   width: 503px;
 }
+.forum__text h4 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #2a4056;
+}
+.forum__text p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #2a4056;
+}
+.forum__text p + * {
+  margin-top: 48px;
+}
 
 .forum__desc {
   margin-bottom: 48px;
