@@ -336,6 +336,9 @@ body {
 .tab-block__row {
   display: flex;
 }
+.tab-block__row:not(:last-child) {
+  margin-bottom: 56px;
+}
 
 .tab-block__column:not(:last-child) {
   margin-right: 32px;
