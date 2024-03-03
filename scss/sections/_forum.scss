@@ -3,6 +3,31 @@
     padding-bottom: 115px;
 }
 
+.forum.decor-polygon {
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -73px;
+
+        width: 182px;
+        height: 348px;
+        background-image: url("./../img/forum/polygon-one.svg");
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 115px;
+        right: 103px;
+
+        width: 138px;
+        height: 228px;
+        background-image: url("./../img/forum/polygon-double.svg");
+    }
+}
+
 .forum__header {
     margin-bottom: 40px;
     text-align: center;
@@ -19,7 +44,7 @@
 
 .forum__img-wrapper {
     margin-bottom: 24px;
-   
+
     width: 235px;
     height: 244px;
     overflow: hidden;
@@ -56,7 +81,7 @@
         color: #2a4056;
     }
 
-    p + * {
+    p+* {
         margin-top: 48px;
     }
 }
@@ -74,18 +99,21 @@
     width: 216px;
 }
 
+.stat-grid {}
+
 .stat-grid li {
-    font-family: "Unbounded", sans-serif;
+    padding-right: 5px;
     &:not(:last-child) {
         margin-bottom: 48px;
     }
-   
+
 }
 
 .stat-grid__value {
     margin-bottom: 4px;
 
     font-size: 46px;
+    font-family: "Unbounded", sans-serif;
     font-weight: 700;
     line-height: 1.04; // 48px
     text-align: left;
