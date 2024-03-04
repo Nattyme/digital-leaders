@@ -621,4 +621,27 @@ body {
 .program__header {
   margin-bottom: 80px;
   text-align: center;
+}
+
+.cost {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background: linear-gradient(-41.52deg, rgb(204, 255, 227) 3.924%, rgb(128, 247, 255) 117.774%);
+}
+
+.cost__header {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.cost__desc {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: rgb(42, 64, 86);
+}
+
+.cost__timer {
+  margin-bottom: 56px;
 }/*# sourceMappingURL=main.css.map */

@@ -32,4 +32,4 @@ tabButtons.forEach(function (item) {
 })
 
 // Делаем "фейковый" клик по первой кнопке
-// document.querySelector('.tab__nav-button').click();
+document.querySelector('.tab__btn').click();
