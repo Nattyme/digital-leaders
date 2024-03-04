@@ -29,12 +29,26 @@
     }
 }
 
-.slider-reviews__title {}
+.slider-reviews__text {
+    padding-top: 8px;
 
-.slider-reviews__name {}
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.55; //28px
+}
 
-.slider-reviews__date {}
+.slider-reviews__title {
+    margin-bottom: 16px;
+}
 
-.slider-reviews__text {}
+.slider-reviews__name {
+    font-weight: 600;
+}
+
+.slider-reviews__date {
+    font-size: 15px;
+    line-height: 1.6; //24px
+}
+
 
 .swiper-pagination {}
