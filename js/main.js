@@ -82,6 +82,12 @@ const swiperReviews = new Swiper('#slider-reviews', {
       nextEl: '#slider-reviews-next',
       prevEl: '#slider-reviews-prev',
     },
+
+    // pagination: {
+    //     el: '.slider-reviews__pagination',
+    //     type: 'bullets',
+    //     clickable: true,
+    //   },
   
   });
 

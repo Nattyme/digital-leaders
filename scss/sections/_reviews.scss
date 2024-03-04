@@ -3,6 +3,34 @@
     padding-bottom: 100px;
 }
 
+
+.reviews .decor-polygon {
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -89px;
+        left: -93px;
+
+        width: 150px;
+        height: 288px;
+        background-image: url("./../img/decor-svg/polygon-cyan-one.svg");
+    }
+
+    &::after {
+        z-index: 2;
+        position: absolute;
+        content: "";
+        top: -49px;
+        right: -32px;
+
+        width: 75px;
+        height: 141px;
+        background-image: url("./../img/decor-svg/polygon-lime-one.svg");
+    }
+}
+
+
 .reviews__header {
     margin-bottom: 64px;
     text-align: center;
