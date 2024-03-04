@@ -414,6 +414,32 @@ body {
   line-height: 1.33;
 }
 
+.slider-arrow {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.slider-arrow__prev {
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.slider-arrow__next {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
 .slider-how-was {
   position: relative;
   width: 1120px;
@@ -421,7 +447,7 @@ body {
   overflow: visible;
 }
 .slider-how-was:hover .slider-how-was__img::after,
-.slider-how-was:hover .slider-how-was__arrow {
+.slider-how-was:hover .slider-arrow {
   opacity: 1;
 }
 
@@ -522,30 +548,30 @@ body {
   overflow: hidden;
 }
 
-.slider-how-was__arrow {
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  content: "";
-  width: 64px;
+.slider-reviews__item {
+  padding: 32px 40px 40px;
+  display: flex;
+  width: 544px;
+  height: 428px;
+  border: 1px solid #c6d9ec;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.slider-reviews__img {
+  margin-right: 16px;
+  min-width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.2s ease-in;
+  overflow: hidden;
 }
-
-.slider-how-was__prev {
-  transform: translate(-50%, -50%);
-  left: 0;
-}
-
-.slider-how-was__next {
-  right: 0;
-  transform: translate(50%, -50%);
+.slider-reviews__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__nav {
@@ -859,6 +885,16 @@ body {
 .how-was__header {
   padding-top: 64px;
   padding-bottom: 100px;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.reviews__header {
   margin-bottom: 64px;
   text-align: center;
 }/*# sourceMappingURL=main.css.map */

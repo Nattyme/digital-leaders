@@ -7,7 +7,7 @@
     &:hover {
 
         .slider-how-was__img::after,
-        .slider-how-was__arrow {
+        .slider-arrow {
             opacity: 1;
         }
     }
@@ -128,30 +128,3 @@
     }
 }
 
-.slider-how-was__arrow {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    content: "";
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background-color: #fff;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
-
-.slider-how-was__prev {
-    transform: translate(-50%, -50%);
-    left: 0;
-}
-
-.slider-how-was__next {
-    right: 0;
-    transform: translate(50%, -50%);
-}

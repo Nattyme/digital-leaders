@@ -704,7 +704,8 @@
     </section>
     <!--// section cost -->
 
-    <section class="how-was">
+    <!-- section how-was  -->
+    <section class="how-was none">
         <div class="container">
 
             <!-- header -->
@@ -717,10 +718,10 @@
             <div class="swiper slider-how-was" id="slider-how-was">
 
                 <!-- swiper controls -->
-                <button class="slider-how-was__arrow slider-how-was__prev">
+                <button class="slider-arrow slider-arrow__prev" id="slider-how-was-prev">
                     <img src="./img/sliders/arrow-left.svg" alt="prev">
                 </button>
-                <button class="slider-how-was__arrow slider-how-was__next">
+                <button class="slider-arrow slider-arrow__next" id="slider-how-was-next">
                     <img src="./img/sliders/arrow-right.svg" alt="next">
                 </button> 
                 <!-- swiper controls -->
@@ -818,6 +819,64 @@
                 </div>
             </div>
             <!--// Миниатюры, Превью, Thumbs -->
+
+        </div>
+    </section>
+    <!--// section how-was  -->
+
+    <section class="reviews">
+        <div class="container">
+
+            <!-- header -->
+            <div class="reviews__header">
+                <h2 class="h2 grad-border">Отзывы участников</h2>
+            </div>
+            <!--// header -->
+
+            <!-- Slider main container -->
+            <div class="swiper slider-reviews" id="slider-reviews">
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                     <!-- swiper controls -->
+                    <!-- <button class="slider-arrow slider-arrow__prev" id="slider-reviews-prev">
+                        <img src="./img/sliders/arrow-left.svg" alt="prev">
+                    </button>
+                    <button class="slider-arrow slider-arrow__next" id="slider-reviews-next">
+                        <img src="./img/sliders/arrow-right.svg" alt="next">
+                    </button>  -->
+                    <!-- swiper controls -->
+
+                    <!-- Slides -->
+                    <div class="swiper-slide slider-reviews__item">
+
+                        <!-- img -->
+                        <div class="slider-reviews__img">
+                            <img src="./img/sliders/reviews/img-01.jpg" alt="img">
+                        </div>
+                        <!--// img -->
+
+                        <!-- text -->
+                        <div class="slider-reviews__text">
+                             <!-- header -->
+                            <div class="slider-reviews__title">
+                                <h4 class="slider-reviews__name">Анастасия Некрасова</h4>
+                                <p class="slider-reviews__date">12 июл 2023</p>
+                            </div>
+                            <!--// header -->
+
+                            <div class="slider-reviews__desc">
+                                <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+                            </div>
+                        </div>
+                        <!--// text -->
+                    </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination">пагинация</div>
+            </div>
 
         </div>
     </section>

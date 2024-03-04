@@ -61,8 +61,8 @@ const swiper = new Swiper('#slider-how-was', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.slider-how-was__next',
-      prevEl: '.slider-how-was__prev',
+      nextEl: '#slider-how-was-next',
+      prevEl: '#slider-how-was-prev',
     },
   
   });

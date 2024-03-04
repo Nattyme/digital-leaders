@@ -18,8 +18,11 @@
 @import "./blocks/tab";
 @import "./blocks/tab-block";
 
+
 //sliders
+@import "./blocks/slider-arrows";
 @import "./blocks/slider-how-was";
+@import "./blocks/slider-reviews";
 
 //sections
 @import "./sections/header-top";
@@ -29,3 +32,4 @@
 @import "./sections/program";
 @import "./sections/cost";
 @import "./sections/how-was";
+@import "./sections/reviews";
