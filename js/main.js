@@ -36,22 +36,35 @@ document.querySelector('.tab__btn').click();
 /* tabs */
 
 /*swiper slider-who-it-was*/
-const swiper = new Swiper('#slider-how-it-was', {
+const swiperMini = new Swiper('#slider-mini-how-was', {
+    // Optional parameters
+    spaceBetween: 16,
+    slidesPreView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    });
+
+const swiper = new Swiper('#slider-how-was', {
     // Optional parameters
     direction: 'horizontal',
-    spaceBetween: 16,
+    spaceBetween: 160,
+    speed: 1200,
     slidesPreView: 1,
     grabCursor: true,
-    loop: true,
+    hashNavigation: {
+        watchState: true,
+      },
+    // loop: true,
     thumbs: {
-        swiper: '#slider-mini-how-it-was',
-        slidesPreView: 4,
+        swiper: swiperMini,
     },
   
-    // // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slider-how-was__next',
+      prevEl: '.slider-how-was__prev',
+    },
   
   });
+
+

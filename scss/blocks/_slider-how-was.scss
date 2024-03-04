@@ -1,0 +1,157 @@
+.slider-how-was {
+    position: relative;
+    width: 1120px;
+    height: 600px; //688
+    overflow: visible;
+
+    &:hover {
+
+        .slider-how-was__img::after,
+        .slider-how-was__arrow {
+            opacity: 1;
+        }
+    }
+}
+
+.slider-mini-how-was {
+    margin-top: 24px;
+}
+
+.slider-how-was__item {
+    position: relative;
+}
+
+.slider-how-was__img {
+    position: relative;
+
+    width: 1120px;
+    height: 600px;
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &::before {
+        @extend %overlay;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 160px;
+        height: 160px;
+
+        background-image: url('./../img/sliders/play.svg');
+        background-position: center center; // x y
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
+}
+
+.slider-how-was__text {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    max-width: 345px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #fff;
+
+    text-overflow: ellipsis;
+}
+
+
+.slider-mini-how-was {
+    height: 88px;
+    width: 100%;
+
+    .swiper-wrapper {
+        justify-content: center;
+    }
+}
+
+.slider-mini-how-was__item {
+    padding-bottom: 8px;
+    position: relative;
+    width: 100px !important;
+    height: 64px;
+
+    opacity: 0.5;
+    cursor: pointer;
+
+    &::before {
+        opacity: 0;
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+
+        background-image: $value-grad;
+    }
+}
+
+.slider-mini-how-was__item.swiper-slide-thumb-active {
+    opacity: 1;
+
+    &::before {
+        opacity: 1;
+    }
+}
+
+.slider-mini-how-was__img {
+    width: 100px;
+    height: 56px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
+.slider-how-was__arrow {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.slider-how-was__prev {
+    transform: translate(-50%, -50%);
+    left: 0;
+}
+
+.slider-how-was__next {
+    right: 0;
+    transform: translate(50%, -50%);
+}
