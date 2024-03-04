@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- swiper styles -->
+    <link rel="stylesheet" href="./libs/swiper-11.0.7/package/swiper-bundle.min.css">
+     <!-- swiper styles -->
+
+    <!-- custom style -->
     <link rel="stylesheet" href="./css/main.css">
+    <!--// custom style -->
 </head>
 <body>
     <!-- header -->
@@ -708,10 +714,23 @@
             <!--// header -->
 
             <!-- Slider main container -->
-            <div class="swiper slider-how-it-was" id="#slider-how-it-was">
+            <div class="swiper slider-how-it-was" id="slider-how-it-was">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                 <!-- Slides -->
+
+                 <!-- slide -->
+                 <div class="swiper-slide">
+                    <a class="slider-how-it-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y">
+                        <div class="slider-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                        <div class="slider-how-it-was__text">
+                            <p>Сочи, Красная поляна, 2023</p>
+                        </div>
+                    </a>
+                </div>
+                <!--// slide -->
 
                 <!-- slide -->
                 <div class="swiper-slide">
@@ -727,27 +746,93 @@
                 <!--// slide -->
 
                 <!-- slide -->
-                <div class="swiper-slide slider-how-it-was__item">Slide 2</div>
+                <div class="swiper-slide">
+                    <a class="slider-how-it-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y">
+                        <div class="slider-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                        <div class="slider-how-it-was__text">
+                            <p>Сочи, Красная поляна, 2023</p>
+                        </div>
+                    </a>
+                </div>
                 <!--// slide -->
 
                 <!-- slide -->
-                <div class="swiper-slide slider-how-it-was__item">Slide 3</div>
-                <!--// slide -->
+                <div class="swiper-slide">
+                    <a class="slider-how-it-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y">
+                        <div class="slider-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                        <div class="slider-how-it-was__text">
+                            <p>Сочи, Красная поляна, 2023</p>
+                        </div>
+                    </a>
                 </div>
-                <!-- If we need pagination
-                <div class="swiper-pagination"></div> -->
+                <!--// slide -->
+
+                </div>
             
                 <!-- If we need navigation buttons
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div> -->
             
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                <!-- If we need scrollbar
+                <div class="swiper-scrollbar"></div> -->
+
             </div>
+
+            
+            <!-- Миниатюры, Превью, Thumbs -->
+            <div class="slider-mini-how-it-was swiper-container" id="slider-mini-how-it-was">
+                <div class="slider-mini-how-it-was__wrapper swiper-wrapper">
+
+                    <!-- slide -->
+                    <div class="slider-mini-how-it-was__item swiper-slide">
+                        <div class="slider-mini-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                    </div>
+                    <!--// slide -->
+
+                    <!-- slide -->
+                    <div class="slider-mini-how-it-was__item swiper-slide">
+                        <div class="slider-mini-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                    </div>
+                    <!--// slide -->
+
+                    <!-- slide -->
+                    <div class="slider-mini-how-it-was__item swiper-slide">
+                        <div class="slider-mini-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                    </div>
+                    <!--// slide -->
+
+                    <!-- slide -->
+                    <div class="slider-mini-how-it-was__item swiper-slide">
+                        <div class="slider-mini-how-it-was__img">
+                            <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
+                        </div>
+                    </div>
+                    <!--// slide -->
+                </div>
+            </div>
+            <!--// Миниатюры, Превью, Thumbs -->
 
         </div>
     </section>
 
+    <!--*** libs ***-->
+    <!-- swiper -->
+    <script src="./libs/swiper-11.0.7/package/swiper-bundle.min.js"></script>
+    <!--// swiper -->
+    <!--***// libs ***-->
+
+    <!-- custom js -->
     <script src="./js/main.js"></script>
+    <!--// custom js -->
 </body>
 </html>

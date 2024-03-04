@@ -414,6 +414,15 @@ body {
   line-height: 1.33;
 }
 
+.slider-how-it-was {
+  width: 1120px;
+  height: 600px;
+}
+
+.slider-mini-how-it-was {
+  margin-top: 24px;
+}
+
 .slider-how-it-was__item {
   position: relative;
 }
@@ -455,6 +464,39 @@ body {
   line-height: 32px;
   color: #fff;
   text-overflow: ellipsis;
+}
+
+.slider-mini-how-it-was {
+  margin-left: auto;
+  margin-right: auto;
+  width: 448px;
+  height: 88px;
+}
+
+.slider-mini-how-it-was__item {
+  margin-right: 16px;
+  position: relative;
+  width: 100px;
+  height: 64px;
+  opacity: 0.5;
+}
+
+.slider-mini-how-it-was__item.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.slider-mini-how-it-was__img {
+  width: 100px;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.slider-mini-how-it-was__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }
 
 .header__nav {

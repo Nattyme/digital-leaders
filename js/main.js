@@ -33,3 +33,25 @@ tabButtons.forEach(function (item) {
 
 // Делаем "фейковый" клик по первой кнопке
 document.querySelector('.tab__btn').click();
+/* tabs */
+
+/*swiper slider-who-it-was*/
+const swiper = new Swiper('#slider-how-it-was', {
+    // Optional parameters
+    direction: 'horizontal',
+    spaceBetween: 16,
+    slidesPreView: 1,
+    grabCursor: true,
+    loop: true,
+    thumbs: {
+        swiper: '#slider-mini-how-it-was',
+        slidesPreView: 4,
+    },
+  
+    // // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+  
+  });
