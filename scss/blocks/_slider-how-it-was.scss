@@ -1,0 +1,61 @@
+.swiper {}
+
+.slider-how-it-was {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.slider-how-it-was__item {
+    position: relative;
+}
+
+.slider-how-it-was__img {
+    position: relative;
+
+    width: 1120px;
+    height: 600px;
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &::before {
+        @extend %overlay;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 160px;
+        height: 160px;
+        background-image: url('./../img/sliders/play.svg');
+        background-position: center center; // x y
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.slider-how-it-was__text {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    max-width: 345px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #fff;
+
+    text-overflow: ellipsis;
+}
+
+.swiper-scrollbar {}

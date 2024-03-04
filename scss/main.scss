@@ -5,6 +5,7 @@
 @import "./base/utilites";
 @import "./base/reset";
 @import "./base/vars";
+@import "./base/mixins";
 @import "./base/containers";
 @import "./base/base";
 
@@ -16,6 +17,9 @@
 @import "./blocks/form";
 @import "./blocks/tab";
 @import "./blocks/tab-block";
+
+//sliders
+@import "./blocks/slider-how-it-was";
 
 //sections
 @import "./sections/header-top";
