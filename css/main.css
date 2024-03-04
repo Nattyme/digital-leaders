@@ -630,6 +630,25 @@ body {
   background: linear-gradient(-41.52deg, rgb(204, 255, 227) 3.924%, rgb(128, 247, 255) 117.774%);
 }
 
+.cost.decor-polygon::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 166px;
+  height: 173px;
+  background-image: url("./../img/decor-svg/cube-double.svg");
+}
+.cost.decor-polygon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 164px;
+  height: 187px;
+  background-image: url("./../img/decor-svg/polygon-triple.svg");
+}
+
 .cost__header {
   margin-bottom: 64px;
 }
@@ -691,4 +710,11 @@ body {
   width: 24px;
   height: 24px;
   display: inline-block;
+}
+
+.how-it-was__header {
+  padding-top: 64px;
+  padding-bottom: 100px;
+  margin-bottom: 64px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

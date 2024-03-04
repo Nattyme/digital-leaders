@@ -5,6 +5,31 @@
     background: linear-gradient(-41.52deg, rgb(204, 255, 227) 3.924%, rgb(128, 247, 255) 117.774%);
 }
 
+.cost.decor-polygon {
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+
+        width: 166px;
+        height: 173px;
+        background-image: url("./../img/decor-svg/cube-double.svg");
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+
+        width: 164px;
+        height: 187px;
+        background-image: url("./../img/decor-svg/polygon-triple.svg");
+    }
+}
+
 .cost__header {
     margin-bottom: 64px;
 }
@@ -36,7 +61,7 @@
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
-    
+
     max-width: 832px;
 
     display: flex;
