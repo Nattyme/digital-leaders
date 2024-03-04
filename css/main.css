@@ -127,7 +127,6 @@ legend {
 body {
   font-family: "Geologica", sans-serif;
   color: #2a4056;
-  overflow: hidden;
 }
 
 .h1 {
@@ -414,6 +413,10 @@ body {
   line-height: 1.33;
 }
 
+.slider-content {
+  position: relative;
+}
+
 .slider-arrow {
   z-index: 4;
   position: absolute;
@@ -456,7 +459,6 @@ body {
   position: relative;
   width: 1120px;
   height: 600px;
-  overflow: visible;
 }
 .slider-how-was:hover .slider-how-was__img::after {
   opacity: 1;

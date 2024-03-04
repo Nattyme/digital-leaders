@@ -2,10 +2,8 @@
     position: relative;
     width: 1120px;
     height: 600px; //688
-    overflow: visible;
 
     &:hover {
-
         .slider-how-was__img::after {
             opacity: 1;
         }
