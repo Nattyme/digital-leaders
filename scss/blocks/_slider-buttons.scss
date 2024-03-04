@@ -1,5 +1,5 @@
 .slider-arrow {
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     top: 50%;
     content: "";
@@ -13,9 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
 }
 
 .slider-arrow__prev {
@@ -26,4 +23,17 @@
 .slider-arrow__next {
     right: 0;
     transform: translate(50%, -50%);
+}
+
+.slider-pagination {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #c6d9ec;
+
+    &--active {
+        width: 16px;
+        height: 16px;
+        background: $btn-grad;
+    }
 }

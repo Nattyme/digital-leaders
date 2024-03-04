@@ -1,10 +1,16 @@
-.slider-reviews {}
+.slider-reviews {
+    position: relative;
+    padding-bottom: 48px;
+
+    width: 1120px;
+    height: 476px;
+}
 
 .slider-reviews__item {
     padding: 32px 40px 40px;
     display: flex;
 
-    width: 544px;
+    width: 544px !important;
     height: 428px;
 
     border: 1px solid #c6d9ec;
@@ -51,4 +57,15 @@
 }
 
 
-.swiper-pagination {}
+.slider-reviews__pagination {
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

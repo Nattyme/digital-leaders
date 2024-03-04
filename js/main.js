@@ -66,5 +66,23 @@ const swiper = new Swiper('#slider-how-was', {
     },
   
   });
+/*swiper slider-who-it-was*/
+
+/* swiper slider-reviews */
+const swiperReviews = new Swiper('#slider-reviews', {
+    // Optional parameters
+    direction: 'horizontal',
+    spaceBetween: 32,
+    speed: 1200,
+    slidesPreView: 2,
+    grabCursor: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-reviews-next',
+      prevEl: '#slider-reviews-prev',
+    },
+  
+  });
 
 

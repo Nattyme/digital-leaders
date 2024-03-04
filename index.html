@@ -826,7 +826,6 @@
 
     <section class="reviews">
         <div class="container">
-
             <!-- header -->
             <div class="reviews__header">
                 <h2 class="h2 grad-border">Отзывы участников</h2>
@@ -836,17 +835,17 @@
             <!-- Slider main container -->
             <div class="swiper slider-reviews" id="slider-reviews">
 
+                <!-- swiper controls -->
+                <button class="slider-arrow slider-arrow__prev" id="slider-reviews-prev">
+                    <img src="./img/sliders/arrow-left.svg" alt="prev">
+                </button>
+                <button class="slider-arrow slider-arrow__next" id="slider-reviews-next">
+                    <img src="./img/sliders/arrow-right.svg" alt="next">
+                </button> 
+                <!-- swiper controls -->
+
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-
-                     <!-- swiper controls -->
-                    <button class="slider-arrow slider-arrow__prev" id="slider-reviews-prev">
-                        <img src="./img/sliders/arrow-left.svg" alt="prev">
-                    </button>
-                    <button class="slider-arrow slider-arrow__next" id="slider-reviews-next">
-                        <img src="./img/sliders/arrow-right.svg" alt="next">
-                    </button> 
-                    <!-- swiper controls -->
 
                     <!-- slide -->
                     <div class="swiper-slide slider-reviews__item">
@@ -900,11 +899,67 @@
                     </div>
                     <!--// slide -->
 
-                    
+                    <!-- slide -->
+                    <div class="swiper-slide slider-reviews__item">
+
+                        <!-- img -->
+                        <div class="slider-reviews__img">
+                            <img src="./img/sliders/reviews/img-01.jpg" alt="img">
+                        </div>
+                        <!--// img -->
+
+                        <!-- text -->
+                        <div class="slider-reviews__text">
+                             <!-- header -->
+                            <div class="slider-reviews__title">
+                                <h4 class="slider-reviews__name">Анастасия Некрасова</h4>
+                                <p class="slider-reviews__date">12 июл 2023</p>
+                            </div>
+                            <!--// header -->
+
+                            <div class="slider-reviews__desc">
+                                <p>Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+                            </div>
+                        </div>
+                        <!--// text -->
+                    </div>
+                    <!--// slide -->
+
+                    <!-- slide -->
+                    <div class="swiper-slide slider-reviews__item">
+
+                        <!-- img -->
+                        <div class="slider-reviews__img">
+                            <img src="./img/sliders/reviews/img-02.jpg" alt="img">
+                        </div>
+                        <!--// img -->
+
+                        <!-- text -->
+                        <div class="slider-reviews__text">
+                             <!-- header -->
+                            <div class="slider-reviews__title">
+                                <h4 class="slider-reviews__name">Константин Константинопольский</h4>
+                                <p class="slider-reviews__date">9 июн 2023</p>
+                            </div>
+                            <!--// header -->
+
+                            <div class="slider-reviews__desc">
+                                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+                            </div>
+                        </div>
+                        <!--// text -->
+                    </div>
+                    <!--// slide -->
 
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination">пагинация</div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination slider-reviews__pagination">
+                        <button class="slider-pagination slider-pagination--active"></button>
+                        <button class="slider-pagination"></button>
+                        <button class="slider-pagination"></button>
+                        <button class="slider-pagination"></button>
+                        <button class="slider-pagination"></button>
+                    </div>
             </div>
 
         </div>
