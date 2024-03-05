@@ -267,6 +267,63 @@ body {
   padding-left: 12px;
 }
 
+.badge-video {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 545px;
+  height: 308px;
+}
+
+.badge-video__title {
+  z-index: 1;
+  position: absolute;
+  bottom: 16px;
+  left: 24px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #fff;
+}
+
+.badge-video__img {
+  position: relative;
+  width: 544px;
+  height: 306px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.badge-video__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.badge-video__img::before, .badge-video__img::after {
+  position: absolute;
+  content: "";
+}
+.badge-video__img::before {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(42, 64, 86, 0.4);
+}
+.badge-video__img::after {
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  background-image: url("./../img/sliders/play.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .form {
   padding-top: 32px;
 }
@@ -458,6 +515,38 @@ body {
   width: 16px;
   height: 16px;
   background: linear-gradient(90deg, rgb(0, 230, 134) -0.036%, rgb(0, 230, 210) 48.922%, rgb(0, 191, 230) 99.964%);
+}
+
+.slider-badge {
+  width: 100%;
+  height: 306px;
+  border-radius: 24px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-badge__text {
+  padding-top: 64px;
+  padding-left: 64px;
+  max-width: 408px;
+}
+
+.slider-badge__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.slider-badge__desc {
+  margin-bottom: 4px;
+}
+
+.slider-badge__link-map {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
 }
 
 .slider-how-was {
@@ -693,6 +782,28 @@ body {
 
 .slider-pagination:not(:last-child) {
   margin-right: 16px;
+}
+
+.slider-place {
+  position: relative;
+  height: 1047px;
+}
+
+.slider-place__item {
+  width: 100%;
+  height: 888px;
+  background-color: #b1d8e7;
+  background-image: url("./../img/sliders/place/img-01.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider-place__badge {
+  position: absolute;
+  bottom: -159px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__nav {
@@ -1092,4 +1203,17 @@ body {
 
 .partners__btn {
   margin-top: 48px;
+}
+
+.place {
+  position: relative;
+  overflow: hidden;
+}
+
+.place__header {
+  z-index: 2;
+  position: absolute;
+  top: 136px;
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=main.css.map */

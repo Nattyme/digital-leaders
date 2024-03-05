@@ -14,6 +14,7 @@
 @import "./blocks/components";
 @import "./blocks/buttons";
 @import "./blocks/timer";
+@import "./blocks/badge-video";
 @import "./blocks/form";
 @import "./blocks/tab";
 @import "./blocks/tab-block";
@@ -21,9 +22,11 @@
 
 //sliders
 @import "./blocks/slider-buttons";
+@import "./blocks/slider-badge";
 @import "./blocks/slider-how-was";
 @import "./blocks/slider-reviews";
 @import "./blocks/slider-press-about";
+@import "./blocks/slider-place";
 
 //sections
 @import "./sections/header-top";
@@ -36,3 +39,4 @@
 @import "./sections/reviews";
 @import "./sections/pess-about";
 @import "./sections/partners";
+@import "./sections/place";

@@ -1,0 +1,22 @@
+.slider-place {
+    position: relative;
+    height: 1047px;
+}
+
+.slider-place__item {
+    width: 100%;
+    height: 888px;
+
+    background-color: #b1d8e7;
+    background-image: url('./../img/sliders/place/img-01.jpg');
+    background-position: center center; // x y
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-place__badge {
+    position: absolute;
+    bottom: -159px;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,12 @@
+.place {
+    position: relative;
+    overflow: hidden;
+}
+
+.place__header {
+    z-index: 2;
+    position: absolute;
+    top: 136px;
+    left: 50%;
+    transform: translateX(-50%);
+}
