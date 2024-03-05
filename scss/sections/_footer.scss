@@ -30,6 +30,11 @@
 
     display: flex;
     justify-content: space-between;
+
+    &>* {
+        flex-shrink: 0;
+    }
+
 }
 
 .footer__column {
@@ -101,18 +106,29 @@
 
     a {
         color: rgb(198, 217, 236);
+        transition: opacity 0.2s ease-in;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
+}
+
+.footer__bottom .footer__column:first-child {
+    margin-top: auto;
 }
 
 .footer__copyright {
-    width: 274px;
     display: flex;
 
-    li+li {
-        margin-left: 48px;
+    li:not(:last-child) {
+        margin-right: 48px;
     }
 }
 
-.footer__policy li+li {
-    margin-top: 8px;
+.footer__policy {
+
+    li+li {
+        margin-top: 8px;
+    }
 }

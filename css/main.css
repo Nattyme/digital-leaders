@@ -1303,6 +1303,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.footer__row > * {
+  flex-shrink: 0;
+}
 
 .footer__column:first-child {
   width: 640px;
@@ -1363,14 +1366,21 @@ body {
 }
 .footer__bottom a {
   color: rgb(198, 217, 236);
+  transition: opacity 0.2s ease-in;
+}
+.footer__bottom a:hover {
+  opacity: 0.6;
+}
+
+.footer__bottom .footer__column:first-child {
+  margin-top: auto;
 }
 
 .footer__copyright {
-  width: 274px;
   display: flex;
 }
-.footer__copyright li + li {
-  margin-left: 48px;
+.footer__copyright li:not(:last-child) {
+  margin-right: 48px;
 }
 
 .footer__policy li + li {
