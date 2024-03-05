@@ -1,0 +1,47 @@
+.partners {
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    text-align: center;
+}
+
+.partners__header {
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+
+.partners__row + .partners__row {
+    margin-top: 57px;
+}
+
+.partners__list li {
+    width: 256px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid #c6d9ec;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners__name {
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.55; //28px
+}
+
+.partners__btn {
+    margin-top: 48px;
+}

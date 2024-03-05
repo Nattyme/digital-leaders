@@ -73,8 +73,9 @@ const swiperReviews = new Swiper('#slider-reviews', {
     // Optional parameters
     direction: 'horizontal',
     spaceBetween: 32,
-    speed: 1200,
+    speed: 2500,
     slidesPerView: 2,
+    slidesPerGroup: 2,
     grabCursor: true,
   
     // Navigation arrows

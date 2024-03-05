@@ -10,12 +10,11 @@
     font-size: 18px;
     line-height: 56px;
     font-weight: 500;
-    color: #2a4056;
+    color: #fff;
 
     &--grad {
         box-shadow: $btn-shadow;
         background: $btn-grad;
-        color: #fff;
     }
 }
 
