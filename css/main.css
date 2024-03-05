@@ -17,7 +17,6 @@
 a,
 a:link,
 a:visited {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -268,12 +267,21 @@ body {
 }
 
 .badge-video {
-  display: block;
+  width: 545px;
+  height: 308px;
   position: absolute;
   right: 0;
   top: -1px;
-  width: 545px;
-  height: 308px;
+}
+.badge-video::before {
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
 }
 
 .badge-video__title {
@@ -792,16 +800,21 @@ body {
 .slider-place__item {
   width: 100%;
   height: 888px;
-  background-color: #b1d8e7;
-  background-image: url("./../img/sliders/place/img-01.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-place__item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider-place__badge {
+  z-index: 2;
   position: absolute;
-  bottom: -159px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }

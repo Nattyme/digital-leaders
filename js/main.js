@@ -90,9 +90,9 @@ const swiperReviews = new Swiper('#slider-reviews', {
         clickable: true,
       },
   
-  });
+});
 
-  /* swiper slider-reviews */
+/* swiper slider-reviews */
 const swiperPressAbout = new Swiper('#slider-press-about', {
     // Optional parameters
     direction: 'horizontal',
@@ -114,6 +114,29 @@ const swiperPressAbout = new Swiper('#slider-press-about', {
         clickable: true,
       },
   
-  });
+});
+
+/* swiper slider-reviews */
+const swiperPlace = new Swiper('#slider-place', {
+    // Optional parameters
+    direction: 'horizontal',
+    spaceBetween: 35,
+    speed: 2000,
+    slidesPerView: 1,
+    grabCursor: true,
+  
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '#slider-press-about-next',
+    //   prevEl: '#slider-press-about-prev',
+    // },
+
+    // pagination: {
+    //     el: '.slider-press-about__pagination',
+    //     // type: 'bullets',
+    //     clickable: true,
+    //   },
+  
+});
 
 
