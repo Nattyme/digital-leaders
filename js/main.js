@@ -91,4 +91,28 @@ const swiperReviews = new Swiper('#slider-reviews', {
   
   });
 
+  /* swiper slider-reviews */
+const swiperPressAbout = new Swiper('#slider-press-about', {
+    // Optional parameters
+    direction: 'horizontal',
+    spaceBetween: 32,
+    speed: 2500,
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    grabCursor: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-press-about-next',
+      prevEl: '#slider-press-about-prev',
+    },
+
+    pagination: {
+        el: '.slider-press-about__pagination',
+        // type: 'bullets',
+        clickable: true,
+      },
+  
+  });
+
 
