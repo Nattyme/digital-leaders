@@ -126,16 +126,16 @@ const swiperPlace = new Swiper('#slider-place', {
     grabCursor: true,
   
     // Navigation arrows
-    // navigation: {
-    //   nextEl: '#slider-press-about-next',
-    //   prevEl: '#slider-press-about-prev',
-    // },
+    navigation: {
+      nextEl: '#slider-place-next',
+      prevEl: '#slider-place-prev',
+    },
 
-    // pagination: {
-    //     el: '.slider-press-about__pagination',
-    //     // type: 'bullets',
-    //     clickable: true,
-    //   },
+    pagination: {
+        el: '#slider-place__pagination',
+        // type: 'bullets',
+        type: "fraction",
+      },
   
 });
 

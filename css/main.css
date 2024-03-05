@@ -499,6 +499,9 @@ body {
 .slider-arrow.swiper-button-disabled {
   opacity: 0;
 }
+.slider-place .slider-arrow.swiper-button-disabled {
+  opacity: 0.4;
+}
 
 .slider-arrow__prev {
   transform: translate(-50%, -50%);
@@ -815,6 +818,33 @@ body {
   z-index: 2;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-place__pagination {
+  padding-left: 34px;
+  padding-right: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 48px;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.slider__controls {
+  z-index: 2;
+  position: absolute;
+  width: 274px;
+  height: 48px;
+  position: absolute;
+  bottom: 33%;
   left: 50%;
   transform: translateX(-50%);
 }
