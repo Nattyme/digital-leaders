@@ -120,7 +120,6 @@ const swiperPressAbout = new Swiper('#slider-press-about', {
 const swiperPlace = new Swiper('#slider-place', {
     // Optional parameters
     direction: 'horizontal',
-    spaceBetween: 35,
     speed: 2000,
     slidesPerView: 1,
     grabCursor: true,

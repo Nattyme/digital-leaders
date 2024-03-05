@@ -796,8 +796,14 @@ body {
 }
 
 .slider-place {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 75%, 0 85%);
+          clip-path: polygon(0 10%, 100% 0, 100% 75%, 0 85%);
   position: relative;
   height: 1047px;
+}
+
+.slider-place__content {
+  position: relative;
 }
 
 .slider-place__item {
