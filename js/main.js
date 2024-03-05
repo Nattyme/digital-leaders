@@ -39,7 +39,7 @@ document.querySelector('.tab__btn').click();
 const swiperMini = new Swiper('#slider-mini-how-was', {
     // Optional parameters
     spaceBetween: 16,
-    slidesPreView: 4,
+    slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
     });
@@ -49,7 +49,7 @@ const swiper = new Swiper('#slider-how-was', {
     direction: 'horizontal',
     spaceBetween: 160,
     speed: 1200,
-    slidesPreView: 1,
+    slidesPerView: 1,
     grabCursor: true,
     hashNavigation: {
         watchState: true,
@@ -74,7 +74,7 @@ const swiperReviews = new Swiper('#slider-reviews', {
     direction: 'horizontal',
     spaceBetween: 32,
     speed: 1200,
-    slidesPreView: 2,
+    slidesPerView: 2,
     grabCursor: true,
   
     // Navigation arrows
@@ -83,11 +83,11 @@ const swiperReviews = new Swiper('#slider-reviews', {
       prevEl: '#slider-reviews-prev',
     },
 
-    // pagination: {
-    //     el: '.slider-reviews__pagination',
-    //     type: 'bullets',
-    //     clickable: true,
-    //   },
+    pagination: {
+        el: '.slider-reviews__pagination',
+        // type: 'bullets',
+        clickable: true,
+      },
   
   });
 

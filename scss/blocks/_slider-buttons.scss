@@ -17,6 +17,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.swiper-button-disabled {
+        opacity: 0;
+    }
 }
 
 .slider-arrow__prev {
@@ -29,13 +33,16 @@
     transform: translate(50%, -50%);
 }
 
-.slider-pagination {
+.swiper-pagination-bullet {
+    position: relative;
     width: 8px;
     height: 8px;
     border-radius: 50%;
+    opacity: 1;
     background-color: #c6d9ec;
+    cursor: pointer;
 
-    &--active {
+    &-active {
         width: 16px;
         height: 16px;
         background: $btn-grad;

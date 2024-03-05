@@ -432,6 +432,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.slider-arrow.swiper-button-disabled {
+  opacity: 0;
+}
 
 .slider-arrow__prev {
   transform: translate(-50%, -50%);
@@ -443,13 +446,16 @@ body {
   transform: translate(50%, -50%);
 }
 
-.slider-pagination {
+.swiper-pagination-bullet {
+  position: relative;
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  opacity: 1;
   background-color: #c6d9ec;
+  cursor: pointer;
 }
-.slider-pagination--active {
+.swiper-pagination-bullet-active {
   width: 16px;
   height: 16px;
   background: linear-gradient(90deg, rgb(0, 230, 134) -0.036%, rgb(0, 230, 210) 48.922%, rgb(0, 191, 230) 99.964%);
@@ -615,16 +621,11 @@ body {
 }
 
 .slider-reviews__pagination {
-  height: 16px;
   display: flex;
+  align-items: center;
   justify-content: center;
   -moz-column-gap: 16px;
        column-gap: 16px;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .header__nav {
