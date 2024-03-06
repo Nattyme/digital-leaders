@@ -213,6 +213,9 @@ body {
   -webkit-clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
           clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
 }
+.clip-section--dark {
+  background-image: url("./../../img/speakers/speakers-bg.svg");
+}
 
 .btn-solid {
   display: inline-block;
@@ -1094,9 +1097,9 @@ body {
 }
 
 .speakers {
+  position: relative;
   padding-top: 187px;
   padding-bottom: 185px;
-  background-image: url("./../../img/speakers/speakers-bg.svg");
 }
 
 .speakers__header {
