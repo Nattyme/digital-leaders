@@ -57,3 +57,15 @@
     line-height: 1.33; //32px
 }
 
+.clip-section {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-41.52deg, rgb(204, 255, 227) 3.924%, rgb(128, 247, 255) 117.774%);
+    // clip-path: polygon(0 11%, 100% 0%, 100% 89%, 0 100%);
+    clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
+}
+

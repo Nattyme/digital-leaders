@@ -150,6 +150,14 @@ body {
   color: #fff;
 }
 
+.h3 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #fff;
+}
+
 .grad-border {
   padding-bottom: 2px;
   display: inline;
@@ -192,6 +200,18 @@ body {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
+}
+
+.clip-section {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-41.52deg, rgb(204, 255, 227) 3.924%, rgb(128, 247, 255) 117.774%);
+  -webkit-clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
+          clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
 }
 
 .btn-solid {
@@ -1074,10 +1094,56 @@ body {
 }
 
 .speakers {
-  z-index: 1;
-  min-height: 500px;
+  padding-top: 187px;
+  padding-bottom: 185px;
   position: relative;
   background-image: url("./../../img/speakers/speakers-bg.svg");
+}
+
+.speakers__header {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.slider-speakers {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  height: 476px;
+}
+
+.slider-speakers__item {
+  width: 216px;
+  height: 280px;
+}
+.slider-speakers__item:nth-child(even) {
+  margin-top: auto;
+}
+
+.slider-speakers__img {
+  margin-bottom: 24px;
+  width: 216px;
+  height: 264px;
+  overflow: hidden;
+}
+.slider-speakers__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: inset(0 round 100px 0 100px 0);
+          clip-path: inset(0 round 100px 0 100px 0);
+}
+
+.slider-speakers__title {
+  margin-bottom: 8px;
+}
+
+.slider-speakers__desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #c6d9ec;
 }
 
 .program {
@@ -1091,21 +1157,11 @@ body {
 }
 
 .cost {
+  position: relative;
   padding-top: 160px;
   padding-bottom: 160px;
   text-align: center;
-}
-
-.clip-section {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-41.52deg, rgb(204, 255, 227) 3.924%, rgb(128, 247, 255) 117.774%);
-  -webkit-clip-path: polygon(0 11%, 100% 0%, 100% calc(100% - 10vw), 0 100%);
-          clip-path: polygon(0 11%, 100% 0%, 100% calc(100% - 10vw), 0 100%);
+  height: 1115px;
 }
 
 .cost.decor-polygon {
