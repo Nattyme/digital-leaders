@@ -894,6 +894,54 @@ body {
   transform: translateX(-50%);
 }
 
+.slider-speakers {
+  position: relative;
+  width: 1080px;
+  height: 540px;
+}
+
+.slider-speakers__item {
+  width: 216px;
+  height: 380px;
+}
+.slider-speakers__item:nth-child(even) {
+  margin-top: 72px;
+}
+
+.slider-speakers__img {
+  margin-bottom: 24px;
+  width: 216px;
+  height: 264px;
+  overflow: hidden;
+}
+.slider-speakers__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: inset(0 round 100px 0 100px 0);
+          clip-path: inset(0 round 100px 0 100px 0);
+}
+
+.slider-speakers__title {
+  margin-bottom: 8px;
+}
+
+.slider-speakers__desc {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #c6d9ec;
+}
+
+.slider-speakers__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
 .header__nav {
   padding-top: 24px;
   padding-bottom: 14px;
@@ -1107,54 +1155,6 @@ body {
   text-align: center;
 }
 
-.slider-speakers {
-  position: relative;
-  width: 1080px;
-  height: 540px;
-}
-
-.slider-speakers__item {
-  width: 216px;
-  height: 380px;
-}
-.slider-speakers__item:nth-child(even) {
-  margin-top: 72px;
-}
-
-.slider-speakers__img {
-  margin-bottom: 24px;
-  width: 216px;
-  height: 264px;
-  overflow: hidden;
-}
-.slider-speakers__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-clip-path: inset(0 round 100px 0 100px 0);
-          clip-path: inset(0 round 100px 0 100px 0);
-}
-
-.slider-speakers__title {
-  margin-bottom: 8px;
-}
-
-.slider-speakers__desc {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.33;
-  color: #c6d9ec;
-}
-
-.slider-speakers__pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-}
-
 .speakers__badge {
   width: 216px;
   height: 84px;
@@ -1162,6 +1162,7 @@ body {
   z-index: 1;
   top: 173px;
   right: calc(50vw - var(--container-width) / 2 - 20px);
+  color: #fff;
 }
 
 .speakers__badge .decor-polygon {
@@ -1175,7 +1176,7 @@ body {
   background-image: url("./../img/decor-svg/polygon-azure-one.svg");
 }
 
-.speakers__value {
+.speakers__amount {
   font-family: "Unbounded", sans-serif;
   font-size: 46px;
   font-weight: 700;
@@ -1186,7 +1187,6 @@ body {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
-  color: #fff;
 }
 
 .program {
