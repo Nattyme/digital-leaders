@@ -138,4 +138,27 @@ const swiperPlace = new Swiper('#slider-place', {
   
 });
 
+/* swiper slider-speakers */
+const swiperSpeakers = new Swiper('#slider-speakers', {
+    // Optional parameters
+    direction: 'horizontal',
+    speed: 1500,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 72,
+    grabCursor: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '#slider-speakers-next',
+      prevEl: '#slider-speakers-prev',
+    },
+
+    pagination: {
+        el: '.slider-speakers__pagination',
+        // type: 'bullets',
+        clickable: true,
+      },
+});
+
 

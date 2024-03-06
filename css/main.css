@@ -1096,7 +1096,6 @@ body {
 .speakers {
   padding-top: 187px;
   padding-bottom: 185px;
-  position: relative;
   background-image: url("./../../img/speakers/speakers-bg.svg");
 }
 
@@ -1106,18 +1105,17 @@ body {
 }
 
 .slider-speakers {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   width: 1080px;
-  height: 476px;
+  height: 540px;
 }
 
 .slider-speakers__item {
   width: 216px;
-  height: 280px;
+  height: 380px;
 }
 .slider-speakers__item:nth-child(even) {
-  margin-top: auto;
+  margin-top: 72px;
 }
 
 .slider-speakers__img {
@@ -1144,6 +1142,14 @@ body {
   font-weight: 300;
   line-height: 1.33;
   color: #c6d9ec;
+}
+
+.slider-speakers__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }
 
 .program {
