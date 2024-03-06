@@ -10,7 +10,13 @@
 
 }
 
-.footer__top {}
+.footer__email-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    color: #fff;
+}
 
 .footer__header {
     margin-bottom: 64px;
@@ -47,15 +53,6 @@
     }
 }
 
-.email__list {
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-
-    color: #fff;
-}
-
-
 .footer__phone {
     margin-bottom: 40px;
 
@@ -67,8 +64,6 @@
         color: #fff;
     }
 }
-
-.footer__form {}
 
 .form-subscribe {
     width: 448px;

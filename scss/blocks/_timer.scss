@@ -1,10 +1,14 @@
 .timer {
     padding: 40px 96px 48px;
-
+    width: 1120px;
     border-radius: 24px;
     border: 1px solid #2a4056;
     box-shadow: 0px 20px 40px 0px rgba(8, 99, 145, 0.08);
     background-color: #fff;
+
+    &--outline {
+        border-color: #e4edf6;
+    }
 }
 
 .timer-count {
@@ -36,8 +40,8 @@
         position: relative;
 
         &::after {
-            padding-left: 13px;
-            padding-right: 13px;
+            padding-left: 10px;
+            padding-right: 11px;
 
             content: ":";
             font-size: 54px;

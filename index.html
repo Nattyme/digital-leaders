@@ -604,7 +604,9 @@
     <!--// section program -->
 
     <!-- section cost -->
-    <section class="cost decor-polygon none">
+    <section class="cost decor-polygon">
+        <div class="clip-section"></div>
+
         <div class="container">
 
             <!-- header -->
@@ -619,7 +621,7 @@
 
             <!-- timer -->
             <div class="cost__timer">
-                <div class="timer">
+                <div class="timer timer--outline">
                     <div class="timer-count">
                         <div class="timer-count__text">
                             <p>До начала регистрации:</p>
@@ -646,9 +648,6 @@
     
                         <!-- form -->
                         <div class="form">
-                            <legend class="form__title">
-                                Оставьте электронную почту, а мы напомним о начале регистрации и будем держать в курсе новостей
-                            </legend>
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Электронная почта">
                                 <input class="btn-solid btn-solid--grad" type="button" value="Подписаться на новости">
@@ -701,6 +700,7 @@
                  <!-- warning -->
             </div>
         </div>
+
     </section>
     <!--// section cost -->
 
@@ -1633,7 +1633,7 @@
     <!--// section place -->
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer none">
 
         <!-- footer top -->
         <div class="footer__top">
@@ -1647,7 +1647,7 @@
 
                 <div class="footer__contacts">
                     <div class="footer__column">
-                        <ul class="email__list">
+                        <ul class="footer__email-list">
                             <li>
                                 <p>Участникам</p>
                                 <a class="email grad-text" href="mailto:forum@activebc.ru">forum@activebc.ru</a>
