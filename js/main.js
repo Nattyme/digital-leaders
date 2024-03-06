@@ -142,7 +142,7 @@ const swiperPlace = new Swiper('#slider-place', {
 const swiperSpeakers = new Swiper('#slider-speakers', {
     // Optional parameters
     direction: 'horizontal',
-    speed: 1500,
+    speed: 1800,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 72,
