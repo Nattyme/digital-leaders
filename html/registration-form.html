@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
+    <link rel="stylesheet" href="./../css/main.css">
 </head>
 <body>
     <main class="registartion-page">
         <section class="registration" >
             <div class="container">
 
+                <!-- back btn -->
                 <div class="registration__back">
-                    <button class="btn-back">
-                        <img src="./../img/icons/arrow-back.svg" alt="Назад">
-                    </button>
-                    <span>Назад</span>
+                    <div class="return-back">
+                        <button class="btn-back">
+                            <img src="./../img/icons/arrow-back.svg" alt="Назад">
+                        </button>
+                        <span class="return-back__text">Назад</span>
+                    </div>
+            
                 </div>
+                <!-- back btn -->
                 
+                <!-- title -->
                 <div class="registration__title">
                     <h1>Регистрация на форум</h1>
                 </div>
-               
-    
+                <!--// title -->
+
+                <!-- form -->
                 <form class="form-register" id="form-register" action="#">
 
                     <!-- fieldset -->
-                    <fieldset class="form-register__block">
+                    <div class="form-register__block">
                         <fieldset class="form-group">
                             <legend class="form-group__title">Компания</legend>
                             <div class="form-group__input">
@@ -61,15 +69,14 @@
                             
                         </fieldset>
                         <!--// fieldset-->
-                    </fieldset>
+                    </div>
                     <!-- fieldset -->
 
                     <!-- fieldset -->
-                    <fieldset class="form-register__block">
+                    <div class="form-register__block">
                         <legend class="form-group__title">Участники</legend>
 
                         <fieldset class="form-group">
-                            
                             <p>Участник 1</p>
 
 
@@ -98,11 +105,11 @@
                             <!--// btn -->
                         </fieldset>
                         <!--// fieldset-->
-                    </fieldset>
+                    </div>
                     <!-- fieldset -->
 
                     <!-- fieldset-->
-                    <fieldset class="form-group">
+                    <div class="form-register__block">
                         <legend class="form-group__title">Реквизиты счёта для оплаты</legend>
 
                         <div class="form-group__input">
@@ -152,11 +159,11 @@
                             <input type="text" class="form-group__input">
                         </div>
                         
-                    </fieldset>
+                    </div>
                     <!--// fieldset-->
 
                     <!-- fieldset -->
-                    <fieldset class="form-register__block">
+                    <div class="form-register__block">
                         <legend class="form-group__title">Почтовый адрес</legend>
                         <p>На этот адрес мы отправим закрывающие документы</p>
                         
@@ -175,7 +182,7 @@
 
                         </fieldset>
                         <!--// fieldset-->
-                    </fieldset>
+                    </div>
                     <!-- fieldset -->
 
                     <!-- fieldset -->
@@ -220,6 +227,7 @@
                     </div>
                     <!--// form buttons -->
                 </form>
+                <!--// form -->
             </div>
         </section>
     </main>

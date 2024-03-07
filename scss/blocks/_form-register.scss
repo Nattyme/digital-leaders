@@ -1,0 +1,50 @@
+.form-register {
+  
+}
+
+.form-register__block {
+    padding: 48px 64px 64px;
+    border-radius: 24px;
+    background-color: #fff;
+
+    & + * {
+        margin-top: 16px;
+    }
+}
+
+.form-group {}
+
+.form-group__title {
+    margin-bottom: 24px;
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.09; //24px;
+}
+
+.form-group__input {
+    
+}
+
+.form-register__btn {}
+
+.btn-add {}
+
+.btn-add__img {}
+
+.btn-add__text {}
+
+.form-group__input-wrapper {}
+
+.form-register__checkbox {}
+
+.checbox-row {}
+
+.form-register__buttons {}
+
+.btn-solid {}
+
+.btn-solid--grad {}
+
+.btn-outline {}

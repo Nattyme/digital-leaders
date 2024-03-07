@@ -138,7 +138,7 @@ body {
 }
 
 .registartion-page {
-  background-color: #c0c0c0;
+  background-color: #ecf4f9;
 }
 
 .h1 {
@@ -286,6 +286,33 @@ body {
 .btn-header:disabled {
   background-color: #fff;
   opacity: 0.4;
+}
+
+.btn-back {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Geologica", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #2a4056;
+}
+
+.return-back {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
 }
 
 .timer {
@@ -604,6 +631,23 @@ body {
 }
 .cost-list__value--active {
   color: #00d68f;
+}
+
+.form-register__block {
+  padding: 48px 64px 64px;
+  border-radius: 24px;
+  background-color: #fff;
+}
+.form-register__block + * {
+  margin-top: 16px;
+}
+
+.form-group__title {
+  margin-bottom: 24px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.09;
 }
 
 .slider-content {
@@ -1636,4 +1680,21 @@ body {
 
 .footer__policy li + li {
   margin-top: 8px;
+}
+
+.registration {
+  padding-top: 16px;
+  padding-bottom: 152px;
+}
+
+.registration__back {
+  margin-bottom: 68px;
+}
+
+.registration__title {
+  margin-bottom: 48px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.04;
 }/*# sourceMappingURL=main.css.map */

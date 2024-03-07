@@ -75,3 +75,20 @@
         opacity: 0.4;
     }
 }
+
+.btn-back {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Geologica", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.55; //28px;
+    color: #2a4056;
+}
