@@ -1,0 +1,19 @@
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list li:not(:last-child) {
+    margin-right: 24px;
+}
+
+.nav__list a {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.55; //28px
+    color: #2a4056;
+
+    &:hover {
+      
+    }
+}

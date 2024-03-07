@@ -13,10 +13,20 @@
     <!--// custom style -->
 </head>
 <body>
+    <!--===**** градиентные заливки для декора svg ***===-->
+    <svg style="height: 0; width: 0; position:absolute; z-index: -1;" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svgGradient" x1="37.5" y1="-5.41774e-05" x2="37.5" y2="140.999" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#8BFFC3"/>
+            <stop offset="1" stop-color="#CCFF99"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
     <!-- header -->
     <header class="header-top section-bg">
         <div class="container">
-            <div class="header__nav">
+            <div class="header-top__nav">
 
                 <!-- nav -->
                 <nav class="nav">
@@ -29,7 +39,7 @@
                 <!--// nav -->
 
                 <!-- btn -->
-                <div class="header__btn">
+                <div class="header-top__btn">
                     <button class="btn-header">Зарегистрироваться</button>
                 </div>
                 <!--// btn -->
@@ -38,7 +48,6 @@
     </header>
     <!--// header -->
 
-    <!-- section header -->
     <section class="header">
         <div class="container ">
             <!-- content -->
@@ -60,52 +69,56 @@
             </div>
             <!--// content -->
 
+            <div class="header__btn"></div>
+
             <!-- timer -->
-            <div class="timer">
-                <div class="timer-count">
-                    <div class="timer-count__text">
-                        <p>До начала регистрации:</p>
-                    </div>
+            <div class="header__timer">
+               
+                <div class="timer">
+                    <div class="timer-count">
+                        <div class="timer-count__text">
+                            <p>До начала регистрации:</p>
+                        </div>
 
-                    <!-- counter -->
-                    <div class="countdown" id="countdown">
-                        <div class="time">
-                            <span class="time__value" id="days">38</span>
-                            <span class="time__unit">д</span>
+                        <!-- counter -->
+                        <div class="countdown" id="countdown">
+                            <div class="time">
+                                <span class="time__value" id="days">38</span>
+                                <span class="time__unit">д</span>
+                            </div>
+                            <div class="time">
+                                <span class="time__value" id="hours">10</span>
+                                <span class="time__unit">ч</span>
+                            </div>
+                            <div class="time">
+                                <span class="time__value" id="minutes">27</span>
+                                <span class="time__unit">мин</span>
+                            </div>
                         </div>
-                        <div class="time">
-                            <span class="time__value" id="hours">10</span>
-                            <span class="time__unit">ч</span>
-                        </div>
-                        <div class="time">
-                            <span class="time__value" id="minutes">27</span>
-                            <span class="time__unit">мин</span>
-                        </div>
+                        <!--// counter -->
                     </div>
-                    <!--// counter -->
-                </div>
-                <div class="timer__form">
+                    <div class="timer__form">
 
-                    <!-- form -->
-                    <form class="form">
-                        <legend class="form__title">
-                            Оставьте электронную почту, а мы напомним о начале регистрации и будем держать в курсе новостей
-                        </legend>
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Электронная почта">
-                            <input class="btn-solid btn-solid--grad" type="button" value="Подписаться на новости">
-                        </div>
-                       
-                    </form>
-                    <!--// form -->
+                        <!-- form -->
+                        <form class="form">
+                            <legend class="form__title">
+                                Оставьте электронную почту, а мы напомним о начале регистрации и будем держать в курсе новостей
+                            </legend>
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Электронная почта">
+                                <input class="btn-solid btn-solid--grad" type="button" value="Подписаться на новости">
+                            </div>
+                            
+                        </form>
+                        <!--// form -->
+                    </div>
                 </div>
+                
             </div>
             <!--// timer -->
         </div>
     </section>
-    <!--// section header -->
 
-    <!--section forum -->
     <section class="forum decor-polygon">
         <div class="container">
 
@@ -191,10 +204,7 @@
             <!--// row -->
         </div>
     </section>
-    <!--// section forum -->
 
-    <!-- section speakers -->
-    
     <section class="speakers">
         <!-- clip bg -->
         <div class="clip-section clip-section--dark"></div>
@@ -408,10 +418,8 @@
            
         </div>
     </section>
-    <!--// section speakers -->
 
-    <!-- section program -->
-    <section class="program" id="#program">
+    <section class="program" id="program">
         <div class="container">
             
             <!-- header -->
@@ -769,9 +777,7 @@
 
         </div>
     </section>
-    <!--// section program -->
 
-    <!-- section cost -->
     <section class="cost decor-polygon">
         <!-- clip bg -->
         <div class="clip-section"></div>
@@ -872,9 +878,7 @@
         </div>
 
     </section>
-    <!--// section cost -->
 
-    <!-- section how-was  -->
     <section class="how-was">
         <div class="container">
 
@@ -994,9 +998,7 @@
 
         </div>
     </section>
-    <!--// section how-was  -->
 
-    <!-- section reviews -->
     <section class="reviews">
         <div class="container">
             <!-- header -->
@@ -1193,9 +1195,7 @@
 
         </div>
     </section>
-     <!--// section reviews -->
 
-    <!-- section press-about -->
     <section class="press-about">
         <div class="container">
 
@@ -1644,10 +1644,7 @@
             </div>
         </div>
     </section>
-    <!--// section press-about -->
 
-    
-    <!-- section partners -->
     <section class="partners">
         <div class="container">
 
@@ -1694,12 +1691,8 @@
 
         </div>
     </section>
-    <!-- //section partners -->
 
-    <!-- section partners -->
-    
-    <!-- section place -->
-    <section class="place" id="#place">
+    <section class="place" id="place">
 
             <!-- header -->
             <div class="place__header">
@@ -1800,13 +1793,12 @@
         </div>
 
     </section>
-    <!--// section place -->
 
     <!-- footer -->
     <footer class="footer">
 
         <!-- section contacts -->
-        <section class="contacts" id="#contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
 
                 <!-- header -->
