@@ -10,26 +10,6 @@
 
 }
 
-.footer__email-list {
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-
-    color: #fff;
-}
-
-.footer__header {
-    margin-bottom: 64px;
-}
-
-.footer__contacts {
-    display: flex;
-    justify-content: space-between;
-
-    padding-bottom: 72px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-
 .footer__row {
     padding-top: 48px;
     padding-bottom: 80px;
@@ -45,23 +25,12 @@
 
 .footer__column {
     &:first-child {
+        margin-top: auto;
         width: 640px;
     }
 
     &:last-child {
         width: 440px;
-    }
-}
-
-.footer__phone {
-    margin-bottom: 40px;
-
-    font-size: 54px;
-    font-weight: 400;
-    line-height: 1.18; //64px
-
-    a {
-        color: #fff;
     }
 }
 
@@ -107,10 +76,6 @@
             opacity: 0.6;
         }
     }
-}
-
-.footer__bottom .footer__column:first-child {
-    margin-top: auto;
 }
 
 .footer__copyright {
