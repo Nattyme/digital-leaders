@@ -641,6 +641,19 @@ body {
 .form-register__block + * {
   margin-top: 16px;
 }
+.form-register__block:first-child {
+  position: relative;
+}
+.form-register__block:first-child::after {
+  content: "";
+  position: absolute;
+  top: 53px;
+  right: 18px;
+  transform: translateY(-100%);
+  width: 120px;
+  height: 195px;
+  background-image: url("./../img/decor-svg/polygon-multyple.svg");
+}
 
 .form-group__title {
   margin-bottom: 24px;
