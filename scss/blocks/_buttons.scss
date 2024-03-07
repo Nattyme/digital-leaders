@@ -12,10 +12,26 @@
     font-weight: 500;
     color: #fff;
 
+    transition: all 0.2s ease-in;
+
     &--grad {
         box-shadow: $btn-shadow;
         background: $btn-grad;
+
+        &:hover {
+            box-shadow: $btn-grad-hover-shadow;
+            background: $btn-grad-hover;
+        }
+
+        &:active {
+            background: $btn-grad-active;
+        }
+
+        &:disabled {
+            opacity: 0.4;
+        }
     }
+
 }
 
 .btn-header {

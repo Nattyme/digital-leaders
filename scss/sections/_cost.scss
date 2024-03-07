@@ -38,7 +38,7 @@
 }
 
 .cost__header {
-    margin-bottom: 72px;
+    margin-bottom: 64px;
 }
 
 .cost__desc {
@@ -61,7 +61,11 @@
     margin-bottom: 56px;
 }
 
-// cost-include 
+.cost-list-wrapper {
+    margin-bottom: 64px;
+    display: none;
+}
+
 .cost-include__title {
     margin-bottom: 24px;
 
@@ -114,4 +118,9 @@
         height: 24px;
         display: inline-block;
     }
+}
+
+.cost__btn {
+    display: none;
+    margin-top: 64px;
 }

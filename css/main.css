@@ -233,10 +233,21 @@ body {
   line-height: 56px;
   font-weight: 500;
   color: #fff;
+  transition: all 0.2s ease-in;
 }
 .btn-solid--grad {
   box-shadow: 0px 24px 40px 0px rgba(8, 202, 229, 0.2);
   background: linear-gradient(90deg, rgb(0, 230, 134) -0.036%, rgb(0, 230, 210) 48.922%, rgb(0, 191, 230) 99.964%);
+}
+.btn-solid--grad:hover {
+  box-shadow: 0px 24px 40px 0px rgba(8, 202, 229, 0.3);
+  background: linear-gradient(90deg, rgb(0, 204, 119) -1.269%, rgb(0, 204, 187) 47.689%, rgb(0, 170, 204) 98.731%);
+}
+.btn-solid--grad:active {
+  background: linear-gradient(90deg, rgb(0, 179, 104) -1.269%, rgb(0, 179, 164) 47.689%, rgb(0, 149, 179) 98.731%);
+}
+.btn-solid--grad:disabled {
+  opacity: 0.4;
 }
 
 .btn-header {
@@ -1302,7 +1313,7 @@ body {
 }
 
 .cost__header {
-  margin-bottom: 72px;
+  margin-bottom: 64px;
 }
 
 .cost__desc {
@@ -1321,6 +1332,11 @@ body {
 .cost__timer {
   margin-top: 40px;
   margin-bottom: 56px;
+}
+
+.cost-list-wrapper {
+  margin-bottom: 64px;
+  display: none;
 }
 
 .cost-include__title {
@@ -1368,6 +1384,11 @@ body {
   width: 24px;
   height: 24px;
   display: inline-block;
+}
+
+.cost__btn {
+  display: none;
+  margin-top: 64px;
 }
 
 .how-was__header {
@@ -1514,6 +1535,10 @@ body {
 }
 .contacts__phone a {
   color: #fff;
+}
+
+.contacts__btn {
+  display: none;
 }
 
 .footer {
