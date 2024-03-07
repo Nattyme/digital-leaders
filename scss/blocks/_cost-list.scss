@@ -1,0 +1,43 @@
+.cost-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cost-list__item {
+    padding: 24px 24px 32px 24px;
+    width: 352px;
+    height: 160px;
+    clip-path: inset(0 round 64px 0 64px 0);
+
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.4;
+
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    &--active {
+        opacity: 1;
+    }
+}
+
+.cost-list__date {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33; //32px;
+}
+
+.cost-list__value {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 1.18; //64px;
+    color: #00d6d6;
+
+    &--active {
+        color: #00d68f;
+    }
+}

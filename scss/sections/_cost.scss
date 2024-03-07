@@ -42,7 +42,7 @@
 }
 
 .cost__desc {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     padding-right: 76px;
     padding-left: 76px;
 
@@ -50,9 +50,14 @@
     font-weight: 300;
     line-height: 32px;
     color: rgb(42, 64, 86);
+
+    p:last-child {
+        display: none;
+    }
 }
 
 .cost__timer {
+    margin-top: 40px;
     margin-bottom: 56px;
 }
 
