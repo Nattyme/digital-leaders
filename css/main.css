@@ -304,6 +304,37 @@ body {
   color: #2a4056;
 }
 
+.btn-add {
+  padding-right: 32px;
+  padding-left: 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #293f55;
+  border-radius: 16px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #2a4056;
+}
+.btn-add img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.btn-add:hover {
+  background-color: #e4edf6;
+}
+.btn-add:active {
+  background-color: #c5d8eb;
+}
+.btn-add:disabled {
+  background-color: #fff;
+  opacity: 0.4;
+}
+
 .return-back {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -734,6 +765,55 @@ body {
 
 .form-register__btn {
   margin-top: 56px;
+}
+
+.checbox-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox-real {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox-custom {
+  margin-right: 8px;
+  position: relative;
+  vertical-align: bottom;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #c6d9ec;
+  background-color: #fff;
+}
+.checkbox-custom::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-image: url("./../../img/icons/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.2s ease-in;
+}
+
+.checkbox-real:focus + .checkbox-custom {
+  background-color: #00d68f;
+}
+.checkbox-real:focus + .checkbox-custom::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .slider-content {
