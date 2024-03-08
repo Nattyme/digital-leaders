@@ -663,6 +663,18 @@ body {
   line-height: 1.09;
 }
 
+.input-row__title {
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.33;
+}
+
+.form-group__input {
+  border: 1px solid #c6d9ec;
+  border-radius: 8px;
+}
+
 .slider-content {
   position: relative;
 }
