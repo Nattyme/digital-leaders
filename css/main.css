@@ -101,6 +101,7 @@ button::-moz-focus-inner {
 
 label {
   cursor: pointer;
+  display: block;
 }
 
 legend {
@@ -633,6 +634,10 @@ body {
   color: #00d68f;
 }
 
+.form-register {
+  width: 100%;
+}
+
 .form-register__block {
   padding: 48px 64px 64px;
   border-radius: 24px;
@@ -659,6 +664,25 @@ body {
   margin-top: 56px;
 }
 
+* + .form-group__input-wrapper {
+  margin-top: 24px;
+}
+* + .form-group__input-wrapper:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-group__input-wrapper {
+  display: flex;
+  align-items: center;
+}
+.form-group__input-wrapper .input {
+  width: 320px;
+}
+.form-group__input-wrapper .input-row + .input-row {
+  margin-top: 0;
+  margin-left: 16px;
+}
+
 .form-group__title {
   margin-bottom: 24px;
   font-family: "Unbounded", sans-serif;
@@ -676,7 +700,7 @@ body {
 
 .input {
   margin-top: 4px;
-  width: 100%;
+  width: 59%;
   position: relative;
   padding-left: 12px;
   padding-right: 12px;
@@ -685,8 +709,15 @@ body {
   border: 1px solid #c6d9ec;
   border-radius: 8px;
 }
+.input--less {
+  width: 29%;
+}
 
 .input-row + .input-row {
+  margin-top: 24px;
+}
+
+.input-row + .checkbox-row {
   margin-top: 24px;
 }
 
@@ -699,6 +730,10 @@ body {
 .checkbox-row {
   margin-bottom: 16px;
   display: flex;
+}
+
+.form-register__btn {
+  margin-top: 56px;
 }
 
 .slider-content {

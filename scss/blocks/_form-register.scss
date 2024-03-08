@@ -1,4 +1,6 @@
-.form-register {}
+.form-register {
+    width: 100%;
+}
 
 .form-register__block {
     padding: 48px 64px 64px;
@@ -30,6 +32,28 @@
     margin-top: 56px;
 }
 
+* + .form-group__input-wrapper {
+    margin-top: 24px;
+    
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.form-group__input-wrapper {
+    display: flex;
+    align-items: center;
+
+    .input {
+        width: 320px;
+    }
+
+    .input-row+.input-row {
+        margin-top: 0;
+        margin-left: 16px;
+    }
+}
+
 .form-group__title {
     margin-bottom: 24px;
 
@@ -49,7 +73,7 @@
 
 .input {
     margin-top: 4px;
-    width: 100%;
+    width: 59%; // 656px
     position: relative;
     padding-left: 12px;
     padding-right: 12px;
@@ -58,13 +82,19 @@
     line-height: 40px;
     border: 1px solid #c6d9ec;
     border-radius: 8px;
+
+    &--less {
+        width: 29%; // 320px
+    }
 }
 
-.input-row {
-  
+.input-row {}
+
+.input-row+.input-row {
+    margin-top: 24px;
 }
 
-.input-row + .input-row {
+.input-row+.checkbox-row {
     margin-top: 24px;
 }
 
@@ -83,7 +113,9 @@
 
 .checkbox-custom {}
 
-.form-register__btn {}
+.form-register__btn {
+    margin-top: 56px;
+}
 
 .btn-add {}
 
