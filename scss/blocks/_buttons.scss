@@ -43,6 +43,10 @@
             opacity: 0.4;
         }
     }
+
+    &--transparent {
+        background-color: #fff;
+    }
 }
 
 .btn-header {
@@ -93,7 +97,7 @@
     color: #2a4056;
 }
 
-.btn-add {
+.btn-outline {
     padding-right: 32px;
     padding-left: 32px;
     height: 56px;

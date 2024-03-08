@@ -1,4 +1,6 @@
 .checbox-row {
+    margin-bottom: 16px;
+
     display: flex;
     align-items: flex-start;
 }
@@ -41,15 +43,20 @@
         background-image: url("./../../img/icons/checked.svg");
         background-repeat: no-repeat;
         background-position: center;
+        background-color: #fff;
 
         transition: transform 0.2s ease-in;
     }
 }
 
-.checkbox-real:focus+.checkbox-custom {
+.checkbox-real:checked+.checkbox-custom {
     background-color: #00d68f;
 
     &::before {
         transform: translate(-50%, -50%) scale(1);
     }
+}
+
+.checkbox-real:hover + .checkbox-custom {
+    border-color: #8fa5bc;
 }

@@ -1,0 +1,72 @@
+.input {
+    margin-top: 4px;
+    width: 59%; // 656px
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 40px;
+
+    line-height: 40px;
+    border: 1px solid #c6d9ec;
+    border-radius: 8px;
+
+    font-family: "Geologica", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #293f55;
+
+    &--less {
+        width: 29%; // 320px
+    }
+
+    &::placeholder {
+        font-family: "Geologica", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 40px;
+        color: #8599ad;
+    }
+
+    &:hover {
+        border-color: #8fa5bc;
+    }
+
+    &:active, &:focus {
+        border: 2px solid #293f55;
+    }
+
+    // &:error{
+    //    border: 1px solid rgb(255, 0, 0);
+        // color: rgb(133, 153, 173);
+        // font-family: Geologica;
+        // font-size: 18px;
+        // font-weight: 300;
+        // line-height: 28px;
+    // }
+}
+
+.input-row {}
+
+.input-row__title {
+    margin-bottom: 4px;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.33; //20px;
+}
+
+
+
+.input-row+.input-row {
+    margin-top: 24px;
+}
+
+.input-row+.checkbox-row {
+    margin-top: 24px;
+}
+
+.input-row__label {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.33; //20px;
+}

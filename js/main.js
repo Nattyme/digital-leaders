@@ -1,8 +1,5 @@
-
-// Поиск элементов на странице:
-// 1. Кнопки
+document.addEventListener("DOMContentLoaded", function () {
 const tabButtons = document.querySelectorAll(".tab__btn");
-// 2. Блоки с контентом
 const tabBlocks = document.querySelectorAll(".tab-block");
 
 // Обходим коллекцию кнопок через forEach
@@ -32,133 +29,139 @@ tabButtons.forEach(function (item) {
 })
 
 // Делаем "фейковый" клик по первой кнопке
-document.querySelector('.tab__btn').click();
-/* tabs */
+if (document.querySelectorAll('.tab__btn').length > 0 ) {
+    document.querySelector('.tab__btn').click();
+}
 
-/*swiper slider-who-it-was*/
-const swiperMini = new Swiper('#slider-mini-how-was', {
-    // Optional parameters
-    spaceBetween: 16,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
+/* swiper sliders*/
+if (document.querySelectorAll('.swiper').length > 0) {
+    const swiperMiniHowWas = new Swiper('#slider-mini-how-was', {
+        // Optional parameters
+        spaceBetween: 16,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        });
+
+    const swiperHowWas = new Swiper('#slider-how-was', {
+        // Optional parameters
+        direction: 'horizontal',
+        spaceBetween: 160,
+        speed: 1200,
+        slidesPerView: 1,
+        grabCursor: true,
+        hashNavigation: {
+            watchState: true,
+        },
+        // loop: true,
+        thumbs: {
+            swiper: swiperMiniHowWas,
+        },
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '#slider-how-was-next',
+        prevEl: '#slider-how-was-prev',
+        },
+    
     });
 
-const swiper = new Swiper('#slider-how-was', {
-    // Optional parameters
-    direction: 'horizontal',
-    spaceBetween: 160,
-    speed: 1200,
-    slidesPerView: 1,
-    grabCursor: true,
-    hashNavigation: {
-        watchState: true,
-      },
-    // loop: true,
-    thumbs: {
-        swiper: swiperMini,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '#slider-how-was-next',
-      prevEl: '#slider-how-was-prev',
-    },
-  
-  });
-/*swiper slider-who-it-was*/
+    const swiperReviews = new Swiper('#slider-reviews', {
+        // Optional parameters
+        direction: 'horizontal',
+        spaceBetween: 32,
+        speed: 2500,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grabCursor: true,
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '#slider-reviews-next',
+        prevEl: '#slider-reviews-prev',
+        },
 
-/* swiper slider-reviews */
-const swiperReviews = new Swiper('#slider-reviews', {
-    // Optional parameters
-    direction: 'horizontal',
-    spaceBetween: 32,
-    speed: 2500,
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    grabCursor: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '#slider-reviews-next',
-      prevEl: '#slider-reviews-prev',
-    },
+        pagination: {
+            el: '.slider-reviews__pagination',
+            // type: 'bullets',
+            clickable: true,
+        },
+    
+    });
 
-    pagination: {
-        el: '.slider-reviews__pagination',
-        // type: 'bullets',
-        clickable: true,
-      },
-  
+    const swiperPressAbout = new Swiper('#slider-press-about', {
+        // Optional parameters
+        direction: 'horizontal',
+        spaceBetween: 32,
+        speed: 2500,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grabCursor: true,
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '#slider-press-about-next',
+        prevEl: '#slider-press-about-prev',
+        },
+
+        pagination: {
+            el: '.slider-press-about__pagination',
+            // type: 'bullets',
+            clickable: true,
+        },
+    
+    });
+
+    const swiperPlace = new Swiper('#slider-place', {
+        // Optional parameters
+        direction: 'horizontal',
+        speed: 2000,
+        slidesPerView: 1,
+        grabCursor: true,
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '#slider-place-next',
+        prevEl: '#slider-place-prev',
+        },
+
+        pagination: {
+            el: '#slider-place__pagination',
+            // type: 'bullets',
+            type: "fraction",
+        },
+    
+    });
+
+    const swiperSpeakers = new Swiper('#slider-speakers', {
+        // Optional parameters
+        direction: 'horizontal',
+        speed: 1800,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 72,
+        grabCursor: true,
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '#slider-speakers-next',
+        prevEl: '#slider-speakers-prev',
+        },
+
+        pagination: {
+            el: '.slider-speakers__pagination',
+            // type: 'bullets',
+            clickable: true,
+        },
+    });
+}
+/* swiper sliders */
+
+// phone mask
+if (document.querySelectorAll('#phone').length > 0) {
+    const input = document.querySelector('#phone');
+    const mask = new Inputmask('+7 (999) 999-99-99');
+    mask.mask(input);
+}
+
 });
-
-/* swiper slider-reviews */
-const swiperPressAbout = new Swiper('#slider-press-about', {
-    // Optional parameters
-    direction: 'horizontal',
-    spaceBetween: 32,
-    speed: 2500,
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    grabCursor: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '#slider-press-about-next',
-      prevEl: '#slider-press-about-prev',
-    },
-
-    pagination: {
-        el: '.slider-press-about__pagination',
-        // type: 'bullets',
-        clickable: true,
-      },
-  
-});
-
-/* swiper slider-reviews */
-const swiperPlace = new Swiper('#slider-place', {
-    // Optional parameters
-    direction: 'horizontal',
-    speed: 2000,
-    slidesPerView: 1,
-    grabCursor: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '#slider-place-next',
-      prevEl: '#slider-place-prev',
-    },
-
-    pagination: {
-        el: '#slider-place__pagination',
-        // type: 'bullets',
-        type: "fraction",
-      },
-  
-});
-
-/* swiper slider-speakers */
-const swiperSpeakers = new Swiper('#slider-speakers', {
-    // Optional parameters
-    direction: 'horizontal',
-    speed: 1800,
-    slidesPerView: 4,
-    slidesPerGroup: 4,
-    spaceBetween: 72,
-    grabCursor: true,
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '#slider-speakers-next',
-      prevEl: '#slider-speakers-prev',
-    },
-
-    pagination: {
-        el: '.slider-speakers__pagination',
-        // type: 'bullets',
-        clickable: true,
-      },
-});
-
-

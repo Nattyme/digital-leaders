@@ -14,9 +14,9 @@
                 <!-- back btn -->
                 <div class="registration__back">
                     <div class="return-back">
-                        <button class="btn-back">
+                        <a href="./../index.html" class="btn-back">
                             <img src="./../img/icons/arrow-back.svg" alt="Назад">
-                        </button>
+                        </a>
                         <span class="return-back__text">Назад</span>
                     </div>
             
@@ -33,7 +33,7 @@
                 <form class="form-register" id="form-register" action="#">
 
                     <!-- fieldset -->
-                    <div class="form-register__block">
+                    <div class="form-block">
                         <fieldset class="form-group">
                             <legend class="form-group__title">Компания</legend>
 
@@ -55,7 +55,7 @@
                             
                             <div class="input-row">
                                 <label classs="input-row__label">Телефон</label>
-                                <input type="text" class="input input--less">
+                                <input type="phone" class="input input-phone input--less">
                             </div>
 
                             <div class="input-row">
@@ -75,11 +75,10 @@
                     <!-- fieldset -->
 
                     <!-- fieldset -->
-                    <div class="form-register__block">
-                        <legend class="form-group__title">Участники</legend>
-
+                    <div class="form-block">
+                        <p class="form-block__title">Участники</p>
                         <fieldset class="form-group">
-                            <p>Участник 1</p>
+                            <legend class="form-group__title form-group__title--less">Участник 1</legend>
 
                             <div class="input-row">
                                 <label classs="input-row__label">ФИО</label>
@@ -93,7 +92,7 @@
 
                             <div class="input-row">
                                 <label classs="input-row__label">Телефон</label>
-                                <input type="text" class="input input--less">
+                                <input type="phone" class="input input-phone input--less">
                             </div>
 
                             <div class="input-row">
@@ -103,8 +102,8 @@
                           
                             <!-- btn -->
                             <div class="form-register__btn">
-                                <button class="btn-add">
-                                    <img class="btn-add__img" src="./../img/icons/plus.svg" alt="Добавить">
+                                <button class="btn-outline">
+                                    <img src="./../img/icons/plus.svg" alt="Добавить">
                                     Добавить участника
                                 </button>
                             </div>
@@ -114,71 +113,75 @@
                     </div>
                     <!-- fieldset -->
 
-                    <!-- fieldset-->
-                    <div class="form-register__block">
-                        <legend class="form-group__title">Реквизиты счёта для оплаты</legend>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">Эл. почта</label>
-                            <input type="text" class="input">
-                        </div>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">Компания</label>
-                            <input type="text" class="input">
-                        </div>
-
-                        <div class="form-group__input-wrapper">
+                    <!-- block-->
+                    <div class="form-block">
+                        <fieldset class="form-group">
+                            <legend class="form-group__title">Реквизиты счёта для оплаты</legend>
 
                             <div class="input-row">
-                                <label classs="input-row__label">ИНН</label>
-                                <input type="text" class="input input--less">
+                                <label classs="input-row__label">Эл. почта</label>
+                                <input type="text" class="input">
                             </div>
-
+    
                             <div class="input-row">
-                                <label classs="input-row__label">ОГРН</label>
-                                <input type="text" class="input input--less">
+                                <label classs="input-row__label">Компания</label>
+                                <input type="text" class="input">
                             </div>
-
+    
+                            <div class="form-group__input-wrapper">
+    
+                                <div class="input-row">
+                                    <label classs="input-row__label">ИНН</label>
+                                    <input type="text" class="input input--less">
+                                </div>
+    
+                                <div class="input-row">
+                                    <label classs="input-row__label">ОГРН</label>
+                                    <input type="text" class="input input--less">
+                                </div>
+    
+                                <div class="input-row">
+                                    <label classs="input-row__label">КПП</label>
+                                    <input type="text" class="input input--less">
+                                </div>
+          
+                            </div>
+    
                             <div class="input-row">
-                                <label classs="input-row__label">КПП</label>
+                                <label classs="input-row__label">Юридический адрес</label>
+                                <input type="text" class="input">
+                            </div>
+    
+                            <div class="input-row">
+                                <label classs="input-row__label">Расчётный счёт</label>
                                 <input type="text" class="input input--less">
                             </div>
-      
-                        </div>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">Юридический адрес</label>
-                            <input type="text" class="input">
-                        </div>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">Расчётный счёт</label>
-                            <input type="text" class="input input--less">
-                        </div>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">Банк</label>
-                            <input type="text" class="input">
-                        </div>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">Кор. счёт</label>
-                            <input type="text" class="input input--less">
-                        </div>
-
-                        <div class="input-row">
-                            <label classs="input-row__label">БИК</label>
-                            <input type="text" class="input input--less">
-                        </div>
+    
+                            <div class="input-row">
+                                <label classs="input-row__label">Банк</label>
+                                <input type="text" class="input">
+                            </div>
+    
+                            <div class="input-row">
+                                <label classs="input-row__label">Кор. счёт</label>
+                                <input type="text" class="input input--less">
+                            </div>
+    
+                            <div class="input-row">
+                                <label classs="input-row__label">БИК</label>
+                                <input type="text" class="input input--less">
+                            </div>
+                        </fieldset>
 
                     </div>
-                    <!--// fieldset-->
+                    <!--// block-->
 
                     <!-- fieldset -->
-                    <div class="form-register__block">
-                        <legend class="form-group__title">Почтовый адрес</legend>
-                        <p class="form-group__tip">На этот адрес мы отправим закрывающие документы</p>
+                    <div class="form-block">
+                        <legend class="form-block__title">
+                            Почтовый адрес
+                            <p class="form-block__tip">На этот адрес мы отправим закрывающие документы</p>
+                        </legend>
                         
                         <fieldset class="form-group">
 
@@ -201,7 +204,7 @@
                     <fieldset class="form-register__checkbox">
                         <!-- row -->
                         <label class="checkbox-row">
-                            <input class="checkbox-real" type="checkbox">
+                            <input name="terms" class="checkbox-real" type="checkbox">
                             <span class="checkbox-custom" type="checkbox"></span>
                             <span>Я принимаю условия договора оферты</span>
                         </label>
@@ -209,7 +212,7 @@
 
                         <!-- row -->
                         <label class="checkbox-row">
-                            <input class="checkbox-real" type="checkbox">
+                            <input name="terms" class="checkbox-real" type="checkbox">
                             <span class="checkbox-custom" type="checkbox"></span>
                             <span>Я принимаю условия Политики в отношении обработки персональных данных ООО «АБК»</span>
                         </label>
@@ -217,20 +220,20 @@
 
                         <!-- row -->
                         <label class="checkbox-row">
-                            <input class="checkbox-real" type="checkbox">
+                            <input name="terms" class="checkbox-real" type="checkbox">
                             <span class="checkbox-custom" type="checkbox"></span>
                             <span>Я даю согласие на обработку моих персональных данных</span>
                         </label>
                         <!--// row -->
 
                         <label class="checkbox-row">
-                            <input class="checkbox-real" type="checkbox">
+                            <input name="terms" class="checkbox-real" type="checkbox">
                             <span class="checkbox-custom" type="checkbox"></span>
                             <span>Настоящим я подтверждаю, что сведения о субъектах персональных данных (участниках «Форума лидеров цифрового развития») предоставляются с соблюдением требований пп. 1 п. 1 ст. 6 и иных положений Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных»</span>
                         </label>
 
                         <label class="checkbox-row">
-                            <input class="checkbox-real" type="checkbox">
+                            <input name="terms" class="checkbox-real" type="checkbox">
                             <span class="checkbox-custom" type="checkbox"></span>
                             <span>Я согласен получать рекламно-информационную рассылку от ООО «АБК»</span>
                         </label>
@@ -248,5 +251,9 @@
             </div>
         </section>
     </main>
+
+    <!-- libs -->
+    <script src="./../libs/inputmask/inputmask.min.js"></script>
+    <script src="./../js/main.js"></script>
 </body>
 </html>
