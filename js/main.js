@@ -158,10 +158,10 @@ if (document.querySelectorAll('.swiper').length > 0) {
 /* swiper sliders */
 
 // phone mask
-if (document.querySelectorAll('#phone').length > 0) {
-    const input = document.querySelector('#phone');
-    const mask = new Inputmask('+7 (999) 999-99-99');
-    mask.mask(input);
-}
+// if (document.querySelectorAll('#phone').length > 0) {
+//     const input = document.querySelector('#phone');
+//     const mask = new Inputmask('+7 (999) 999-99-99');
+//     mask.mask(input);
+// }
 
 });
