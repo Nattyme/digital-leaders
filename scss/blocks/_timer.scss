@@ -46,8 +46,20 @@
             content: ":";
             font-size: 54px;
             color: #79a6d2;
+            animation: 1s ease-in-out infinite flashing;
         }
     }
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
 }
 
 .time__unit {
