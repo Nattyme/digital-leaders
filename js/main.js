@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 const tabButtons = document.querySelectorAll(".tab__btn");
 const tabBlocks = document.querySelectorAll(".tab-block");
+const countDown = document.querySelector("#header-timer");
+const headerTopBtn = document.querySelector("#header-top-btn");
+const headerBtn = document.querySelector("#header-btn");
 
 //таймер
-const dueTo = new Date("Sep 19, 2023 00:00:00").getTime();
+const dueTo = new Date("Sep 19, 2024 00:00:00").getTime();
 const timer = setInterval(function(){
     let now = new Date().getTime();
     let distance = dueTo - now;
@@ -18,10 +21,9 @@ const timer = setInterval(function(){
 
     if (distance < 0) {
         clearInterval(timer);
-        const countDown = document.querySelector("#header-timer");
-        const headerBtn = document.querySelector("#header-top-btn");
         countDown.classList.add("header__timer--none");
-        headerBtn.classList.remove("header-top__btn--none")
+        headerTopBtn.classList.remove("header-top__btn--none")
+        headerBtn.classList.remove("header__btn--none")
     }
 }, 1000);
 

@@ -1415,7 +1415,7 @@ body {
   display: none;
 }
 
-.header__btn {
+.header__btn--none {
   display: none;
 }
 
