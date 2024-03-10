@@ -92,7 +92,10 @@
 
 .header__timer {
     padding-top: 76px;
-  
+
+    &--none {
+        display: none;
+    }
 }
 
 .header__btn {

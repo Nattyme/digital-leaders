@@ -1319,7 +1319,7 @@ body {
   align-items: center;
 }
 
-.header-top__btn {
+.header-top__btn--none {
   display: none;
 }
 
@@ -1410,6 +1410,9 @@ body {
 
 .header__timer {
   padding-top: 76px;
+}
+.header__timer--none {
+  display: none;
 }
 
 .header__btn {

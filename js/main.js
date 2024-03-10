@@ -3,10 +3,10 @@ const tabButtons = document.querySelectorAll(".tab__btn");
 const tabBlocks = document.querySelectorAll(".tab-block");
 
 //таймер
-const countDown = new Date("Sep 19, 2024 00:00:00").getTime();
-const count = setInterval(function(){
+const dueTo = new Date("Sep 19, 2023 00:00:00").getTime();
+const timer = setInterval(function(){
     let now = new Date().getTime();
-    let distance = countDown - now;
+    let distance = dueTo - now;
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
@@ -15,6 +15,14 @@ const count = setInterval(function(){
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hours
     document.getElementById("minutes").innerHTML = minutes;
+
+    if (distance < 0) {
+        clearInterval(timer);
+        const countDown = document.querySelector("#header-timer");
+        const headerBtn = document.querySelector("#header-top-btn");
+        countDown.classList.add("header__timer--none");
+        headerBtn.classList.remove("header-top__btn--none")
+    }
 }, 1000);
 
 // Обходим коллекцию кнопок через forEach
