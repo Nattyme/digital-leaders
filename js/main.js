@@ -2,6 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
 const tabButtons = document.querySelectorAll(".tab__btn");
 const tabBlocks = document.querySelectorAll(".tab-block");
 
+//таймер
+const countDown = new Date("Sep 19, 2024 00:00:00").getTime();
+const count = setInterval(function(){
+    let now = new Date().getTime();
+    let distance = countDown - now;
+
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours
+    document.getElementById("minutes").innerHTML = minutes;
+}, 1000);
+
 // Обходим коллекцию кнопок через forEach
 tabButtons.forEach(function (item) {
 	// Для каждой кнопки запускаем прослушку события клик

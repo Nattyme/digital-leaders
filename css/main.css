@@ -190,13 +190,12 @@ body {
   z-index: -1;
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 160px;
   content: "";
   width: 600px;
   height: 600px;
-  transform: translateX(50%);
   background-image: url("./../../img/decor-svg/circle-green.svg");
-  background-size: contain;
+  background-size: 600px 100%;
   background-repeat: no-repeat;
 }
 
@@ -483,6 +482,7 @@ body {
   line-height: 1.55;
   color: #2a4056;
 }
+
 .form {
   padding-top: 32px;
 }
@@ -1080,7 +1080,7 @@ body {
   border-radius: 16px;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-reviews__img {
@@ -1302,6 +1302,7 @@ body {
 }
 
 .header-top__nav {
+  position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
@@ -1309,9 +1310,19 @@ body {
   align-items: center;
 }
 
+.header-top__btn {
+  display: none;
+}
+
 .header {
   padding-bottom: 105px;
   min-height: 564px;
+}
+
+.header.section-bg::after {
+  left: -200px;
+  bottom: 0;
+  background-image: url("./../../img/decor-svg/circle-cyan.svg");
 }
 
 .header__content {
