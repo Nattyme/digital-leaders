@@ -11,6 +11,7 @@
     line-height: 56px;
     font-weight: 500;
     color: #fff;
+    cursor: pointer;
 
     transition: all 0.2s ease-in;
 
@@ -29,6 +30,7 @@
     &--grad {
         box-shadow: $btn-shadow;
         background: $btn-grad;
+        transition: all 0.2s ease-in;
 
         &:hover {
             box-shadow: $btn-grad-hover-shadow;

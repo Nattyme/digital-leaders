@@ -237,6 +237,7 @@ body {
   line-height: 56px;
   font-weight: 500;
   color: #fff;
+  cursor: pointer;
   transition: all 0.2s ease-in;
 }
 .btn-solid:hover {
@@ -251,6 +252,7 @@ body {
 .btn-solid--grad {
   box-shadow: 0px 24px 40px 0px rgba(8, 202, 229, 0.2);
   background: linear-gradient(90deg, rgb(0, 230, 134) -0.036%, rgb(0, 230, 210) 48.922%, rgb(0, 191, 230) 99.964%);
+  transition: all 0.2s ease-in;
 }
 .btn-solid--grad:hover {
   box-shadow: 0px 24px 40px 0px rgba(8, 202, 229, 0.3);
@@ -1376,7 +1378,7 @@ body {
   position: absolute;
   width: 72px;
   height: 125px;
-  top: -44px;
+  top: -39px;
   left: -16px;
   transform: translateX(-100%);
   background-image: url("./../img/decor-svg/polygon-multyple.svg");
@@ -1449,7 +1451,7 @@ body {
 }
 
 .forum__header {
-  margin-bottom: 40px;
+  margin-bottom: 71px;
   text-align: center;
 }
 
@@ -1459,6 +1461,7 @@ body {
 }
 
 .forum__speakers {
+  margin-right: 57px;
   width: 252px;
 }
 
@@ -1509,7 +1512,8 @@ body {
 }
 
 .forum__stat {
-  width: 216px;
+  margin-left: 89px;
+  width: 218px;
 }
 
 .stat-grid li {
@@ -1521,6 +1525,7 @@ body {
 
 .stat-grid__value {
   margin-bottom: 4px;
+  display: inline-block;
   font-size: 46px;
   font-family: "Unbounded", sans-serif;
   font-weight: 700;
