@@ -382,15 +382,21 @@ body {
 }
 
 .time {
+  width: 484px;
   display: flex;
+  justify-content: space-between;
   font-size: 54px;
   line-height: 1.18;
 }
-.time:not(:last-child) {
+.time li {
+  display: flex;
+  justify-content: space-between;
+}
+.time li:not(:last-child) {
   position: relative;
 }
-.time:not(:last-child)::after {
-  padding-left: 10px;
+.time li:not(:last-child)::after {
+  padding-left: 11px;
   padding-right: 11px;
   content: ":";
   font-size: 54px;
@@ -407,7 +413,7 @@ body {
   }
 }
 .time__unit {
-  padding-left: 12px;
+  padding-left: 11px;
 }
 
 .badge-video {

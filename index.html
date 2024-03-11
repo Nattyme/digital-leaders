@@ -76,18 +76,20 @@
 
                         <!-- counter -->
                         <div class="countdown" id="countdown">
-                            <div class="time">
-                                <span class="time__value" id="days"></span>
-                                <span class="time__unit">д</span>
-                            </div>
-                            <div class="time">
-                                <span class="time__value" id="hours">10</span>
-                                <span class="time__unit">ч</span>
-                            </div>
-                            <div class="time">
-                                <span class="time__value" id="minutes">27</span>
-                                <span class="time__unit">мин</span>
-                            </div>
+                            <ul class="time" data-countdown="2024-09-20 00:00:00">
+                                <li>
+                                    <span class="time__value" data-days="00">00</span>
+                                    <sapn class="time__unit">д</sapn>
+                                </li>
+                                <li>
+                                    <span class="time__value" data-hours="00">00</span>
+                                    <span class="time__unit">ч</span>
+                                </li>
+                                <li>
+                                    <span class="time__value" data-minutes="00">00</span>
+                                    <span class="time__unit">мин</span>
+                                </li>
+                            </ul>
                         </div>
                         <!--// counter -->
                     </div>
@@ -792,7 +794,7 @@
 
             <!-- timer -->
             <div class="cost__timer">
-                <!-- <div class="timer timer--outline">
+                <div class="timer timer--outline">
                     <div class="timer-count">
                         <div class="timer-count__text">
                             <p>До начала регистрации:</p>
@@ -800,18 +802,20 @@
     
                         <!-- counter -->
                         <div class="countdown" id="countdown">
-                            <div class="time">
-                                <span class="time__value" id="days">38</span>
-                                <span class="time__unit">д</span>
-                            </div>
-                            <div class="time">
-                                <span class="time__value" id="hours">10</span>
-                                <span class="time__unit">ч</span>
-                            </div>
-                            <div class="time">
-                                <span class="time__value" id="minutes">27</span>
-                                <span class="time__unit">мин</span>
-                            </div>
+                            <ul class="time" data-countdown="2024-09-20 00:00:00">
+                                <li>
+                                    <span class="time__value" data-days="00">00</span>
+                                    <sapn class="time__unit">д</sapn>
+                                </li>
+                                <li>
+                                    <span class="time__value" data-hours="00">00</span>
+                                    <span class="time__unit">ч</span>
+                                </li>
+                                <li>
+                                    <span class="time__value" data-minutes="00">00</span>
+                                    <span class="time__unit">мин</span>
+                                </li>
+                            </ul>
                         </div>
                         <!--// counter -->
                     </div>
@@ -827,7 +831,7 @@
                         </div>
                         <!--// form -->
                     </div>
-                </div> -->
+                </div> 
                
             </div>
             <!--// timer -->
@@ -1898,12 +1902,14 @@
     <!--// footer -->
 
     <!--*** libs ***-->
+    <!-- jquery -->
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
+
     <!-- swiper -->
     <script src="./libs/swiper-11.0.7/package/swiper-bundle.min.js"></script>
-    <!--// swiper -->
-    <!--***// libs ***-->
+    <!--// libs -->
 
-    <!-- custom js -->
+    <!--*** custom js ***-->
     <script src="./js/main.js"></script>
     <!--// custom js -->
 </body>

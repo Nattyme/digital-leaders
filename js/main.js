@@ -5,27 +5,24 @@ const countDown = document.querySelector("#header-timer");
 const headerTopBtn = document.querySelector("#header-top-btn");
 const headerBtn = document.querySelector("#header-btn");
 
-//таймер
-const dueTo = new Date("Sep 19, 2024 00:00:00").getTime();
-const timer = setInterval(function(){
-    let now = new Date().getTime();
-    let distance = dueTo - now;
+$('[data-countdown]').each(function(){
+    const $deadline = new Date($(this).data('countdown')).getTime();
+    let $dataDays = $(this).find('[data-days]');
+    let $dataHours = $(this).find('[data-hours]');
+    let $dataMinutes = $(this).find('[data-minutes]');
+    console.log($dataDays);
+    const x = setInterval(function(){
+        let now = new Date().getTime();
+        let timeRemain = $deadline - now;
+        let days = Math.floor(timeRemain/(1000*60*60*24));
+        let hours = Math.floor(timeRemain%(1000*60*60*24) / (1000*60*60));   
+        let minutes = Math.floor(timeRemain%(1000*60*60*24) / (1000*60));   
 
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours
-    document.getElementById("minutes").innerHTML = minutes;
-
-    if (distance < 0) {
-        clearInterval(timer);
-        countDown.classList.add("header__timer--none");
-        headerTopBtn.classList.remove("header-top__btn--none")
-        headerBtn.classList.remove("header__btn--none")
-    }
-}, 1000);
+        $dataDays.html(days);
+        $dataHours.html(hours);
+        $dataMinutes.html(minutes);
+    }, 1000);
+});
 
 // Обходим коллекцию кнопок через forEach
 tabButtons.forEach(function (item) {
