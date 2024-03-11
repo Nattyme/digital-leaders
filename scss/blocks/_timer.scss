@@ -15,7 +15,7 @@
     padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     border-bottom: 1px solid #e4edf6;
 }
 
@@ -42,6 +42,7 @@
         display: flex;
         justify-content: space-between;
     }
+    
     li:not(:last-child) {
         position: relative;
 

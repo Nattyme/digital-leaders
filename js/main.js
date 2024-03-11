@@ -32,7 +32,6 @@ $('[data-countdown]').each(function(){
             minutes = '0' + minutes;
         }
 
-
         $dataDays.html(days);
         $dataHours.html(hours);
         $dataMinutes.html(minutes);
