@@ -1,16 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
 const tabButtons = document.querySelectorAll(".tab__btn");
 const tabBlocks = document.querySelectorAll(".tab-block");
-const countDown = document.querySelector("#header-timer");
+const headerTimer = document.querySelector(".header__timer");
 const headerTopBtn = document.querySelector("#header-top-btn");
 const headerBtn = document.querySelector("#header-btn");
+const costTimer = document.querySelector(".cost__timer");
+const costList = document.querySelector(".cost-list-wrapper");
 
 $('[data-countdown]').each(function(){
     const $deadline = new Date($(this).data('countdown')).getTime();
     let $dataDays = $(this).find('[data-days]');
     let $dataHours = $(this).find('[data-hours]');
     let $dataMinutes = $(this).find('[data-minutes]');
-    console.log($dataDays);
+  
     const x = setInterval(function(){
         let now = new Date().getTime();
         let timeRemain = $deadline - now;
@@ -34,6 +36,18 @@ $('[data-countdown]').each(function(){
         $dataDays.html(days);
         $dataHours.html(hours);
         $dataMinutes.html(minutes);
+
+        if (timeRemain < 0) {
+            clearInterval(x);
+            $dataDays.html('00');
+            $dataHours.html('00');
+            $dataMinutes.html('00');
+            headerTimer.classList.add("header__timer--none");
+            costTimer.classList.add("cost__timer--none");
+            headerTopBtn.classList.remove("header-top__btn--none");
+            headerBtn.classList.remove("header-btn--none");
+            costList.classList.remove("cost-list-wrapper--none");
+        }
     }, 1000);
 });
 

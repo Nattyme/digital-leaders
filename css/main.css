@@ -1639,7 +1639,8 @@ body {
   line-height: 32px;
   color: rgb(42, 64, 86);
 }
-.cost__desc p:last-child {
+
+.cost__text--none {
   display: none;
 }
 
@@ -1647,9 +1648,14 @@ body {
   margin-top: 40px;
   margin-bottom: 56px;
 }
+.cost__timer--none {
+  display: none;
+}
 
 .cost-list-wrapper {
   margin-bottom: 64px;
+}
+.cost-list-wrapper--none {
   display: none;
 }
 
