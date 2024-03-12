@@ -16,9 +16,9 @@ $('[data-countdown]').each(function(){
     const x = setInterval(function(){
         let now = new Date().getTime();
         let timeRemain = $deadline - now;
-        let days = Math.floor(timeRemain/(1000*60*60*24));
-        let hours = Math.floor(timeRemain%(1000*60*60*24) / (1000*60*60));   
-        let minutes = Math.floor(timeRemain%(1000*60*60*24) / (1000*60));  
+        let days = Math.floor(timeRemain / 1000 / 60 / 60 / 24);
+        let hours = Math.floor(timeRemain / 1000 / 60 / 60) % 24;   
+        let minutes = Math.floor(timeRemain / 1000 / 60 ) % 60;  
         
         if( days < 10) {
             days = '0' + days;
