@@ -3,11 +3,17 @@
     min-height: 564px;
 }
 
-.header.section-bg::after {
-    left: -200px;
-    bottom: 0;
-    // background-image: url('./../../img/decor-svg/circle-cyan.svg');
+.header.decor-circle {
+    &::after {
+        display: none;
+    }
+
+    &::before {
+        left: -200px;
+        bottom: 0;
+    }
 }
+
 
 .header__content {
     position: relative;

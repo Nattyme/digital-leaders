@@ -183,20 +183,26 @@ body {
   color: transparent;
 }
 
-.section-bg {
+.decor-circle {
   position: relative;
 }
-.section-bg::after {
+.decor-circle::before {
+  z-index: -1;
+  position: absolute;
+  content: url("./../img/decor-svg/circle-cyan.svg");
+  left: 0;
+  bottom: 0;
+  width: 600px;
+  height: 600px;
+}
+.decor-circle::after {
   z-index: -1;
   position: absolute;
   top: 0;
-  left: 160px;
-  content: "";
+  left: 0;
+  content: url("./../../img/decor-svg/circle-green.svg");
   width: 600px;
   height: 600px;
-  background-image: url("./../../img/decor-svg/circle-green.svg");
-  background-size: 600px 100%;
-  background-repeat: no-repeat;
 }
 
 .decor-polygon {
@@ -1318,6 +1324,13 @@ body {
        column-gap: 16px;
 }
 
+.header-top.decor-circle::after {
+  left: 160px;
+}
+.header-top.decor-circle::before {
+  display: none;
+}
+
 .header-top__nav {
   position: relative;
   padding-top: 24px;
@@ -1336,7 +1349,10 @@ body {
   min-height: 564px;
 }
 
-.header.section-bg::after {
+.header.decor-circle::after {
+  display: none;
+}
+.header.decor-circle::before {
   left: -200px;
   bottom: 0;
 }

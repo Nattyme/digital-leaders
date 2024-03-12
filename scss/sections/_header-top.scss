@@ -1,3 +1,13 @@
+.header-top.decor-circle {
+    &::after {
+        left: 160px;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
 .header-top__nav {
     position: relative;
     padding-top: 24px;

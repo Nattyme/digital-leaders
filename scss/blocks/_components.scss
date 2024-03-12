@@ -13,35 +13,27 @@
     color: transparent;
 }
 
-.section-bg {
+.decor-circle {
     position: relative;
 
-    // &::before {
-    //     z-index: -1;
-    //     position: absolute;
-    //     content: "";
-    //     left: 0px;
-    //     bottom: 0;
-    //     width: 600px;
-    //     height: 600px;
-
-    //     background-image: url('./../img/decor-svg/circle-cyan.svg');
-    //     background-size: 600px 100%;
-    //     background-repeat: no-repeat;
-    // }
+    &::before {
+        z-index: -1;
+        position: absolute;
+        content: url('./../img/decor-svg/circle-cyan.svg');
+        left: 0;
+        bottom: 0;
+        width: 600px;
+        height: 600px;
+    }
 
     &::after {
         z-index: -1;
         position: absolute;
         top: 0;
-        left: 160px;
-        content: "";
+        left: 0;
+        content: url('./../../img/decor-svg/circle-green.svg');
         width: 600px;
         height: 600px;
-
-        background-image: url('./../../img/decor-svg/circle-green.svg');
-        background-size: 600px 100%;
-        background-repeat: no-repeat;
     }
 }
 
