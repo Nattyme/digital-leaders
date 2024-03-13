@@ -1127,10 +1127,12 @@ body {
 
 .slider-reviews__text {
   padding-top: 8px;
+  overflow: hidden;
+}
+.slider-reviews__text p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.55;
-  overflow: hidden;
 }
 
 .slider-reviews__title {
@@ -1172,11 +1174,20 @@ body {
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
+  max-height: 96px;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
   color: #2a4056;
   text-decoration: underline;
+  overflow: hidden;
+}
+.slider-press-about__title p p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .slider-press-about__text {
@@ -1185,8 +1196,14 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.55;
-  text-overflow: ellipsis;
   overflow: hidden;
+}
+.slider-press-about__text p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .slider-press-about__label {
@@ -1314,10 +1331,17 @@ body {
 }
 
 .slider-speakers__desc {
+  height: 60px;
+  overflow: hidden;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.33;
   color: #c6d9ec;
+}
+.slider-speakers__desc p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .slider-speakers__pagination {
@@ -1549,6 +1573,7 @@ body {
   position: relative;
   padding-top: 187px;
   padding-bottom: 185px;
+  min-height: 1032px;
   overflow: hidden;
 }
 
@@ -1619,7 +1644,7 @@ body {
   padding-top: 160px;
   padding-bottom: 160px;
   text-align: center;
-  height: 1115px;
+  min-height: 1075px;
 }
 
 .cost.decor-polygon {
@@ -1794,7 +1819,7 @@ body {
 
 .partners {
   padding-top: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
   text-align: center;
 }
 
@@ -1837,7 +1862,6 @@ body {
 }
 
 .place {
-  margin-top: -100px;
   position: relative;
   height: 1047px;
   overflow: hidden;

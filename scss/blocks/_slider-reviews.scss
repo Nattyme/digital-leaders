@@ -38,11 +38,13 @@
 
 .slider-reviews__text {
     padding-top: 8px;
-
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.55; //28px
     overflow: hidden;
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.55; //28px
+    }
 }
 
 .slider-reviews__title {

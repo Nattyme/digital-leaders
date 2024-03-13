@@ -20,11 +20,26 @@
 
     position: relative;
     display: inline-block;
+    max-height: 96px;
+
     font-size: 24px;
     font-weight: 300;
     line-height: 1.33; //32px
     color: #2a4056;
+    
     text-decoration: underline;
+    overflow: hidden;
+
+    p {
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical; // Если конец тсроки обрезан, то добавляет многоточие
+            -webkit-line-clamp: 3; // Ограничиваем кол-во строк текста
+            overflow: hidden;
+    
+            text-overflow: clip;
+        }
+    }
 }
 
 .slider-press-about__text {
@@ -34,8 +49,16 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 1.55; //28px
-    text-overflow: ellipsis;
     overflow: hidden;
+
+    p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical; // Если конец тсроки обрезан, то добавляет многоточие
+        -webkit-line-clamp: 5; // Ограничиваем кол-во строк текста
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
 }
 
 .slider-press-about__label {
@@ -56,10 +79,6 @@
         object-fit: cover;
     }
 }
-
-.slider-press-about__name {}
-
-.swiper-pagination {}
 
 .slider-press-about__pagination {
     position: absolute;

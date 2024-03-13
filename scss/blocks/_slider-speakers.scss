@@ -33,10 +33,20 @@
 }
 
 .slider-speakers__desc {
+    height: 60px;     
+    overflow: hidden;
+
     font-size: 15px;
     font-weight: 300;
     line-height: 1.33; //20px;
     color: #c6d9ec;
+    
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        overflow: hidden;
+    }
+
 }
 
 .slider-speakers__pagination {
