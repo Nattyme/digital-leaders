@@ -3,44 +3,19 @@
     padding-bottom: 164px;
 }
 
-.forum>.decor-polygon {
-
-    &::before {
-        position: absolute;
-        content: url("./../img/forum/polygon-one.svg");
-        top: 0;
-        left: -36px;
-        transform: translateX(-100%);
-
-        width: 182px;
-        height: 348px;
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        right: 0;
-
-        width: 138px;
-        height: 228px;
-        background-image: url("./../img/forum/polygon-double.svg");
-    }
-}
-
 .forum.decor-circle {
-
     &::before {
-        left: unset;
-        right: 0;
-        top: 0;
+        bottom: 0;
+        left: calc(50vw - var(--container-width) / 2 - 60px);
+        transform: translateX(-50%);
+        background-image: url("./../img/decor-svg/circle-green.svg");
     }
 
     &::after {
-        top: unset;
-        bottom: -141px;
-        left: -145px;
-        transform: translateX(calc(-100% / 3));
+        top: 43px;
+        left: unset;
+        right: calc(50vw - var(--container-width) / 2 - 200px);
+        background-image: url("./../img/decor-svg/circle-cyan.svg");
     }
 }
 

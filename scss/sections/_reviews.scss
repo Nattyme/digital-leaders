@@ -3,6 +3,20 @@
     padding-bottom: 100px;
 }
 
+.reviews.decor-circle {
+    &::before {
+        bottom: unset;
+        top: 52px;
+        left: calc(50vw - var(--container-width) / 2 - 60px);
+        transform: translateX(-50%);
+        background-image: url("./../img/decor-svg/circle-green.svg");
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
 
 .reviews .decor-polygon {
 
