@@ -16,24 +16,32 @@
 .decor-circle {
     position: relative;
 
-    &::before {
-        z-index: -1;
-        position: absolute;
-        content: url('./../img/decor-svg/circle-cyan.svg');
-        left: 0;
-        bottom: 0;
-        width: 600px;
-        height: 600px;
-    }
-
+    &::before,
     &::after {
         z-index: -1;
         position: absolute;
-        top: 0;
-        left: 0;
-        content: url('./../../img/decor-svg/circle-green.svg');
+        content: "";
+
         width: 600px;
         height: 600px;
+
+        background-position: center center; // x y
+        background-size: 600px auto;
+        background-repeat: no-repeat;
+        filter: blur(100px);
+    }
+
+    &::before {
+        bottom: 0;
+        left: calc(50vw - var(--container-width) / 2  - 60px);
+        transform: translateX(-50%);
+        background-image: url("./../img/decor-svg/circle-cyan.svg");
+    }
+
+    &::after {
+        top: -80px;
+        left: calc(50vw - var(--container-width) / 2 + 176px);
+        background-image: url("./../img/decor-svg/circle-green.svg");
     }
 }
 

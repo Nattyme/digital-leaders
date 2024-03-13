@@ -1,6 +1,6 @@
 .forum {
     padding-top: 43px;
-    padding-bottom: 115px;
+    padding-bottom: 164px;
 }
 
 .forum>.decor-polygon {
@@ -25,6 +25,22 @@
         width: 138px;
         height: 228px;
         background-image: url("./../img/forum/polygon-double.svg");
+    }
+}
+
+.forum.decor-circle {
+
+    &::before {
+        left: unset;
+        right: 0;
+        top: 0;
+    }
+
+    &::after {
+        top: unset;
+        bottom: -141px;
+        left: -145px;
+        transform: translateX(calc(-100% / 3));
     }
 }
 

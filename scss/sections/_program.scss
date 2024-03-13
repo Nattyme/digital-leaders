@@ -3,8 +3,34 @@
     padding-bottom: 67px;
 }
 
+.program.decor-circle {
+    position: relative;
+
+    &::before {
+        z-index: -1;
+        position: absolute;
+        content: url('./../img/decor-svg/circle-cyan.svg');
+        left: 0;
+        bottom: 0;
+        width: 600px;
+        height: 600px;
+    }
+
+    &::after {
+        z-index: -1;
+        position: absolute;
+        top: 122px;
+        left: unset;
+        right: 0;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='1000' height='1000' viewBox='0 0 1000 1000' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_3711_886)'%3E%3Ccircle cx='500' cy='500' r='300' fill='%2307FFA0' fill-opacity='0.2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_3711_886' x='0' y='0' width='1000' height='1000' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_3711_886'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+        // background-size: 600px auto;
+        width: 600px;
+        height: 600px;
+    }
+}
+
 .program__header {
     margin-bottom: 80px;
     text-align: center;
 }
-
