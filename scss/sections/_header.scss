@@ -1,19 +1,9 @@
 .header {
     padding-bottom: 105px;
+    overflow: visible;
     min-height: 564px;
+    
 }
-
-.header.decor-circle {
-    &::after {
-        display: none;
-    }
-
-    &::before {
-        left: -200px;
-        bottom: 0;
-    }
-}
-
 
 .header__content {
     position: relative;

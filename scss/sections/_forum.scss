@@ -3,24 +3,24 @@
     padding-bottom: 115px;
 }
 
-.forum.decor-polygon {
+.forum>.decor-polygon {
 
     &::before {
         position: absolute;
-        content: "";
+        content: url("./../img/forum/polygon-one.svg");
         top: 0;
-        left: -73px;
+        left: -36px;
+        transform: translateX(-100%);
 
         width: 182px;
         height: 348px;
-        background-image: url("./../img/forum/polygon-one.svg");
     }
 
     &::after {
         position: absolute;
         content: "";
-        bottom: 115px;
-        right: 103px;
+        bottom: 0;
+        right: 0;
 
         width: 138px;
         height: 228px;

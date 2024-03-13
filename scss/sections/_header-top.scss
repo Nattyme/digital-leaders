@@ -1,15 +1,14 @@
 .header-top.decor-circle {
-    &::after {
-        left: 160px;
-    }
-
     &::before {
         display: none;
+    }
+
+    &:after {
+        left: 158px;
     }
 }
 
 .header-top__nav {
-    position: relative;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -21,4 +20,3 @@
 .header-top__btn--none {
     display: none;
 }
-
