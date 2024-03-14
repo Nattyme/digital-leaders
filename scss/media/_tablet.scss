@@ -1,0 +1,16 @@
+/* Tablet */
+@media (max-width: 1199px) {
+    
+    .header-top__nav {
+        padding-top: 12px;
+    }
+    
+    .nav__list li:not(:last-child) {
+        margin-right: 16px;
+    }
+    
+    .nav__list a {
+        font-size: 15px;
+        line-height: 1.6; //24px
+    }
+}
