@@ -1,6 +1,5 @@
 /* Tablet */
 @media (max-width: 1199px) {
-    
     .header-top__nav {
         padding-top: 12px;
     }
@@ -12,5 +11,92 @@
     .nav__list a {
         font-size: 15px;
         line-height: 1.6; //24px
+    }
+
+    .header {
+        padding-bottom: 40px;
+    }
+    
+    .header__content:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    
+    .header__img {
+        margin-left: 0;
+    
+        width: 688px;
+        height: 420px;
+    
+        img {
+            clip-path: path("M681.155 0H75.2617C72.6358 0 70.1097 1.00609 68.2029 2.81138L3.20846 64.3444C1.16028 66.2835 0 68.9797 0 71.8002V128.546C0 132.327 3.06454 135.391 6.84483 135.391H114C117.78 135.391 120.845 138.456 120.845 142.236V203.522C120.845 207.302 123.909 210.366 127.69 210.366H253.379C257.16 210.366 260.224 213.431 260.224 217.211V286.209C260.224 289.989 263.289 293.054 267.069 293.054H420.931C424.711 293.054 427.776 296.118 427.776 299.899V413.155C427.776 416.935 430.84 420 434.621 420H612.085C614.878 420 617.551 418.862 619.487 416.848L685.134 348.561C686.973 346.648 688 344.098 688 341.445V6.84483C688 3.06453 684.935 0 681.155 0Z");
+        }
+    }
+    
+    .header__text {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+    
+        max-width: 657px;
+        font-size: 36px;
+        font-weight: 300;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            width: 72px;
+            height: 125px;
+            top: -39px;
+            left: -16px;
+            transform: translateX(-100%);
+            background-image: url("./../img/decor-svg/polygon-multyple.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center; // x y
+        }
+    }
+    
+    .header__text span {
+        line-height: 1.5; //40px
+    }
+    
+    .header__title {
+        margin-bottom: 24px;
+    }
+    
+    .header__desc {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.11;
+    
+        p+p {
+            position: relative;
+            padding-left: 32px;
+    
+            &::before {
+                position: absolute;
+                top: 16px;
+                left: 0;
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #2a4056;
+            }
+        }
+    }
+    
+    .header__timer {
+        padding-top: 55px;
+    
+        &--none {
+            display: none;
+        }
+    }
+    
+    .header__btn--none {
+        display: none;
     }
 }
