@@ -6,6 +6,14 @@
     overflow: hidden;
 }
 
+.speakers__tooltip {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 48px;
+}
+
 .speakers__header {
     margin-bottom: 64px;
     text-align: center;

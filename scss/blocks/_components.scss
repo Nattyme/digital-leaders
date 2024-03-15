@@ -68,6 +68,7 @@
     clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
 
     &--dark {
+        clip-path: polygon(0 10vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
         background-image: url('./../../img/speakers/speakers-bg.svg');
     }
 }
