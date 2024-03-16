@@ -1522,13 +1522,8 @@ body {
   font-weight: 300;
   line-height: 1.33;
 }
-.forum__desc--none {
-  display: none;
-}
 .forum__desc-mobile {
   order: -1;
-}
-.forum__desc-mobile--none {
   display: none;
 }
 
