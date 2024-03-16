@@ -192,32 +192,29 @@
 
     .forum__row {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: unset;
+        row-gap: 40px;
     }
 
     .forum__speakers {
-        margin-right: 57px;
-        width: 252px;
+        margin-right: 0;
+
+        display: flex;
+        align-items: center;
+        width: 688px;
     }
 
     .forum__img-wrapper {
-        margin-bottom: 24px;
-
-        width: 235px;
-        height: 244px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
+        margin-bottom: 0;
+        width: 330px;
+        height: 320px;
     }
 
     .forum__note {
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 1.6; //24px
-        color: #2a4056;
+        width: 326px;
+
+        font-size: 18px;
+        line-height: 1.55; //28px;
     }
 
     .forum__text {
