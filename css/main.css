@@ -1524,6 +1524,15 @@ body {
   line-height: 1.33;
   color: #2a4056;
 }
+.forum__desc--none {
+  display: none;
+}
+.forum__desc-mobile {
+  order: -1;
+}
+.forum__desc-mobile--none {
+  display: none;
+}
 
 .forum__stat {
   margin-left: 89px;
@@ -2212,6 +2221,9 @@ body {
     font-weight: 300;
     line-height: 1.33;
     color: #2a4056;
+  }
+  .forum__desc-mobile {
+    display: block;
   }
   .forum__stat {
     margin-left: 89px;

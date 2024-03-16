@@ -85,6 +85,17 @@
     font-weight: 300;
     line-height: 1.33; //32px
     color: #2a4056;
+
+    &--none {
+        display: none;
+    }
+
+    &-mobile {
+        order: -1;
+        &--none {
+            display: none;
+        }   
+    }
 }
 
 .forum__stat {
