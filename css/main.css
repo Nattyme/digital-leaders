@@ -213,6 +213,7 @@ body {
           clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
 }
 .clip-section--dark {
+  height: 1035px;
   -webkit-clip-path: polygon(0 10vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
           clip-path: polygon(0 10vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
   background-image: url("./../../img/speakers/speakers-bg.svg");
@@ -1556,16 +1557,19 @@ body {
   position: relative;
   padding-top: 187px;
   padding-bottom: 185px;
-  min-height: 1032px;
   overflow: hidden;
 }
 
 .speakers__tooltip {
   position: absolute;
-  top: -18px;
-  left: 0;
+  top: 0;
+  right: 0;
   width: 100%;
-  height: 48px;
+  height: 200px;
+}
+.speakers__tooltip svg {
+  top: -18px;
+  position: relative;
 }
 
 .speakers__header {
@@ -2151,5 +2155,86 @@ body {
   }
   .form__group > * {
     width: 50%;
+  }
+  .forum {
+    padding-top: 40px;
+    padding-bottom: 28px;
+  }
+  .forum__header {
+    margin-bottom: 48px;
+  }
+  .forum__row {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .forum__speakers {
+    margin-right: 57px;
+    width: 252px;
+  }
+  .forum__img-wrapper {
+    margin-bottom: 24px;
+    width: 235px;
+    height: 244px;
+    overflow: hidden;
+  }
+  .forum__img-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+  .forum__note {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #2a4056;
+  }
+  .forum__text {
+    width: 503px;
+  }
+  .forum__text h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #2a4056;
+  }
+  .forum__text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.55;
+    color: #2a4056;
+  }
+  .forum__text p + * {
+    margin-top: 48px;
+  }
+  .forum__desc {
+    margin-bottom: 48px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #2a4056;
+  }
+  .forum__stat {
+    margin-left: 89px;
+    width: 218px;
+  }
+  .stat-grid li {
+    padding-right: 5px;
+  }
+  .stat-grid li:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .stat-grid__value {
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 46px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    line-height: 1.04;
+  }
+  .stat-grid__text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #2a4056;
   }
 }/*# sourceMappingURL=main.css.map */
