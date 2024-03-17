@@ -201,7 +201,7 @@
 
         display: flex;
         align-items: center;
-        width: 688px;
+        width: 100%;
     }
 
     .forum__img-wrapper {
@@ -257,8 +257,13 @@
     }
 
     .forum__stat {
-        margin-left: 89px;
-        width: 218px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .stat-grid {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .stat-grid li {

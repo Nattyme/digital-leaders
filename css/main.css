@@ -1481,7 +1481,7 @@ body {
 
 .forum__img-wrapper {
   margin-bottom: 24px;
-  width: 235px;
+  width: 252px;
   height: 244px;
   overflow: hidden;
 }
@@ -1491,6 +1491,7 @@ body {
 }
 
 .forum__note {
+  width: 216px;
   font-size: 15px;
   font-weight: 300;
   line-height: 1.6;
@@ -2174,7 +2175,7 @@ body {
     margin-right: 0;
     display: flex;
     align-items: center;
-    width: 688px;
+    width: 100%;
   }
   .forum__img-wrapper {
     margin-bottom: 0;
@@ -2216,8 +2217,12 @@ body {
     display: block;
   }
   .forum__stat {
-    margin-left: 89px;
-    width: 218px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .stat-grid {
+    display: flex;
+    flex-wrap: wrap;
   }
   .stat-grid li {
     padding-right: 5px;
