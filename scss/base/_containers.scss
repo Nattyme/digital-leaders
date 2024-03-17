@@ -11,3 +11,11 @@
         width: 718px;
    }
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+    .container {
+        width: 320px;
+    }
+}
+

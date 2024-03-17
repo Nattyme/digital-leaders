@@ -1,3 +1,8 @@
+.header-top {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-top.decor-circle {
     &::before {
         display: none;
@@ -6,15 +11,6 @@
     &:after {
         left: 158px;
     }
-}
-
-.header-top__nav {
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .header-top__btn--none {
