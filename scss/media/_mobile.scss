@@ -6,13 +6,10 @@
     }
 
     .btn-solid {
-        height: 48px;
-        padding-left: 31.5px;
-        padding-right: 31.5px;
-        border-radius: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
 
-        font-size: 15px;
-        line-height: 48px;
+        font-size: 14px;
     }
 
     .header-top__nav {
@@ -75,31 +72,22 @@
     }
 
     .header__timer {
-        padding-top: 195px;
+        padding-top: 110px;
     }
 
     .timer {
-        padding: 24px 32px 32px;
-        width: 100%;
-        border-radius: 20px;
-
-        // &--outline {
-        //     border-color: #e4edf6;
-        // }
+        padding: 20px 24px 26px;
     }
 
     .timer-count {
-        padding-bottom: 20px;
-        width: 100%;
-        flex-direction: column;
-        justify-content: unset;
-        align-items: unset;
+        padding-bottom: 15px;
     }
 
     .timer-count__text {
-        font-size: 24px;
+        margin-bottom: 5px;
+
+        font-size: 18px;
         font-weight: 600;
-        line-height: 1.33; //32px
     }
 
     .countdown {
@@ -110,21 +98,41 @@
     .time {
         width: 100%;
         justify-content: left;
+
+        font-size: 26px;
+    }
+
+    .time li:not(:last-child)::after {
+        padding-left: 5px;
+        padding-right: 5px;
+        content: ":";
+        font-size: 26px;
     }
 
     .timer__form {
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+
+    .time__unit {
+        padding-left: 5px;
+    }
+
+    .form__title {
+        font-size: 16px;
     }
 
     .form__group {
-        column-gap: 24px;
+        column-gap: 0;
+        flex-direction: column;
 
         &>* {
-            width: 50%;
+            width: 100%;
         }
     }
 
     .form__input {
+        margin-bottom: 15px;
+
         height: 44px;
 
         &::placeholder {
