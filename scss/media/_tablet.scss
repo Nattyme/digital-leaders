@@ -1,56 +1,13 @@
 /* Tablet */
 @media (max-width: 1199px) {
     .btn-solid {
-        display: inline-block;
-        height: 56px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 16px;
-        background-color: #2a4056;
+        height: 48px;
+        padding-left: 31.5px;
+        padding-right: 31.5px;
+        border-radius: 12px;
 
-        font-family: "Unbounded", sans-serif;
-        font-size: 18px;
-        line-height: 56px;
-        font-weight: 500;
-        color: #fff;
-        cursor: pointer;
-
-        transition: all 0.2s ease-in;
-
-        &:hover {
-            background-color: #4b739b;
-        }
-
-        &:active {
-            background-color: #7699bc;
-        }
-
-        &:disabled {
-            opacity: 0.3;
-        }
-
-        &--grad {
-            box-shadow: $btn-shadow;
-            background: $btn-grad;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-                box-shadow: $btn-grad-hover-shadow;
-                background: $btn-grad-hover;
-            }
-
-            &:active {
-                background: $btn-grad-active;
-            }
-
-            &:disabled {
-                opacity: 0.4;
-            }
-        }
-
-        &--transparent {
-            background-color: #fff;
-        }
+        font-size: 15px;
+        line-height: 48px;
     }
 
     .header-top__nav {
@@ -146,6 +103,10 @@
         align-items: center;
     }
 
+    .timer__form {
+        margin-top: 20px;
+    }
+
     .time {
         width: 484px;
         display: flex;
@@ -178,6 +139,16 @@
 
         &>* {
             width: 50%;
+        }
+    }
+
+    .form__input {
+        height: 44px;
+
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
         }
     }
 
