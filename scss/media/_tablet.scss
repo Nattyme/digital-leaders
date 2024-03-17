@@ -246,14 +246,16 @@
 
     .stat-grid {
         display: flex;
+        gap: 32px;
         flex-wrap: wrap;
     }
 
     .stat-grid li {
-        padding-right: 5px;
+        width: 328px;
+        padding-right: 0;
 
         &:not(:last-child) {
-            margin-bottom: 48px;
+            margin-bottom: 0;
         }
     }
 
