@@ -236,6 +236,7 @@
 
     .forum__tooltip {
         margin-top: 40px;
+        padding-right: 10px;
         width: 100%;
     }
 
@@ -259,21 +260,7 @@
         }
     }
 
-    .stat-grid__value {
-        margin-bottom: 4px;
-
-        display: inline-block;
-
-        font-size: 46px;
-        font-family: "Unbounded", sans-serif;
-        font-weight: 700;
-        line-height: 1.04; // 48px
-    }
-
     .stat-grid__text {
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1.33; //32px
-        color: #2a4056;
+        font-size: 18px;
     }
 }
