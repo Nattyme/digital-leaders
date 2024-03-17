@@ -1497,32 +1497,43 @@ body {
   color: #2a4056;
 }
 
-.forum__text {
+.forum-text {
   width: 503px;
 }
-.forum__text h4 {
+.forum-text h4 {
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.33;
   color: #2a4056;
 }
-.forum__text p {
+.forum-text p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.55;
 }
-.forum__text p + * {
-  margin-top: 48px;
+
+.forum-text__block:not(:last-child) {
+  margin-bottom: 48px;
 }
 
-.forum__desc {
+.forum__tooltip {
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 503px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.forum-text__desc {
   margin-bottom: 48px;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
 }
-.forum__desc-mobile {
+.forum-text__desc--mobile {
   order: -1;
   display: none;
 }
@@ -2160,6 +2171,7 @@ body {
   }
   .forum__img-wrapper {
     margin-bottom: 0;
+    margin-right: 32px;
     width: 330px;
     height: 320px;
   }
@@ -2168,34 +2180,45 @@ body {
     font-size: 18px;
     line-height: 1.55;
   }
-  .forum__text {
-    width: 503px;
+  .forum-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 100%;
   }
-  .forum__text h4 {
+  .forum-text h4 {
     margin-bottom: 16px;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.33;
     color: #2a4056;
   }
-  .forum__text p {
+  .forum-text p {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.55;
     color: #2a4056;
   }
-  .forum__text p + * {
+  .forum-text p + * {
     margin-top: 48px;
   }
-  .forum__desc {
-    margin-bottom: 48px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.33;
-    color: #2a4056;
+  .forum-text__block {
+    width: 328px;
   }
-  .forum__desc-mobile {
+  .forum-text__block:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .forum-text__desc {
+    margin-bottom: 0;
+    display: none;
+  }
+  .forum-text__desc--mobile {
     display: block;
+  }
+  .forum__tooltip {
+    margin-top: 40px;
+    width: 100%;
   }
   .forum__stat {
     margin-left: 0;

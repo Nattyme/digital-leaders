@@ -177,6 +177,7 @@
 
     .forum__img-wrapper {
         margin-bottom: 0;
+        margin-right: 32px;
         width: 330px;
         height: 320px;
     }
@@ -188,8 +189,12 @@
         line-height: 1.55; //28px;
     }
 
-    .forum__text {
-        width: 503px;
+    .forum-text {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        flex-wrap: wrap;
+        width: 100%;
 
         h4 {
             margin-bottom: 16px;
@@ -212,19 +217,26 @@
         }
     }
 
-    .forum__desc {
-        margin-bottom: 48px;
+    .forum-text__block {
+        width: 328px;
 
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1.33; //32px
-        color: #2a4056;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
 
-        &-mobile {
+    .forum-text__desc {
+        margin-bottom: 0;
+        display: none;
+
+        &--mobile {
             display: block;
         }
+    }
 
-
+    .forum__tooltip {
+        margin-top: 40px;
+        width: 100%;
     }
 
     .forum__stat {
