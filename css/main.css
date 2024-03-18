@@ -521,9 +521,10 @@ body {
 .form__input {
   height: 56px;
   width: 100%;
-  padding: 14px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid rgb(198, 217, 236);
-  border-radius: 16px;
+  border-radius: 12px;
 }
 .form__input::-moz-placeholder {
   font-size: 18px;
@@ -2278,22 +2279,19 @@ body {
     margin-bottom: 8px;
   }
   .header__desc p + p::before {
-    width: 6px;
-    height: 6px;
-    top: 3px;
+    width: 5px;
+    height: 5px;
+    top: 4px;
   }
   .header__timer {
     padding-top: 110px;
   }
   .timer {
-    padding: 20px 24px 26px;
-  }
-  .timer-count {
-    padding-bottom: 15px;
+    padding: 20px 20px 26px;
   }
   .timer-count__text {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
   }
   .countdown {
@@ -2311,14 +2309,12 @@ body {
     content: ":";
     font-size: 26px;
   }
-  .timer__form {
-    margin-top: 10px;
-  }
   .time__unit {
     padding-left: 5px;
   }
   .form__title {
     font-size: 16px;
+    text-align: center;
   }
   .form__group {
     -moz-column-gap: 0;
@@ -2330,15 +2326,17 @@ body {
   }
   .form__input {
     margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 44px;
   }
   .form__input::-moz-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
   }
   .form__input::placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
   }

@@ -62,13 +62,10 @@
         margin-bottom: 8px;
     }
 
-    .header__desc {
-
-        p + p::before {
-            width: 6px;
-            height: 6px;
-            top: 3px;
-        }
+    .header__desc p+p::before {
+        width: 5px;
+        height: 5px;
+        top: 4px;
     }
 
     .header__timer {
@@ -76,17 +73,13 @@
     }
 
     .timer {
-        padding: 20px 24px 26px;
-    }
-
-    .timer-count {
-        padding-bottom: 15px;
+        padding: 20px 20px 26px;
     }
 
     .timer-count__text {
         margin-bottom: 5px;
 
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
     }
 
@@ -109,16 +102,13 @@
         font-size: 26px;
     }
 
-    .timer__form {
-        margin-top: 10px;
-    }
-
     .time__unit {
         padding-left: 5px;
     }
 
     .form__title {
         font-size: 16px;
+        text-align: center;
     }
 
     .form__group {
@@ -132,11 +122,13 @@
 
     .form__input {
         margin-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
 
         height: 44px;
 
         &::placeholder {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             line-height: 1.5;
         }
