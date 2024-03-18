@@ -63,18 +63,21 @@
 
 .header__desc {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     line-height: 1.11;
 
-    p+p {
+    p:first-child {
+        margin-right: 56px;
         position: relative;
-        padding-left: 32px;
 
-        &::before {
+        &::after {
             position: absolute;
             top: 16px;
-            left: 0;
+            right: -24px;
+            transform: translateX(100%);
             content: "";
+
+            display: inline-block;
             width: 8px;
             height: 8px;
             border-radius: 50%;
