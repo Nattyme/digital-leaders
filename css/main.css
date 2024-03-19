@@ -552,7 +552,7 @@ body {
   font-size: 36px;
   font-weight: 300;
   line-height: 1.11;
-  color: #2a4056;
+  color: rgba(42, 64, 86, 0.4);
   background-image: transparent;
 }
 .tab__btn:not(:last-child) {
