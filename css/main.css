@@ -1312,8 +1312,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-clip-path: inset(0 round 100px 0 100px 0);
-          clip-path: inset(0 round 100px 0 100px 0);
+  -webkit-clip-path: path("M100 0H216V164C216 219.228 171.228 264 116 264H0V100C0 44.7715 44.7715 0 100 0Z");
+          clip-path: path("M100 0H216V164C216 219.228 171.228 264 116 264H0V100C0 44.7715 44.7715 0 100 0Z");
 }
 
 .slider-speakers__title {
@@ -2222,53 +2222,33 @@ body {
   .speakers__badge {
     display: none;
   }
+  .speakers .slider-arrow {
+    display: none;
+  }
   .slider-speakers {
     width: 100vw;
     height: 408px;
   }
   .slider-speakers__item {
-    width: 216px;
-    height: 380px;
+    width: 220px;
+    height: 408px;
   }
   .slider-speakers__item:nth-child(even) {
-    margin-top: 72px;
+    margin-top: unset;
   }
   .slider-speakers__img {
-    margin-bottom: 24px;
-    width: 216px;
-    height: 264px;
-    overflow: hidden;
+    width: 220px;
+    height: 268px;
   }
   .slider-speakers__img img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-clip-path: inset(0 round 100px 0 100px 0);
-            clip-path: inset(0 round 100px 0 100px 0);
+    -webkit-clip-path: path("M68.5185 0H220V199.481C220 237.323 189.323 268 151.481 268H0V68.5185C0 30.6768 30.6768 0 68.5185 0Z");
+            clip-path: path("M68.5185 0H220V199.481C220 237.323 189.323 268 151.481 268H0V68.5185C0 30.6768 30.6768 0 68.5185 0Z");
   }
   .slider-speakers__title {
-    margin-bottom: 8px;
-  }
-  .slider-speakers__desc {
-    height: 60px;
-    overflow: hidden;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.33;
-    color: #c6d9ec;
-  }
-  .slider-speakers__desc p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
+    padding-right: 10px;
   }
   .slider-speakers__pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -moz-column-gap: 16px;
-         column-gap: 16px;
+    display: none;
   }
 }
 /* Mobile */

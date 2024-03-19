@@ -184,9 +184,6 @@ if (document.querySelectorAll('.swiper').length > 0) {
     const swiperSpeakers = new Swiper('#slider-speakers', {
         // Optional parameters
         direction: 'horizontal',
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        spaceBetween: 72,
         speed: 1800,
         grabCursor: true,
     
@@ -201,22 +198,28 @@ if (document.querySelectorAll('.swiper').length > 0) {
             // type: 'bullets',
             clickable: true,
         },
-        // breakpoints: {
-        //     //when window width is >= 360px
-        //     360: {
-        //         slidesPerView: 2,
-        //         slidesPerGroup: 1,
-        //         spaceBetween: 24
-        //     },
+        breakpoints: {
+            //when window width is >= 360px
+            360: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 24
+            },
            
-        //     //when window width is >= 768px
-        //     768: {
-        //         slidesPerView: 'auto',
-        //         slidesPerGroup: 3,
-        //         spaceBetween: 40
-        //     },
+            //when window width is >= 768px
+            768: {
+                slidesPerView: 'auto',
+                slidesPerGroup: 1,
+                spaceBetween: 40
+            },
 
-        // }
+            //when window width is >= 1200px
+            1200: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                spaceBetween: 72
+            }
+        }
     });
 }
 /* swiper sliders */

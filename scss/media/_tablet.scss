@@ -255,6 +255,10 @@
         display: none;
     }
 
+    .speakers .slider-arrow {
+        display: none;
+    }
+
     .slider-speakers {
         // position: relative;
         width: 100vw;
@@ -262,55 +266,29 @@
     }
 
     .slider-speakers__item {
-        width: 216px;
-        height: 380px;
+        width: 220px;
+        height: 408px;
 
         &:nth-child(even) {
-            margin-top: 72px;
+            margin-top: unset;
         }
     }
 
     .slider-speakers__img {
-        margin-bottom: 24px;
-
-        width: 216px;
-        height: 264px;
-        overflow: hidden;
+        width: 220px;
+        height: 268px;
 
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            clip-path: inset(0 round 100px 0 100px 0);
+            clip-path: path("M68.5185 0H220V199.481C220 237.323 189.323 268 151.481 268H0V68.5185C0 30.6768 30.6768 0 68.5185 0Z");
         }
     }
 
     .slider-speakers__title {
-        margin-bottom: 8px;
-    }
-
-    .slider-speakers__desc {
-        height: 60px;
-        overflow: hidden;
-
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 1.33; //20px;
-        color: #c6d9ec;
-
-        p {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            overflow: hidden;
-        }
-
+        padding-right: 10px;
     }
 
     .slider-speakers__pagination {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 16px;
+        display: none;
     }
 
 }
