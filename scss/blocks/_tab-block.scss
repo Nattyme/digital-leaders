@@ -7,27 +7,12 @@
 }
 
 .tab-block__row {
-    display: flex;
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 160px 352px 1fr;
 
     &:not(:last-child) {
         margin-bottom: 56px;
-    }
-}
-
-.tab-block__column {
-    &:not(:last-child) {
-        margin-right: 32px;
-    }
-
-    &:first-child {
-        width: 160px;
-    }
-
-    &:nth-child(n + 2) {
-        width: 352px;
-    }
-    &:last-child {
-        flex-grow: 1;
     }
 }
 
