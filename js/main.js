@@ -201,14 +201,13 @@ if (document.querySelectorAll('.swiper').length > 0) {
         breakpoints: {
             //when window width is >= 360px
             360: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
                 slidesPerGroup: 1,
                 spaceBetween: 24
             },
            
             //when window width is >= 768px
             768: {
-                slidesPerView: 'auto',
                 slidesPerGroup: 1,
                 spaceBetween: 40
             },

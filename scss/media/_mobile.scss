@@ -190,4 +190,31 @@
     .stat-grid li {
         width: 148px;
     }
+
+    .speakers {
+        padding-top: 88px;
+        padding-bottom: 91px;
+    }
+
+    .speakers__header {
+        margin-bottom: 32px;
+    }
+
+    .slider-speakers__item {
+        width: 220px;
+        height: 408px;
+    }
+
+    .slider-speakers__title {
+        font-size: 16px;
+    }
+
+    .slider-speakers__img {
+        width: 220px;
+        height: 268px;
+
+        img {
+            clip-path: path("M80 0H220V188C220 232.183 184.183 268 140 268H0V80C0 35.8172 35.8172 0 80 0Z");
+        }
+    }
 }
