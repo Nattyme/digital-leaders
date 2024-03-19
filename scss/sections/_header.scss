@@ -62,28 +62,10 @@
 }
 
 .header__desc {
+    width: 657px;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     line-height: 1.11;
-
-    p:first-child {
-        margin-right: 56px;
-        position: relative;
-
-        &::after {
-            position: absolute;
-            top: 16px;
-            right: -24px;
-            transform: translateX(100%);
-            content: "";
-
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: #2a4056;
-        }
-    }
 }
 
 .header__timer {
