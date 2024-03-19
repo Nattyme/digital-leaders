@@ -15,7 +15,8 @@
     }
 
     .grad-border {
-        background-size: 100% 6px;
+        padding-bottom: 4px;
+        background-size: 100% 8px;
     }
 
     .header-top {
@@ -28,7 +29,7 @@
     }
 
     .header {
-        padding-bottom: 20px;
+        padding-bottom: 28px;
         min-height: unset;
     }
 
@@ -99,10 +100,6 @@
         padding-left: 5px;
     }
 
-    .form__title {
-        font-size: 15px;
-    }
-
     .form__group {
         column-gap: 0;
         flex-direction: column;
@@ -126,8 +123,8 @@
     }
 
     .forum {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 28px;
+        padding-bottom: 32px;
     }
 
     .forum__header {
@@ -135,7 +132,7 @@
     }
 
     .forum__row {
-        row-gap: 20px;
+        row-gap: 48px;
     }
 
     .forum__speakers {
@@ -143,44 +140,30 @@
     }
 
     .forum__img-wrapper {
-        margin-bottom: 0;
-        margin-right: 32px;
-        width: 330px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        width: 308px;
         height: 320px;
     }
 
     .forum__note {
-        width: 326px;
-
-        font-size: 18px;
-        line-height: 1.55; //28px;
+        width: 100%;
+        font-size: 16px;
     }
 
     .forum-text {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        flex-wrap: wrap;
-        width: 100%;
+        row-gap: 24px;
 
         h4 {
-            margin-bottom: 16px;
-
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 1.33; //32px
-            color: #2a4056;
+            margin-bottom: 8px;
         }
 
         p {
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 1.55; //28px
-            color: #2a4056;
+            font-size: 16px;
         }
 
         p+* {
-            margin-top: 48px;
+            margin-top: 24px;
         }
     }
 
@@ -193,36 +176,18 @@
     }
 
     .forum-text__desc {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .forum__tooltip {
-        margin-top: 40px;
-        padding-right: 10px;
-        width: 100%;
-    }
-
-    .forum__stat {
-        margin-left: 0;
-        width: 100%;
+        margin-top: 48px;
     }
 
     .stat-grid {
-        display: flex;
-        gap: 32px;
-        flex-wrap: wrap;
+        gap: 24px;
     }
 
     .stat-grid li {
-        width: 328px;
-        padding-right: 0;
-
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
-
-    .stat-grid__text {
-        font-size: 18px;
+        width: 148px;
     }
 }
