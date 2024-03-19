@@ -290,4 +290,24 @@
     .slider-speakers__pagination {
         display: none;
     }
+
+    .program {
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+
+    .program__header {
+        margin-bottom: 40px;
+    }
+
+    .tab__nav {
+        margin-bottom: 40px;
+    }
+
+    .tab__btn {
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
 }
