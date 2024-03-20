@@ -379,6 +379,7 @@
     }
 
     .reviews {
+        overflow: hidden;
         padding-top: 60px;
         padding-bottom: 64px;
     }
@@ -396,14 +397,14 @@
     }
 
     .slider-reviews {
-        width: 100%;
+        width: 664px;
         height: 496px;
     }
 
     .slider-reviews__item {
         padding: 24px 24px;
 
-        width: 320px;
+        max-width: 320px;
         height: 440px;
 
         font-size: 16px;

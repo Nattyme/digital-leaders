@@ -295,4 +295,48 @@
         width: 320px;
         height: 180px;
     }
+
+    .reviews {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .reviews__header {
+        margin-bottom: 28px;
+    }
+
+    .slider-reviews {
+        width: 296px;
+        height: 448px;
+    }
+
+    .slider-reviews__item {
+        padding: 20px 20px;
+
+        max-width: 296px;
+        height: 448px;
+
+        font-size: 15px;
+    }
+
+    .slider-reviews__img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .slider-reviews__name {
+        height: 48px;
+        font-size: 18px;
+        line-height: 1.33;
+        overflow: hidden;
+    }
+
+    .slider-reviews__desc {
+        height: 320px;
+        line-height: 1.6;
+    }
+
+    .slider-reviews__pagination {
+        display: none;
+    }
 }

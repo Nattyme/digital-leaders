@@ -178,7 +178,6 @@ $(document).ready(function () {
         const swiperReviews = new Swiper('#slider-reviews', {
             // Optional parameters
             direction: 'horizontal',
-            speed: 2500,
             grabCursor: true,
         
             // Navigation arrows
@@ -194,10 +193,20 @@ $(document).ready(function () {
             },
 
             breakpoints: {
+                360: {
+                    speed: 1500,
+                    spaceBetween: 16,
+                    slidesPerView: 1,
+                //     slidesPerView: "auto",
+                //     centeredSlidesBounds: true,
+                //     centeredSlides: true,
+                },
+
                 768: {
-                    spaceBetween: 24,
                     slidesPerView: 2,
-                    slidesPerGroup: 2
+                    slidesPerGroup: 2,
+                    speed: 2500,
+                    spaceBetween: 24,
                 },
 
                 1440: {
