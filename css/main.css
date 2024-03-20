@@ -180,6 +180,12 @@ body {
   color: #fff;
 }
 
+.tab-arrow {
+  width: 12px;
+  height: 7px;
+  fill: #303438;
+}
+
 .grad-border {
   padding-bottom: 2px;
   display: inline;
@@ -590,9 +596,12 @@ body {
 }
 
 .tab-block__column {
+  position: relative;
   width: 50%;
+  line-height: 1.33;
+  font-weight: 300;
 }
-.tab-block__column:nth-child(odd) {
+.tab-block__column:first-child {
   margin-right: 32px;
   display: flex;
   align-content: flex-start;
@@ -602,21 +611,18 @@ body {
 
 .tab-block__time {
   font-size: 24px;
-  font-weight: 300;
-  line-height: 1.33;
 }
 
 .tab-block__title {
+  position: relative;
   width: 64.8%;
   font-size: 24px;
   font-weight: 600;
-  line-height: 1.33;
 }
 
 .tab-block__line {
   position: relative;
   padding-left: 32px;
-  font-weight: 300;
 }
 .tab-block__line:not(:last-child) {
   margin-bottom: 16px;
@@ -639,7 +645,25 @@ body {
 
 .tab-block__desc {
   font-size: 15px;
-  line-height: 1.33;
+}
+
+.tab-block__btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 44px;
+  right: -8px;
+  transform: translateX(100%);
+  width: 24px;
+  height: 24px;
+}
+.tab-block__btn--active svg {
+  transform: rotate(180deg);
+}
+
+.tab-block__column:only-child .tab-block__btn {
+  display: none;
 }
 
 .cost-list {
@@ -2270,6 +2294,9 @@ body {
     width: 100%;
     font-size: 18px;
   }
+  .tab-block__desc {
+    color: #5b7289;
+  }
 }
 /* Mobile */
 @media (max-width: 767px) {
@@ -2448,15 +2475,43 @@ body {
     -webkit-clip-path: path("M80 0H220V188C220 232.183 184.183 268 140 268H0V80C0 35.8172 35.8172 0 80 0Z");
             clip-path: path("M80 0H220V188C220 232.183 184.183 268 140 268H0V80C0 35.8172 35.8172 0 80 0Z");
   }
+  .program__header {
+    margin-bottom: 32px;
+  }
+  .tab__nav {
+    margin-bottom: 42px;
+  }
+  .tab__btn {
+    padding-bottom: 8px;
+    font-size: 24px;
+  }
   .tab-block__row {
     flex-wrap: wrap;
   }
-  .tab-block__column:nth-child(odd) {
+  .tab-block__row:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .tab-block__column:first-child {
     margin-right: 0;
     width: 288px;
   }
-  .tab-block__column:last-child {
+  .tab-block__column:not(:only-child):last-child {
+    display: none;
     margin-top: 12px;
     width: 100%;
+  }
+  .tab-block__time {
+    margin-bottom: 12px;
+  }
+  .tab-block__line {
+    padding-left: 28px;
+  }
+  .tab-block__line::before {
+    top: 10px;
+    width: 8px;
+    height: 8px;
+  }
+  .tab-block__btn {
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */
