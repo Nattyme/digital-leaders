@@ -664,6 +664,7 @@ body {
 
 .tab-block__column:only-child .tab-block__btn {
   display: none;
+  pointer-events: none;
 }
 
 .cost-list {
@@ -2496,7 +2497,6 @@ body {
     width: 288px;
   }
   .tab-block__column:not(:only-child):last-child {
-    display: none;
     margin-top: 12px;
     width: 100%;
   }
@@ -2513,5 +2513,8 @@ body {
   }
   .tab-block__btn {
     display: flex;
+  }
+  .tab-block__column--hidden {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

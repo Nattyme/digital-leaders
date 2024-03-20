@@ -86,13 +86,12 @@
     width: 24px;
     height: 24px;
 
-    &--active {
-        svg {
-            transform: rotate(180deg);
-        }
+    &--active svg {
+        transform: rotate(180deg);
     }
 }
 
 .tab-block__column:only-child .tab-block__btn {
     display: none;
+    pointer-events: none;
 }

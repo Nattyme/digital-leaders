@@ -246,7 +246,6 @@
         }
 
         &:not(:only-child):last-child {
-            display: none;
             margin-top: 12px;
             width: 100%;
         }
@@ -268,5 +267,9 @@
 
     .tab-block__btn {
         display: flex;
+    }
+
+    .tab-block__column--hidden {
+        display: none;
     }
 }
