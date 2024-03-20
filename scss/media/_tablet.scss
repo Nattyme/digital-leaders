@@ -270,7 +270,7 @@
     }
 
     .slider-speakers__item {
-        width: 220px;
+        max-width: 220px;
         height: 408px;
 
         &:nth-child(even) {
@@ -371,9 +371,60 @@
 
     .slider-mini-how-was__item {
         padding-bottom: 8px;
-        position: relative;
-        width: 100px !important;
         height: 64px;
     }
 
+    .reviews {
+        padding-top: 60px;
+        padding-bottom: 64px;
+    }
+
+    .reviews .decor-polygon {
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .reviews__header {
+        margin-bottom: 40px;
+    }
+
+    .slider-reviews {
+        width: 100%;
+        height: 592px;
+    }
+
+    .slider-reviews__item {
+        padding: 24px 24px;
+
+        width: 320px;
+        height: 440px;
+    }
+
+    .slider-reviews__img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .slider-reviews__desc {
+        padding-left: 0;
+    }
+
+    .slider-reviews__name {
+        font-weight: 600;
+    }
+
+    .slider-reviews__date {
+        font-size: 15px;
+        line-height: 1.6; //24px
+    }
+
+    .slider-reviews__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 16px;
+    }
 }

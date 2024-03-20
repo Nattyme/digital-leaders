@@ -97,16 +97,64 @@ $(document).ready(function () {
 
     /* swiper sliders*/
     if (document.querySelectorAll('.swiper').length > 0) {
-        const swiperMiniHowWas = new Swiper('#slider-mini-how-was', {
+        const swiperSpeakers = new Swiper('#slider-speakers', {
             // Optional parameters
+            direction: 'horizontal',
+            speed: 1800,
+            grabCursor: true,
+        
+            // Navigation arrows
+            navigation: {
+            nextEl: '#slider-speakers-next',
+            prevEl: '#slider-speakers-prev',
+            },
+
+            pagination: {
+                el: '.slider-speakers__pagination',
+                // type: 'bullets',
+                clickable: true,
+            },
+            breakpoints: {
+                //when window width is >= 360px
+                360: {
+                    slidesPerView: 'auto',
+                    slidesPerGroup: 1,
+                    spaceBetween: 24
+                },
+            
+                //when window width is >= 768px
+                768: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 1,
+                    spaceBetween: 40
+                },
+
+                //when window width is >= 1200px
+                1200: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 72
+                }
+            }
+        });
+
+        const swiperMiniHowWas = new Swiper('#slider-mini-how-was', {
             spaceBetween: 16,
-            slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                360: {
+                    slidesPerView: 3
+                },
+
+                768: {
+                    slidesPerView: 4
+                }
+            }
             });
 
+
         const swiperHowWas = new Swiper('#slider-how-was', {
-            // Optional parameters
             direction: 'horizontal',
             spaceBetween: 160,
             speed: 1200,
@@ -114,11 +162,10 @@ $(document).ready(function () {
             grabCursor: true,
             hashNavigation: {
                 watchState: true,
-            },
-            // loop: true,
+                },
             thumbs: {
                 swiper: swiperMiniHowWas,
-            },
+                },
         
             // Navigation arrows
             navigation: {
@@ -131,10 +178,7 @@ $(document).ready(function () {
         const swiperReviews = new Swiper('#slider-reviews', {
             // Optional parameters
             direction: 'horizontal',
-            spaceBetween: 32,
             speed: 2500,
-            slidesPerView: 2,
-            slidesPerGroup: 2,
             grabCursor: true,
         
             // Navigation arrows
@@ -148,6 +192,18 @@ $(document).ready(function () {
                 // type: 'bullets',
                 clickable: true,
             },
+
+            breakpoints: {
+                768: {
+                    spaceBetween: 24,
+                    slidesPerView: 2,
+                    slidesPerGroup: 2
+                },
+
+                1440: {
+                    spaceBetween: 32
+                }
+            }
         
         });
 
@@ -193,46 +249,6 @@ $(document).ready(function () {
                 type: "fraction",
             },
         
-        });
-
-        const swiperSpeakers = new Swiper('#slider-speakers', {
-            // Optional parameters
-            direction: 'horizontal',
-            speed: 1800,
-            grabCursor: true,
-        
-            // Navigation arrows
-            navigation: {
-            nextEl: '#slider-speakers-next',
-            prevEl: '#slider-speakers-prev',
-            },
-
-            pagination: {
-                el: '.slider-speakers__pagination',
-                // type: 'bullets',
-                clickable: true,
-            },
-            breakpoints: {
-                //when window width is >= 360px
-                360: {
-                    slidesPerView: 'auto',
-                    slidesPerGroup: 1,
-                    spaceBetween: 24
-                },
-            
-                //when window width is >= 768px
-                768: {
-                    slidesPerGroup: 1,
-                    spaceBetween: 40
-                },
-
-                //when window width is >= 1200px
-                1200: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4,
-                    spaceBetween: 72
-                }
-            }
         });
     }
     /* swiper sliders */

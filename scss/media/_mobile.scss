@@ -273,4 +273,26 @@
     .tab-block__column--hidden {
         display: none;
     }
+
+    .how-was {
+        padding-top: 56px;
+        padding-bottom: 28px;
+    }
+
+    .how-was__header {
+        margin-bottom: 24px;
+    }
+
+    .slider-how-was {
+        height: 180px;
+    }
+
+    .slider-mini-how-was .swiper-wrapper {
+        justify-content: unset;
+    }
+
+    .slider-how-was__img {
+        width: 320px;
+        height: 180px;
+    }
 }
