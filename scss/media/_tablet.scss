@@ -431,4 +431,23 @@
         line-height: 1.6; //24px
     }
 
+    .press-about {
+        padding-top: 64px;
+        padding-bottom: 46px;
+    }
+
+    .press-about__header {
+        margin-bottom: 40px;
+    }
+
+    .slider-press-about {
+        height: 364px;
+    }
+
+    .slider-press-about__item {
+        padding-left: 0;
+        padding-right: 0;
+        width: 320px;
+    }
+
 }
