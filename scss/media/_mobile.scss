@@ -217,4 +217,21 @@
             clip-path: path("M80 0H220V188C220 232.183 184.183 268 140 268H0V80C0 35.8172 35.8172 0 80 0Z");
         }
     }
+
+    .tab-block__row {
+        flex-wrap: wrap;
+    }
+
+    .tab-block__column {
+        &:nth-child(odd) {
+            margin-right: 0;
+            width: 288px;
+        }
+       
+        &:last-child {
+            // display: none;
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
 }
