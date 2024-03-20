@@ -87,7 +87,11 @@
     height: 24px;
 
     &--active svg {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
+    }
+
+    svg {
+        transition: transform 0.2s ease;
     }
 }
 

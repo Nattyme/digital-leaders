@@ -2,12 +2,6 @@
     position: relative;
     width: 1120px;
     height: 600px; //688
-
-    &:hover {
-        .slider-how-was__img::after {
-            opacity: 1;
-        }
-    }
 }
 
 .slider-mini-how-was {
@@ -51,9 +45,6 @@
         background-position: center center; // x y
         background-size: contain;
         background-repeat: no-repeat;
-
-        opacity: 0;
-        transition: opacity 0.2s ease-in;
     }
 }
 
@@ -124,4 +115,3 @@
         overflow: hidden;
     }
 }
-

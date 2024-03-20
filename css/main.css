@@ -659,7 +659,10 @@ body {
   height: 24px;
 }
 .tab-block__btn--active svg {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+}
+.tab-block__btn svg {
+  transition: transform 0.2s ease;
 }
 
 .tab-block__column:only-child .tab-block__btn {
@@ -1002,9 +1005,6 @@ body {
   width: 1120px;
   height: 600px;
 }
-.slider-how-was:hover .slider-how-was__img::after {
-  opacity: 1;
-}
 
 .slider-mini-how-was {
   margin-top: 24px;
@@ -1039,8 +1039,6 @@ body {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 0.2s ease-in;
 }
 
 .slider-how-was__text {
@@ -1780,9 +1778,12 @@ body {
   margin-top: 64px;
 }
 
-.how-was__header {
+.how-was {
   padding-top: 64px;
   padding-bottom: 100px;
+}
+
+.how-was__header {
   margin-bottom: 64px;
   text-align: center;
 }
@@ -2048,6 +2049,9 @@ body {
     font-size: 15px;
     line-height: 48px;
   }
+  .slider-arrow {
+    display: none;
+  }
   .header-top {
     padding-top: 12px;
   }
@@ -2269,6 +2273,10 @@ body {
   .slider-speakers__title {
     padding-right: 10px;
   }
+  .how-was__header .grad-border {
+    padding-bottom: 7px;
+    background-size: 100% 10px;
+  }
   .slider-speakers__pagination {
     display: none;
   }
@@ -2297,6 +2305,37 @@ body {
   }
   .tab-block__desc {
     color: #5b7289;
+  }
+  .how-was {
+    padding-bottom: 60px;
+  }
+  .how-was__header {
+    margin-bottom: 40px;
+  }
+  .slider-how-was {
+    width: 100%;
+    height: 366px;
+  }
+  .slider-how-was__img {
+    width: 688px;
+    height: 366px;
+    border-radius: 16px;
+  }
+  .slider-how-was__img:after {
+    width: 96px;
+    height: 96px;
+  }
+  .slider-how-was__text {
+    display: none;
+  }
+  .slider-mini-how-was {
+    height: 64px;
+  }
+  .slider-mini-how-was__item {
+    padding-bottom: 8px;
+    position: relative;
+    width: 100px !important;
+    height: 64px;
   }
 }
 /* Mobile */
@@ -2495,6 +2534,7 @@ body {
   .tab-block__column:first-child {
     margin-right: 0;
     width: 288px;
+    cursor: pointer;
   }
   .tab-block__column:not(:only-child):last-child {
     margin-top: 12px;
