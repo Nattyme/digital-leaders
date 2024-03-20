@@ -7,27 +7,39 @@
 }
 
 .tab-block__row {
-    display: grid;
-    column-gap: 32px;
-    grid-template-columns: 160px 352px 1fr;
+    display: flex;
+    justify-content: space-between;
 
     &:not(:last-child) {
         margin-bottom: 56px;
     }
 }
 
+.tab-block__column {
+    width: 50%;
+    // width: 544px;
+
+    &:nth-child(odd) {
+        margin-right: 32px;
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
 .tab-block__time {
-    color: #2a4056;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.33; //32px
 }
 
 .tab-block__title {
+    // width: 352px;
+    width: 64.8%;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.33; //32px
-    color: #2a4056;
 }
 
 .tab-block__line {
@@ -35,7 +47,6 @@
     padding-left: 32px;
 
     font-weight: 300;
-    color: #2a4056;
 
     &:not(:last-child) {
         margin-bottom: 16px;
