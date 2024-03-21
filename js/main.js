@@ -224,6 +224,17 @@ $(document).ready(function () {
             slidesPerView: 3,
             slidesPerGroup: 3,
             grabCursor: true,
+            breakpoints: {
+                360: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                },
+
+                768: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                }
+            },
         
             // Navigation arrows
             navigation: {

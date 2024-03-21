@@ -1187,7 +1187,6 @@ body {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
-  color: #2a4056;
   text-decoration: underline;
   overflow: hidden;
 }
@@ -2660,6 +2659,31 @@ body {
     line-height: 1.6;
   }
   .slider-reviews__pagination {
+    display: none;
+  }
+  .press-about {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .press-about__header {
+    margin-bottom: 24px;
+  }
+  .slider-press-about {
+    height: 176px;
+  }
+  .slider-press-about__item {
+    width: 296px;
+    max-height: 176px;
+  }
+  .slider-press-about__title {
+    margin-bottom: 12px;
+    max-height: 24px;
+  }
+  .slider-press-about__text {
+    margin-bottom: 12px;
+    height: 96px;
+  }
+  .slider-press-about__pagination {
     display: none;
   }
 }/*# sourceMappingURL=main.css.map */
