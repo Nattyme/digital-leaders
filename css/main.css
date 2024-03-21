@@ -1228,8 +1228,8 @@ body {
 .slider-press-about__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .slider-press-about__pagination {
@@ -2677,13 +2677,23 @@ body {
   }
   .slider-press-about__title {
     margin-bottom: 12px;
+    font-size: 18px;
     max-height: 24px;
   }
   .slider-press-about__text {
     margin-bottom: 12px;
     height: 96px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .slider-press-about__text p {
+    -webkit-line-clamp: 5;
   }
   .slider-press-about__pagination {
     display: none;
+  }
+  .slider-press-about__name {
+    font-size: 15px;
+    line-height: 1.6;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -361,15 +361,27 @@
     .slider-press-about__title {
         margin-bottom: 12px;
 
+        font-size: 18px;
         max-height: 24px;
     }
 
     .slider-press-about__text {
         margin-bottom: 12px;
         height: 96px;
+        font-size: 16px;
+        line-height: 1.5;
+
+        p {
+            -webkit-line-clamp: 5;
+        }
     }
 
     .slider-press-about__pagination {
         display: none;
+    }
+
+    .slider-press-about__name {
+        font-size: 15px;
+        line-height: 1.6;
     }
 }
