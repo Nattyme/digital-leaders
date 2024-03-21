@@ -450,4 +450,36 @@
         width: 320px;
     }
 
+    .partners {
+        padding-top: 46px;
+        padding-bottom: 60px;
+    }
+    
+    .partners__header {
+        margin-bottom: 32px;
+    }
+
+    .partners__header .grad-border {
+        padding-bottom: 7px;
+        background-size: 100% 10px;
+    }
+       
+    .partners__row + .partners__row {
+        margin-top: 32px;
+    }
+    
+    .partners__list li {
+        padding: 18px 18px;
+        width: 148px;
+        height: 93px;
+
+        img {
+            height: 53px;
+        }
+    }
+    
+    .partners__btn {
+        margin-top: 32px;
+    }
+
 }

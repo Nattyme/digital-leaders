@@ -226,8 +226,9 @@ $(document).ready(function () {
             grabCursor: true,
             breakpoints: {
                 360: {
-                    slidesPerView: 1,
+                    slidesPerView: 'auto',
                     slidesPerGroup: 1,
+                    spaceBetween: 24,
                 },
 
                 768: {
