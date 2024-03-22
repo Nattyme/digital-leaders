@@ -1,7 +1,8 @@
 .slider-place {
     position: relative;
+    max-width: 1440px;
     height: 1047px;
-    clip-path: polygon(0 10%, 100% 0, 100% 75%, 0 85%);
+    clip-path: polygon(0 8vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
 }
 
 .slider-place__content {
@@ -50,7 +51,7 @@
     background-color: #fff;
 }
 
-.slider__controls {
+.slider-place__controls {
     z-index: 2;
     position: absolute;
     width: 274px;

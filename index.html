@@ -214,7 +214,7 @@
         </div>
     </section>
 
-    <section class="speakers none">
+    <section class="speakers clip-section clip-section--dark">
 
         <div class="speakers__tooltip">
             <svg width="100%" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,10 +241,6 @@
             </defs>
             </svg>
         </div>
-            
-        <!-- clip bg -->
-        <div class="clip-section clip-section--dark"></div>
-        <!-- clip bg -->
 
         <div class="container">
             <!-- badge -->
@@ -830,132 +826,129 @@
         </div>
     </section>
 
-    <section class="cost decor-polygon none">
+    <section class="cost clip-section clip-section--light">
+            <div class="container ">
 
-        <!-- clip bg -->
-        <div class="clip-section"></div>
-        <!--// clip bg -->
-        
-        <div class="container">
+                <!-- header -->
+                <div class="cost__header">
+                    <h2 class="h2 grad-border">Стоимость</h2>
+                </div>
+                <!--// header -->
 
-            <!-- header -->
-            <div class="cost__header">
-                <h2 class="h2 grad-border">Стоимость</h2>
-            </div>
-            <!--// header -->
+                <div class="cost__desc">
+                    <p class="cost__text">Стоимость участия в форуме станет известна после начала регистрации. Подпишитесь на новости форума, чтобы не пропустить важную информацию.</p>
+                    <p class="cost__text cost__text--none">Чем раньше регистрируетесь, тем дешевле участие:</p>
+                </div>
 
-            <div class="cost__desc">
-                <p class="cost__text">Стоимость участия в форуме станет известна после начала регистрации. Подпишитесь на новости форума, чтобы не пропустить важную информацию.</p>
-                <p class="cost__text cost__text--none">Чем раньше регистрируетесь, тем дешевле участие:</p>
-            </div>
-
-            <!-- timer -->
-            <div class="cost__timer">
-                <div class="timer timer--outline">
-                    <div class="timer-count">
-                        <div class="timer-count__text">
-                            <p>До начала регистрации:</p>
-                        </div>
-    
-                        <!-- counter -->
-                        <div class="countdown" id="countdown">
-                            <ul class="time" data-countdown="2024-09-20 00:00:00">
-                                <li>
-                                    <span class="time__value" data-days="00">00</span>
-                                    <sapn class="time__unit">д</sapn>
-                                </li>
-                                <li>
-                                    <span class="time__value" data-hours="00">00</span>
-                                    <span class="time__unit">ч</span>
-                                </li>
-                                <li>
-                                    <span class="time__value" data-minutes="00">00</span>
-                                    <span class="time__unit">мин</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <!--// counter -->
-                    </div>
-                    <div class="timer__form">
-    
-                        <!-- form -->
-                        <div class="form">
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Электронная почта">
-                                <input class="btn-solid btn-solid--grad" type="button" value="Подписаться на новости">
+                <!-- timer -->
+                <div class="cost__timer">
+                    <div class="timer timer--outline">
+                        <div class="timer-count">
+                            <div class="timer-count__text">
+                                <p>До начала регистрации:</p>
                             </div>
-                            
+        
+                            <!-- counter -->
+                            <div class="countdown" id="countdown">
+                                <ul class="time" data-countdown="2024-09-20 00:00:00">
+                                    <li>
+                                        <span class="time__value" data-days="00">00</span>
+                                        <sapn class="time__unit">д</sapn>
+                                    </li>
+                                    <li>
+                                        <span class="time__value" data-hours="00">00</span>
+                                        <span class="time__unit">ч</span>
+                                    </li>
+                                    <li>
+                                        <span class="time__value" data-minutes="00">00</span>
+                                        <span class="time__unit">мин</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--// counter -->
                         </div>
-                        <!--// form -->
+                        <div class="timer__form">
+        
+                            <!-- form -->
+                            <div class="form">
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Электронная почта">
+                                    <input class="btn-solid btn-solid--grad" type="button" value="Подписаться на новости">
+                                </div>
+                                
+                            </div>
+                            <!--// form -->
+                        </div>
+                    </div> 
+                
+                </div>
+                <!--// timer -->
+
+                <div class="cost-list-wrapper cost-list-wrapper--none">
+                    <!-- row -->
+                    <ul class="cost-list">
+                        <li class="cost-list__item cost-list__item--active">
+                            <p class="cost-list__date">до 31 мая</p>
+                            <p class="cost-list__value">140 000 &#8381;</p>
+                        </li>
+
+                        <li class="cost-list__item cost-list__item--active">
+                            <p class="cost-list__date">1 июня &mdash; 31 июля</p>
+                            <p class="cost-list__value cost-list__value--active">145 000 &#8381;</p>
+                        </li>
+
+                        <li class="cost-list__item cost-list__item--active">
+                            <p class="cost-list__date">1 &mdash; 31 августа</p>
+                            <p class="cost-list__value">150 000 &#8381;</p>
+                        </li>
+                    </ul>
+                    <!-- row -->
+                </div>
+
+                <div class="cost-include">
+                    <!-- title -->
+                    <p class="cost-include__title">В стоимость участия будет входить:</p>
+                    <!--// title -->
+
+                    <!-- flex row -->
+                    <ul class="cost-include__list">
+                        <!-- item -->
+                        <li class="cost-include__item">Два рабочих дня форума</li>
+                        <!--// item -->
+
+                        <!-- item -->
+                        <li class="cost-include__item">Кофе-брейки и обеды</li>
+                        <!--// item -->
+                        <!-- item -->
+                        <li class="cost-include__item">Приветственный фуршет</li>
+                        <!--// item -->
+
+                        <!-- item -->
+                        <li class="cost-include__item">Экскурсии</li>
+                        <!--// item -->
+
+                        <!-- item -->
+                        <li class="cost-include__item">Развлекательные программы</li>
+                        <!--// item -->
+
+                        <!-- item -->
+                        <li class="cost-include__item">Гала-ужины</li>
+                        <!--// item -->
+                    </ul>
+                    <!--// flex row -->
+
+                    <!-- warning -->
+                    <div class="const__warning">
+                        <p>Перелёт и проживание участники организуют и оплачивают самостоятельно</p>
                     </div>
-                </div> 
-               
-            </div>
-            <!--// timer -->
+                    <!-- warning -->
+                </div>
 
-            <div class="cost-list-wrapper cost-list-wrapper--none">
-                <!-- row -->
-                <ul class="cost-list">
-                    <li class="cost-list__item cost-list__item--active">
-                        <p class="cost-list__date">до 31 мая</p>
-                        <p class="cost-list__value">140 000 &#8381;</p>
-                    </li>
-
-                    <li class="cost-list__item cost-list__item--active">
-                        <p class="cost-list__date">1 июня &mdash; 31 июля</p>
-                        <p class="cost-list__value cost-list__value--active">145 000 &#8381;</p>
-                    </li>
-
-                    <li class="cost-list__item cost-list__item--active">
-                        <p class="cost-list__date">1 &mdash; 31 августа</p>
-                        <p class="cost-list__value">150 000 &#8381;</p>
-                    </li>
-                </ul>
-                <!-- row -->
+                <div class="cost__btn">
+                    <button class="btn-solid">Зарегистрироваться</button>
+                </div>
             </div>
 
-            <div class="cost-include">
-                <!-- title -->
-                <p class="cost-include__title">В стоимость участия будет входить:</p>
-                <!--// title -->
-
-                <!-- flex row -->
-                <ul class="cost-include__list">
-                    <!-- item -->
-                    <li class="cost-include__item">Два рабочих дня форума</li>
-                     <!--// item -->
-
-                    <!-- item -->
-                    <li class="cost-include__item">Кофе-брейки и обеды</li>
-                    <!--// item -->
-                    <!-- item -->
-                    <li class="cost-include__item">Приветственный фуршет</li>
-                    <!--// item -->
-
-                    <!-- item -->
-                    <li class="cost-include__item">Экскурсии</li>
-                     <!--// item -->
-
-                    <!-- item -->
-                    <li class="cost-include__item">Развлекательные программы</li>
-                    <!--// item -->
-
-                    <!-- item -->
-                    <li class="cost-include__item">Гала-ужины</li>
-                    <!--// item -->
-                </ul>
-                 <!--// flex row -->
-
-                 <!-- warning -->
-                 <div class="const__warning">
-                    <p>Перелёт и проживание участники организуют и оплачивают самостоятельно</p>
-                 </div>
-                 <!-- warning -->
-            </div>
-
-            <div class="cost__btn">
-                <button class="btn-solid">Зарегистрироваться</button>
-            </div>
         </div>
 
     </section>
@@ -1735,7 +1728,7 @@
         </div>
     </section>
 
-    <section class="partners">
+    <section class="partners none">
         <div class="container">
 
             <!-- header -->
@@ -1782,7 +1775,7 @@
         </div>
     </section>
 
-    <section class="place none" id="place">
+    <section class="place" id="place">
 
             <!-- header -->
             <div class="place__header">
@@ -1832,7 +1825,7 @@
                 </div>
             
 
-                <div class="slider__controls">
+                <div class="slider-place__controls">
 
                     <!-- swiper controls -->
                     <button class="slider-arrow slider-arrow__prev" id="slider-place-prev">
