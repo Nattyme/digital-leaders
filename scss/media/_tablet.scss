@@ -546,4 +546,20 @@
         bottom: 154px;
     }
 
+    .slider-place__badge {
+        // z-index: 1;
+        // position: absolute;
+        // bottom: 153px;
+        // left: 50%;
+        // transform: translate(-50%, 100%);
+    }
+
+    .slider-badge {
+        width: 688px;
+        height: 531px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
 }

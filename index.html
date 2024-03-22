@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./libs/swiper-11.0.7/package/swiper-bundle.min.css">
      <!-- swiper styles -->
 
+    <!-- youtubelightbox style -->
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+    <!--// youtubelightbox style -->
+
     <!-- custom style -->
     <link rel="stylesheet" href="./css/main.css">
     <!--// custom style -->
@@ -214,7 +218,7 @@
         </div>
     </section>
 
-    <section class="speakers clip-section clip-section--dark">
+    <section class="speakers clip-section clip-section--dark none">
 
         <div class="speakers__tooltip">
             <svg width="100%" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -826,7 +830,7 @@
         </div>
     </section>
 
-    <section class="cost clip-section clip-section--light">
+    <section class="cost clip-section clip-section--light none">
             <div class="container ">
 
                 <!-- header -->
@@ -953,7 +957,7 @@
 
     </section>
 
-    <section class="how-was none">
+    <section class="how-was">
         <div class="container">
 
             <!-- header -->
@@ -980,7 +984,7 @@
                     <!-- Slides -->
 
                         <!-- slide -->
-                        <a data-hash="slide1" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y">
+                        <a data-hash="slide1"  class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y" data-youtubelightbox target="_blank">
                             <div class="slider-how-was__img">
                                 <img src="./img/sliders/how-it-was/slider-01.jpg" alt="img">
                             </div>
@@ -991,7 +995,7 @@
                         <!--// slide -->
 
                         <!-- slide -->
-                        <a data-hash="slide2" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=E6K290u3rKo">
+                        <a data-hash="slide2" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=E6K290u3rKo" data-youtubelightbox target="_blank">
                             <div class="slider-how-was__img">
                                 <img src="./img/sliders/how-it-was/slider-02.jpg" alt="img">
                             </div>
@@ -1002,7 +1006,7 @@
                         <!--// slide -->
 
                         <!-- slide -->
-                        <a data-hash="slide3" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y">
+                        <a data-hash="slide3" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y" data-youtubelightbox target="_blank">
                             <div class="slider-how-was__img">
                                 <img src="./img/sliders/how-it-was/slider-03.jpg" alt="img">
                             </div>
@@ -1013,7 +1017,7 @@
                         <!--// slide -->
 
                         <!-- slide -->
-                        <a data-hash="slide4" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y">
+                        <a data-hash="slide4" class="swiper-slide slider-how-was__item" href="https://www.youtube.com/watch?v=rKsEvX2bo-Y" data-youtubelightbox target="_blank">
                             <div class="slider-how-was__img">
                             <img src="./img/sliders/how-it-was/slider-04.jpg" alt="img">
                             </div>
@@ -1859,7 +1863,7 @@
                         <a href="https://yandex.ru/maps/-/CDF6yFn1" class="slider-badge__link-map grad-text">Показать на карте</a>
                     </div>
 
-                    <a class="badge-video" href="https://www.youtube.com/watch?v=D0AdmiHQ9BU">
+                    <a class="badge-video" href="https://www.youtube.com/watch?v=D0AdmiHQ9BU" data-youtubelightbox target="_blank">
                         <div class="badge-video__title">
                             <p>Видео-презентация отеля «Манжерок»</p>
                         </div>
@@ -1870,7 +1874,7 @@
                     </a>
                            
                 </div>
-                </div>
+            </div>
             <!--// badge -->
 
             </div>
@@ -1961,7 +1965,17 @@
     <!--// footer -->
 
 
-    <!--*** libs ***-->
+    <!--=== Libs ===-->
+    <!-- youtube lightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
     <!-- jquery -->
     <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
 
