@@ -2,12 +2,10 @@
     margin-top: -300px;
     padding-top: 459px;
     padding-bottom: 80px;
-    background-color: #999;
-    background-image: url('./../img/footer-bg/img-bg.svg');
-    background-position: center center; // x y
-    background-size: cover;
-    background-repeat: no-repeat;
+}
 
+.footer.clip-section::after {
+    clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0 100%);
 }
 
 .footer__row {
