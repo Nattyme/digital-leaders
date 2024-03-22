@@ -22,9 +22,13 @@
         opacity: 0;
     }
 
-    .slider-place &.swiper-button-disabled {
-        opacity: 0.4;
+    img {
+        object-fit: contain;
     }
+}
+
+.slider-place__content .slider-arrow.swiper-button-disabled {
+    opacity: 0.4;
 }
 
 .slider-arrow__prev {

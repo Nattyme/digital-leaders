@@ -491,7 +491,7 @@
     }
 
     .place {
-        padding-top: 106px;
+        padding-top: 108px;
     }
 
     .place__header {
@@ -508,15 +508,10 @@
         clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
     }
 
-    .slider-place .slider-arrow {
+    .slider-place__content .slider-arrow {
         display: flex;
         width: 48px;
         height: 48px;
-
-        img {
-            width: 10px;
-            height: 20px;
-        }
     }
 
     .slider-place__item {
@@ -558,9 +553,8 @@
     }
 
     .slider-badge__text {
-        padding-top: 32px;
-        padding-left: 32px;
-        max-height: 120px;
+        padding: 32px 32px 0;
+        max-height: 128px;
     }
 
     .slider-badge__desc {
@@ -587,7 +581,6 @@
 
     .badge-video {
         top: unset;
-        right: 21px;
         left: 0;
         bottom: -1px;
         width: 101%;
@@ -598,6 +591,4 @@
         width: 100%;
         height: 100%;
     }
-
-
 }
