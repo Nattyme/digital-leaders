@@ -26,6 +26,27 @@
         width: 688px;
     }
 
+    .form-subscribe {
+        width: 328px;
+        height: 104px;
+    }
+
+    .form-subscribe__input {
+        margin-bottom: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 44px;
+        
+        border-radius: 12px;
+        line-height: 44px;
+    }
+
+    .form-subscribe .btn-solid {
+        width: 100%;
+        padding-left: 45.5px;
+        padding-right: 45.5px;
+    }
+
     .header-top {
         padding-top: 12px;
     }
@@ -606,6 +627,7 @@
         clip-path: unset;
     }
 
+    
     .contacts__header {
         margin-bottom: 40px;
         text-align: center;
@@ -623,6 +645,28 @@
 
     .contacts__column+.contacts__column {
         margin-left: 32px;
+    }
+
+    .contacts__email-list {
+        row-gap: 24px;
+    }
+
+    .contacts__email-list li {
+        font-size: 15px;
+        line-height: 1.6;
+    
+        a {
+            font-size: 18px;
+            line-height: 1.55;
+        }
+    }
+
+    .contacts__phone {
+        margin-bottom: 32px;
+
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.11;
     }
 
     .footer__row {

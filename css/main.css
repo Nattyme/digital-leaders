@@ -1945,9 +1945,22 @@ body {
 
 .contacts__email-list {
   display: flex;
-  gap: 32px;
+  row-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   flex-wrap: wrap;
   color: #fff;
+}
+
+.contacts__email-list li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+.contacts__email-list li a {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
 }
 
 .contacts__phone {
@@ -2080,6 +2093,23 @@ body {
   }
   .slider-badge__text {
     width: 688px;
+  }
+  .form-subscribe {
+    width: 328px;
+    height: 104px;
+  }
+  .form-subscribe__input {
+    margin-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 44px;
+    border-radius: 12px;
+    line-height: 44px;
+  }
+  .form-subscribe .btn-solid {
+    width: 100%;
+    padding-left: 45.5px;
+    padding-right: 45.5px;
   }
   .header-top {
     padding-top: 12px;
@@ -2549,6 +2579,23 @@ body {
   }
   .contacts__column + .contacts__column {
     margin-left: 32px;
+  }
+  .contacts__email-list {
+    row-gap: 24px;
+  }
+  .contacts__email-list li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .contacts__email-list li a {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .contacts__phone {
+    margin-bottom: 32px;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.11;
   }
   .footer__row {
     padding-top: 40px;
