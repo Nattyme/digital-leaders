@@ -14,11 +14,6 @@
 
     display: flex;
     justify-content: space-between;
-
-    &>* {
-        flex-shrink: 0;
-    }
-
 }
 
 .footer__column {

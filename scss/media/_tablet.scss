@@ -674,12 +674,17 @@
         padding-bottom: 68px;
     }
 
-    .footer__column,
-    .footer__column:first-child {
+    .footer__column:first-child,
+    .footer__column:last-child {
         width: 50%;
     }
 
-    .footer__column+.footer__column {
+    .footer__column + .footer__column {
         margin-left: 32px;
     }
+
+    .footer__policy li + li {
+        margin-top: 16px;
+    }
+
 }
