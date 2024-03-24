@@ -48,8 +48,7 @@
 
     font-size: 24px;
     font-weight: 300;
-    line-height: 32px;
-    color: rgb(42, 64, 86);
+    line-height: 1.33;
 }
 
 .cost__text--none {
@@ -78,8 +77,7 @@
 
     font-size: 24px;
     font-weight: 600;
-    line-height: 32px;
-    color: #2a4056;
+    line-height: 1.33;
 }
 
 .cost-include__list {
@@ -113,9 +111,8 @@
     text-align: left;
     font-size: 15px;
     font-weight: 300;
-    line-height: 20px;
-    color: #2a4056;
-
+    line-height: 1.33;
+    
     &::before {
         position: absolute;
         content: url("./../../img/icons/warning.svg");

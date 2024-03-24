@@ -1604,6 +1604,7 @@ body {
   position: relative;
   padding-top: 187px;
   padding-bottom: 185px;
+  min-height: 1032px;
 }
 
 .speakers__tooltip {
@@ -1725,8 +1726,7 @@ body {
   padding-left: 76px;
   font-size: 24px;
   font-weight: 300;
-  line-height: 32px;
-  color: rgb(42, 64, 86);
+  line-height: 1.33;
 }
 
 .cost__text--none {
@@ -1752,8 +1752,7 @@ body {
   margin-bottom: 24px;
   font-size: 24px;
   font-weight: 600;
-  line-height: 32px;
-  color: #2a4056;
+  line-height: 1.33;
 }
 
 .cost-include__list {
@@ -1782,8 +1781,7 @@ body {
   text-align: left;
   font-size: 15px;
   font-weight: 300;
-  line-height: 20px;
-  color: #2a4056;
+  line-height: 1.33;
 }
 .const__warning::before {
   position: absolute;
@@ -2361,6 +2359,46 @@ body {
   }
   .tab-block__desc {
     color: #5b7289;
+  }
+  .cost {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    height: 968px;
+  }
+  .cost::after {
+    -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 82%, 0 100%);
+            clip-path: polygon(0% 15%, 100% 0%, 100% 82%, 0 100%);
+  }
+  .cost__header {
+    margin-bottom: 40px;
+  }
+  .cost__desc {
+    margin-bottom: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .cost__timer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .cost__timer--none {
+    display: none;
+  }
+  .cost-include__title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.77;
+  }
+  .cost-include__list {
+    margin-bottom: 40px;
+    max-width: 688px;
+  }
+  .const__warning {
+    max-width: 688px;
+  }
+  .cost__btn {
+    display: none;
+    margin-top: 64px;
   }
   .how-was {
     padding-bottom: 60px;
