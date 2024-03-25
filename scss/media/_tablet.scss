@@ -36,7 +36,7 @@
         padding-left: 16px;
         padding-right: 16px;
         height: 44px;
-        
+
         border-radius: 12px;
         line-height: 44px;
     }
@@ -122,11 +122,7 @@
     }
 
     .timer-count {
-        padding-bottom: 20px;
-        width: 100%;
-        flex-direction: column;
-        justify-content: unset;
-        align-items: unset;
+        text-align: left;
     }
 
     .timer-count__text {
@@ -141,6 +137,7 @@
     }
 
     .time {
+        font-size: 34px;
         width: 100%;
         justify-content: left;
     }
@@ -378,46 +375,51 @@
             clip-path: polygon(0% 15%, 100% 0%, 100% 82%, 0 100%);
         }
     }
-    
+
     .cost__header {
         margin-bottom: 40px;
     }
-    
+
     .cost__desc {
         margin-bottom: 40px;
         padding-right: 0;
         padding-left: 0;
+        text-align: left;
     }
-    
+
     .cost__timer {
         margin-top: 40px;
         margin-bottom: 40px;
-    
+
         &--none {
             display: none;
         }
     }
-    
-    .cost-list-wrapper {
 
+    .cost-include__list {
+        justify-content: left;
     }
-    
+
+    .cost-include {
+        text-align: left;
+    }
+
     .cost-include__title {
         margin-bottom: 16px;
-    
+
         font-size: 18px;
         line-height: 1.77;
     }
-    
+
     .cost-include__list {
         margin-bottom: 40px;
         max-width: 688px;
     }
-    
+
     .const__warning {
         max-width: 688px;
     }
-    
+
     .cost__btn {
         display: none;
         margin-top: 64px;
@@ -681,7 +683,7 @@
         clip-path: unset;
     }
 
-    
+
     .contacts__header {
         margin-bottom: 40px;
         text-align: center;
@@ -708,7 +710,7 @@
     .contacts__email-list li {
         font-size: 15px;
         line-height: 1.6;
-    
+
         .email {
             font-size: 18px;
             line-height: 1.55;
@@ -733,11 +735,11 @@
         width: 50%;
     }
 
-    .footer__column + .footer__column {
+    .footer__column+.footer__column {
         margin-left: 32px;
     }
 
-    .footer__policy li + li {
+    .footer__policy li+li {
         margin-top: 16px;
     }
 

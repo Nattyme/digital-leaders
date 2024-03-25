@@ -2162,11 +2162,7 @@ body {
     border-radius: 20px;
   }
   .timer-count {
-    padding-bottom: 20px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: unset;
-    align-items: unset;
+    text-align: left;
   }
   .timer-count__text {
     font-size: 24px;
@@ -2178,6 +2174,7 @@ body {
     align-items: center;
   }
   .time {
+    font-size: 34px;
     width: 100%;
     justify-content: left;
   }
@@ -2376,6 +2373,7 @@ body {
     margin-bottom: 40px;
     padding-right: 0;
     padding-left: 0;
+    text-align: left;
   }
   .cost__timer {
     margin-top: 40px;
@@ -2383,6 +2381,12 @@ body {
   }
   .cost__timer--none {
     display: none;
+  }
+  .cost-include__list {
+    justify-content: left;
+  }
+  .cost-include {
+    text-align: left;
   }
   .cost-include__title {
     margin-bottom: 16px;
