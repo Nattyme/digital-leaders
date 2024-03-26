@@ -125,7 +125,7 @@ $(document).ready(function () {
                 //when window width is >= 768px
                 768: {
                     slidesPerView: 3,
-                    slidesPerGroup: 3,
+                    slidesPerGroup: 1,
                     spaceBetween: 40
                 },
 
