@@ -117,7 +117,7 @@ $(document).ready(function () {
             breakpoints: {
                 //when window width is >= 360px
                 360: {
-                    slidesPerView: 'auto',
+                    slidesPerView: 2,
                     slidesPerGroup: 1,
                     spaceBetween: 24
                 },
@@ -125,16 +125,15 @@ $(document).ready(function () {
                 //when window width is >= 768px
                 768: {
                     slidesPerView: 3,
-                    slidesPerGroup: 1,
+                    slidesPerGroup: 3,
                     spaceBetween: 40
                 },
 
-                //when window width is >= 1200px
-                1200: {
+                1440: {
                     slidesPerView: 4,
-                    slidesPerGroup: 4,
-                    spaceBetween: 72
+                    slidesPerGroup: 3,
                 }
+
             }
         });
 

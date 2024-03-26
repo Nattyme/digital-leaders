@@ -4,9 +4,10 @@
         font-size: 40px;
     }
 
-    // .clip-section::after {
-    //     clip-path: polygon(0% 10vw, 100% 0%, 100% calc(100% - 10vw), 0 100%);
-    // }
+    .clip-section::after {
+        width: 768px;
+        clip-path: polygon(0% 14%, 100% 0%, 100% 65%, 0 80%);
+    }
 
     .btn-solid {
         height: 48px;
@@ -279,6 +280,7 @@
     .speakers {
         padding-top: 120px;
         padding-bottom: 72px;
+        overflow: hidden;
     }
 
     .speakers__header {
@@ -295,7 +297,7 @@
 
     .slider-speakers {
         // position: relative;
-        width: 100vw;
+        max-width: 700px;
         height: 408px;
     }
 

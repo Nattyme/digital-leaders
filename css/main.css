@@ -108,6 +108,10 @@ legend {
   display: block;
 }
 
+img {
+  pointer-events: none;
+}
+
 :root {
   --container-width: 1150px;
   --container-padding: 15px;
@@ -219,6 +223,7 @@ body {
   z-index: 1;
 }
 .clip-section::after {
+  display: block;
   z-index: -1;
   position: absolute;
   content: "";
@@ -2075,6 +2080,11 @@ body {
   .h2 {
     font-size: 40px;
   }
+  .clip-section::after {
+    width: 768px;
+    -webkit-clip-path: polygon(0% 14%, 100% 0%, 100% 65%, 0 80%);
+            clip-path: polygon(0% 14%, 100% 0%, 100% 65%, 0 80%);
+  }
   .btn-solid {
     height: 48px;
     padding-left: 31.5px;
@@ -2292,6 +2302,7 @@ body {
   .speakers {
     padding-top: 120px;
     padding-bottom: 72px;
+    overflow: hidden;
   }
   .speakers__header {
     margin-bottom: 48px;
@@ -2303,7 +2314,7 @@ body {
     display: none;
   }
   .slider-speakers {
-    width: 100vw;
+    max-width: 700px;
     height: 408px;
   }
   .slider-speakers__item {
