@@ -1634,12 +1634,19 @@ body {
   font-weight: 500;
   line-height: 24px;
   fill: #2a4056;
-}
-.speakers__tooltip-text tspan {
-  margin-right: 22px;
-  margin-left: 22px;
+  animation: svgTextMove 30s linear infinite;
 }
 
+@keyframes svgTextMove {
+  0% {
+    transform: translate(-1500px, 0);
+    /* hop up */
+  }
+  100% {
+    transform: translate(0, 0);
+    /* return to baseline */
+  }
+}
 .speakers__header {
   margin-bottom: 64px;
   text-align: center;
