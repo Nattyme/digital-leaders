@@ -9,7 +9,7 @@
         clip-path: polygon(0% 14%, 100% 0%, 100% 65%, 0 80%);
     }
 
-    .btn-solid {
+    .main-page .btn-solid {
         height: 48px;
         padding-left: 31.5px;
         padding-right: 31.5px;
@@ -274,7 +274,7 @@
     }
 
     .speakers__tooltip {
-        display: none;
+        // display: none;
     }
 
     .speakers {
@@ -743,6 +743,69 @@
 
     .footer__policy li+li {
         margin-top: 16px;
+    }
+
+    /*== form-register page ==*/
+    .registration {
+        padding-bottom: 77px;
+    }
+
+    .registration__back {
+        margin-bottom: 32px;
+    }
+
+    .form-block {
+        padding: 32px 32px;
+        border-radius: 16px;
+
+        &:first-child {
+            position: relative;
+
+            &::after {
+                top: 46px;
+                right: 0;
+                transform: translateY(-100%);
+
+                width: 80px;
+                height: 142px;
+            }
+        }
+
+        &--checkbox {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    .form-group+.form-group {
+        margin-top: 32px;
+    }
+
+    .form-group__input-wrapper .input {
+        width: 197px;
+    }
+
+    .input {
+        width: 100%; 
+    
+        &--less {
+            width: 100%; 
+        }
+    }
+
+    .form-group__title {
+        margin-bottom: 16px;
+    }
+
+    .checkbox-text {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.33;
+        color: #293f55;
+    }
+
+    .form-register__buttons {
+        padding-left: 32px;
     }
 
 }

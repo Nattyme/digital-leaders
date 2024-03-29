@@ -20,14 +20,19 @@
 }
 
 .speakers__tooltip-text {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Unbounded", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    fill: #2a4056;
     animation: svgTextMove 30s linear infinite;
+
+    tspan {
+        font-family: "Unbounded", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        fill: #2a4056;
+    }
+
+    tspan:nth-child(even) {
+        font-size: 24px;
+    }
 }
 
 @keyframes svgTextMove {

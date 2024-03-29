@@ -1,6 +1,12 @@
 .header-top {
-    padding-top: 24px;
+    padding-top: 28px;
     padding-bottom: 24px;
+}
+
+.header-top__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-top.decor-circle {

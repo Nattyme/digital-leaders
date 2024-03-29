@@ -7,8 +7,12 @@
     border-radius: 24px;
     background-color: #fff;
 
-    &+* {
+    & + & {
         margin-top: 16px;
+    }
+    
+    &+* {
+        margin-top: 40px;
     }
 
     &:first-child {
@@ -24,7 +28,18 @@
             width: 120px;
             height: 195px;
             background-image: url("./../img/decor-svg/polygon-multyple.svg");
+            background-position: center center; // x y
+            background-size: contain;
+            background-repeat: no-repeat;
+            
         }
+    }
+
+    &--checkbox {
+        padding: 0;
+        padding-top: 24px;
+        border-radius: 0;
+        background-color: transparent;
     }
 }
 
@@ -79,21 +94,7 @@
     color: #8fa6bc;
 }
 
-.form-register__btn {
-    margin-top: 56px;
-}
-
-.form-register__checkbox {
-    padding-top: 24px;
-
-    & + .form-register__checkbox  {
-        margin-top: 16px;
-    }
-}
-
 .form-register__buttons {
-    margin-top: 40px;
-    
     display: flex;
     column-gap: 16px;
 }

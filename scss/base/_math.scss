@@ -1,0 +1,321 @@
+@use 'sass:math';
+
+// set an angled section value
+$angle: 5deg;
+
+// have guardails in place for angle value
+$angle: math.max(0deg, math.min($angle, 15deg));
+// compute vertical spacing needed for this angle
+$space: 100vw*math.tan($angle);
+// length of angled edge for this angle
+$hypot: 100vw/math.cos($angle);
+
+$base: .5rem; // base spacing
+$size: 2*$base; // footer background size
+
+/* register variables so they have fallback values 
+ * for no CSS trigonometric functions support
+ * (as of Feb 2023, Chromium supports @property, 
+ * but only supports CSS trigonometric functions 
+ * starting with version 111 and behind a flag) */
+@property --angle {
+	syntax: '<angle>';
+	initial-value: #{$angle};
+	inherits: true
+}
+
+@property --space {
+	syntax: '<length-percentage>';
+	initial-value: #{$space};
+	inherits: true
+}
+
+@property --hypot {
+	syntax: '<length-percentage>';
+	initial-value: #{$hypot};
+	inherits: true
+}
+
+// body {
+// 	overflow: hidden; /* cut off bottom footer margin */
+// 	/* responsive, but within limits font */
+// 	font: clamp(.75em, 3.25vw, 1.5em)/ 1.25 ubuntu, 
+// 		trebuchet ms, verdana, arial, sans-serif;
+// 	/* avoid weird dark spacing between sectins glitch */
+// 	filter: drop-shadow(0 1px 1px #dedede)
+// }
+
+header, section, footer {
+	/* negative vertical spacing needed for overlap */
+	margin: calc(-.5*var(--space)) 0;
+	/* spacing allowed by angled verion vertically, 
+	 * base spacing laterally */
+	padding: calc(var(--space)) #{$base};
+}
+
+header {
+	/* se it doesn't stick to left */
+	padding-left: 5vw;
+	background-size: $base $base
+}
+
+section, footer {
+	grid-gap: 2*$base; /* space between paragraphs */
+	/* put each item on their grid in its cell middle
+	 * along both axes */
+	place-items: center
+}
+
+/* for reference: 
+ * DRY switching for numeric values
+ * https://css-tricks.com/dry-switching-with-css-variables-the-difference-of-one-declaration/ 
+ * DRY switching for keyword values 
+ * https://css-tricks.com/dry-state-switching-with-css-variables-fallbacks-and-invalid-values/ */
+section {
+	--_p: var(--p, 0); /* parity flag dfault value */
+	--not-p: calc(1 - var(--_p)); /* complementary */
+	--sgn-p: calc(2*var(--_p) - 1); /* parity sign */
+	/* to attach absolutely positioned pseudo */
+	position: relative;
+	/* tiny adjustment to bottom padding */
+	padding-bottom: calc(var(--space) + #{$base});
+	/* give each a pastel gradient */
+	background: 
+		linear-gradient(to bottom right, var(--sl));
+	/* angled clip */
+	clip-path: 
+		polygon(calc(var(--not-p)*100%) 0, 
+			calc(var(--_p)*100%) var(--space), 
+			calc(var(--_p)*100%) calc(100% - var(--space)), 
+			calc(var(--not-p)*100%) 100%);
+	
+	/* change parity flag value from default 0 
+	 * to 1 on even items */
+	&:nth-of-type(2n) { --p: 1 }
+	
+	&::after { /* creates to section shadow */
+		position: absolute; /* take out of flow */
+		/* middle of vertical spacing from top */
+		top: calc(.5*var(--space));
+		/* from half the parent minus half of itself */
+		left: calc(50% - .5*var(--hypot));
+		/* its width is that of the angled edge */
+		width: var(--hypot);
+		height: 2*$base; /* small height */
+		/* rotate one way or another depending on parity */
+		transform: rotate(calc(var(--sgn-p)*var(--angle)));
+		background: /* visual "shadow" */
+			radial-gradient(farthest-side at 50% 0, 
+					hsla(0, 0%, 0%, .375), 
+					hsla(0, 0%, 0%, .125), 
+					transparent) 50% 0/ 115% 100%;
+		/* thought it makes it look better
+		 * not that important, could be ditched */
+		mix-blend-mode: multiply;
+		content: '' /* so pseudo shows up */
+	}
+}
+
+h2 {
+	/* avoid padding adding to width */
+	box-sizing: border-box;
+	margin: 
+		/* move up to attach to top of angled section */
+		calc(-1*var(--space)) 
+		/* if even, go outside section on the right
+		 * by its own width minus parent's width */
+		calc(var(--_p)*(100% - var(--hypot)))
+		/* compensate for negative top margin, so  
+		 * elements after it don't move up too */
+		var(--space)
+		/* if odd, go outside section on the left
+		 * by its own width minus parent's width */
+		calc(var(--not-p)*(100% - var(--hypot)));
+	/* its width is that of an angled section */
+	width: var(--hypot);
+	/* limit text line length via padding lateral */
+	padding: $base calc(.5*(var(--hypot) - 18em));
+	/* rotate around top right/ left depending on parity */
+	transform-origin: calc(var(--not-p)*100%) 0;
+	/* rotate one way or another depending on parity */
+	transform: rotate(calc(var(--sgn-p)*var(--angle)));
+	/* align right or default left depending on parity */
+	text-align: var(--p, right);
+	/* for better contrast with background
+	 * not that important, could be ditched */
+	text-shadow: 1px 1px #fff
+}
+
+/* limit paragraph width */
+p { max-width: 39em }
+
+/* for reference: feature support info boxes
+ * https://codepen.io/thebabydino/full/qBKvjKM */
+.box {
+	/* initial value for passing support test flag */
+	--pass: 0;
+	--not-pass: calc(1 - var(--pass)); /* complementary */
+	/* avoid padding & border adding to width */
+	box-sizing: border-box;
+	border: solid 1px 
+		/* border-color depends on passing support test */
+		hsl(
+			calc(359 - var(--pass)*261), 
+			calc(47% - var(--pass)*15%), 
+			calc(51% - var(--pass)*6%));
+	border-left-width: 5px; /* thicker left border */
+	padding: $base;
+	/* box palette depends on passing support test */
+	background: hsla(0, 0%, calc(var(--pass)*100%), .57);
+	color: hsl(0, 0%, calc(var(--not-pass)*100%));
+	
+	/* change flag on passed support test box */
+	&[data-view='pass'] { --pass: 1 }
+}
+
+/* before testing, hasn't passed support test, 
+ * default to fail */
+[data-view='fail'] { display: block }
+[data-view='pass'] { display: none }
+
+/* code boxes text */
+code, kbd, style { font: 1.125em ubuntu mono, consolas, monaco, monospace }
+
+code, kbd {
+	/* since we're adding a background, prevent text 
+	 * from sticking to edges of this background */
+	padding: 1px 3px;
+	background: hsla(0, 0%, 100%, .25)
+}
+
+style, a {
+	--hl: 0; /* highlight state flag, initial value */
+	/* shrink width to content for style, 
+	 * avoid messing up pseudo edge attachment for links */
+	display: inline-block;
+	/* to attach absolutely positioned pseudo */
+	position: relative;
+	
+	/* ditch ugly focus outline */
+	&:focus { outline: none }
+	/* switch highlight flag to 1 */
+	&:focus, &:hover { --hl: 1 }
+	
+	&::before {
+		position: absolute; /* take out of flow */
+		content: '' /* so that pseudo shows up */
+	}
+}
+
+style { /* interactive code box */
+	margin-top: $base; /* a bit of spacing around */
+	/* create spacing around to be fille by 
+	 * pseudo-created background */
+	border: solid $base transparent;
+	/* box glow in a highlight state (hover, focus) */
+	box-shadow: 
+		2px 2px 5px hsla(0, 0%, 7%, calc(var(--hl)*.65));
+	color: #dedede; /* fallback text color */
+	/* some stupid syntax highlighting
+	 * remove it by removing / at end of this line */
+	background: 
+		linear-gradient(-90deg, white 1ch, transparent 0), 
+		linear-gradient(90deg, #ffe53b 4.5ch, 
+				#dedede 0 6.5ch, #f58ad9 0 21ch, 
+				#dedede 0 22ch, #3bffa3 0);
+	-webkit-background-clip: text;
+	color: transparent;/**/
+	/* text glow in a highlight state (hover, focus) */
+	text-shadow: 
+		0 0 calc(var(--hl)*5px) hsla(0, 0%, 100%, .65);
+	transition: .3s ease-out; /* smooth state change */
+	transition-property: box-shadow, text-shadow;
+	
+	&::before {
+		z-index: -1; /* place under parent */
+		/* fill border space around parent */
+		inset: -1*$base;
+		background: #121212; /* dark contrasting background */
+	}
+}
+
+footer {
+	/* avoid stop list & full gradient repetition */
+	--sl: calc(100% - 1px), transparent;
+	--g0: 
+		radial-gradient(circle 2px, 
+				hsl(0, 0%, 3%) var(--sl));
+	--g1: 
+		radial-gradient(circle 2px 
+				at calc(50% + 1px) calc(50% + 1px), 
+				hsl(0, 0%, 17%) var(--sl));
+	/* "holes" background made up of multiple gradients */
+	background-image: 
+		var(--g0), var(--g0), var(--g1), var(--g1);
+	background-position: 0 0, $base $base;
+	background-size: $size $size;
+	font-size: Max(.625rem, .75em); /* limit font size */
+	text-align: center /* middle-align text */
+}
+
+/* for reference: link XOR effect explained
+ * https://css-tricks.com/taming-blend-modes-difference-and-exclusion/#aa-now-lets-turn-to-the-what-of-blend-modes */
+a {
+	z-index: 1;
+	/* since we're adding a background, prevent text 
+	 * from sticking to edges of this background */
+	padding: 0 2px;
+	color: #fc8621;
+	text-decoration: none; /* ditch underline */
+	isolation: isolate;
+	
+	&::before {
+		/* for reference: inset
+		 * https://twitter.com/anatudor/status/1478412237295566850 */
+		inset: 0; /* cover parent's padding area */
+		transform-origin: 0 100%; /* relative to bottom */
+		/* cover parent of just tiny strip at bottom 
+		 * depending on whether in highlight state or not */
+		transform: 
+			scaley(calc(var(--hl) + .1*(1 - var(--hl))));
+		/* same background as parent color */
+		background: currentcolor;
+		mix-blend-mode: difference; /* XOR effect */
+		/* smooth grow from underline to parent cover */
+		transition: transform .3s ease-out
+	}
+}
+
+[data-ico] { /* if followed by emoji icon */
+	margin-right: 1.5em; /* pretty much icon size */
+	
+	&::after {
+		position: absolute; /* take out of flow */
+		/* its left edge is 2px to the right of right edge */
+		left: calc(100% + 2px);
+		content: attr(data-ico) /* so it shows up */
+	}
+}
+
+@supports (z-index: tan(0deg)) { /* if trig in CSS is supported */
+	body {
+		/* make angle & all values depending on it actually dynamic, 
+		 * not just "glorified constants" */
+		--angle: clamp(0deg, var(--custom-angle), var(--limit, 15deg));
+		--space: calc(100vw*tan(var(--angle)));
+		--hypot: calc(100vw/cos(var(--angle)))
+	}
+	
+	[data-feat='trig'] {
+		/* CSS trig support info boxes display toggle */
+		&[data-view='fail'] { display: none }
+		&[data-view='pass'] { display: block }
+	}
+}
+
+/* this is a funny one, not supported everywhere */
+@supports (rotate: atan2(1vh, 1vw)) {
+	/* make angle limit actually dynamic depending on 
+	 * viewport aspect ratio if supported */
+	body { --limit: calc(.25*atan2(1vh, 1vw)) }
+}

@@ -3,7 +3,7 @@
     align-items: flex-start;
 }
 
-.checkbox-row + .checkbox-row {
+.checkbox-row+.checkbox-row {
     margin-top: 16px;
 }
 
@@ -49,7 +49,7 @@
     }
 }
 
-.checkbox-real:hover + .checkbox-custom {
+.checkbox-real:hover+.checkbox-custom {
     border-color: #8fa5bc;
 }
 
@@ -62,3 +62,9 @@
     }
 }
 
+.checkbox-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #293f55;
+}
