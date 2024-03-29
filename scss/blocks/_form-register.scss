@@ -50,6 +50,7 @@
 .form-group__input-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .input {
         width: 320px;
@@ -57,7 +58,6 @@
 
     .input-row+.input-row {
         margin-top: 0;
-        margin-left: 16px;
     }
 }
 
@@ -76,15 +76,24 @@
     font-size: 22px;
     font-weight: 500;
     line-height: 1.09; //24px;
+
+    &--less {
+        margin-bottom: 24px;
+
+        font-family: "Geologica", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.55; //28px;
+    }
 }
 
-.form-group__title--less {
-    margin-bottom: 24px;
-
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.55; //28px;
+.form-block__title {
+    font-family: "Unbounded", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.09; //24px;
 }
+
 
 .form-block__tip {
     margin-top: 4px;
@@ -96,5 +105,6 @@
 
 .form-register__buttons {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 16px;
 }

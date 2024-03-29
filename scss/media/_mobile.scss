@@ -8,21 +8,17 @@
         font-size: 24px;
     }
 
-    .btn-solid {
+    .main-page .btn-solid {
         padding-left: 21.5px;
         padding-right: 21.5px;
         font-size: 15px;
     }
 
-    .btn-back {
-        width: 32px;
-        height: 32px;
-
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.55; //28px;
+    .registartion-page .btn-solid {
+        height: 48px;
+        line-height: 48px;
+        font-size: 15px;
     }
-    
 
     .grad-border {
         padding-bottom: 4px;
@@ -519,5 +515,93 @@
 
     .footer__copyright li:not(:last-child) {
         margin-right: 32px;
+    }
+
+    /*== form-register page ==*/
+    .registration {
+        padding-bottom: 71px;
+    }
+
+    .registration__back {
+        margin-bottom: 24px;
+    }
+
+    .registration__title {
+        margin-bottom: 32px;
+
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.28; //48px;
+    }
+
+    .return-back {
+        width: 89px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .btn-back {
+        width: 32px;
+        height: 32px;
+
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.55; //28px;
+    }
+
+    .form-block {
+        padding: 24px 24px;
+
+        &:first-child::after {
+            top: 45px;
+
+            width: 66px;
+            height: 117px;
+        }
+
+        &--checkbox {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    .form-block+.form-block {
+        margin-top: 8px;
+    }
+
+    .form-group__input-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .input-row {
+            margin-bottom: 16px;
+            width: 100%;
+        }
+
+        .input {
+            width: 100%;
+        }
+    }
+
+    .form-group__title, .form-block__title {
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+
+    .form-register__buttons {
+        padding-left: 24px;
+        padding-right: 24px;
+        column-gap: 0;
+        row-gap: 16px;
+
+        &>* {
+            flex: 1;
+        }
+    }
+
+    .btn-cancel {
+        height: 48px;
+        line-height: 48px;
+        font-size: 15px;
     }
 }

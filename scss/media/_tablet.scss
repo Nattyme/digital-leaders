@@ -754,21 +754,21 @@
         margin-bottom: 32px;
     }
 
+    .return-back {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .form-block {
         padding: 32px 32px;
         border-radius: 16px;
 
-        &:first-child {
-            position: relative;
+        &:first-child::after {
+            top: 46px;
+            right: 0;
 
-            &::after {
-                top: 46px;
-                right: 0;
-                transform: translateY(-100%);
-
-                width: 80px;
-                height: 142px;
-            }
+            width: 80px;
+            height: 142px;
         }
 
         &--checkbox {
@@ -795,13 +795,6 @@
 
     .form-group__title {
         margin-bottom: 16px;
-    }
-
-    .checkbox-text {
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 1.33;
-        color: #293f55;
     }
 
     .form-register__buttons {

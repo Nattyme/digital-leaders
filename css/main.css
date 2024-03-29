@@ -144,6 +144,9 @@ img {
   .container {
     width: 350px;
   }
+  .registartion-page .container {
+    width: 358px;
+  }
 }
 html {
   overflow-x: hidden;
@@ -791,13 +794,13 @@ body {
 .form-group__input-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .form-group__input-wrapper .input {
   width: 320px;
 }
 .form-group__input-wrapper .input-row + .input-row {
   margin-top: 0;
-  margin-left: 16px;
 }
 
 * + .form-group__input-wrapper {
@@ -814,12 +817,19 @@ body {
   font-weight: 500;
   line-height: 1.09;
 }
-
-.form-group__title--less {
+.form-group__title--less, .form-block__title--less {
   margin-bottom: 24px;
+  font-family: "Geologica", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.55;
+}
+
+.form-block__title {
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.09;
 }
 
 .form-block__tip {
@@ -832,6 +842,7 @@ body {
 
 .form-register__buttons {
   display: flex;
+  flex-wrap: wrap;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
@@ -2720,17 +2731,17 @@ body {
   .registration__back {
     margin-bottom: 32px;
   }
+  .return-back {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .form-block {
     padding: 32px 32px;
     border-radius: 16px;
   }
-  .form-block:first-child {
-    position: relative;
-  }
   .form-block:first-child::after {
     top: 46px;
     right: 0;
-    transform: translateY(-100%);
     width: 80px;
     height: 142px;
   }
@@ -2753,12 +2764,6 @@ body {
   .form-group__title {
     margin-bottom: 16px;
   }
-  .checkbox-text {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.33;
-    color: #293f55;
-  }
   .form-register__buttons {
     padding-left: 32px;
   }
@@ -2771,17 +2776,15 @@ body {
   .h2 {
     font-size: 24px;
   }
-  .btn-solid {
+  .main-page .btn-solid {
     padding-left: 21.5px;
     padding-right: 21.5px;
     font-size: 15px;
   }
-  .btn-back {
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.55;
+  .registartion-page .btn-solid {
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
   }
   .grad-border {
     padding-bottom: 4px;
@@ -3174,5 +3177,75 @@ body {
   }
   .footer__copyright li:not(:last-child) {
     margin-right: 32px;
+  }
+  /*== form-register page ==*/
+  .registration {
+    padding-bottom: 71px;
+  }
+  .registration__back {
+    margin-bottom: 24px;
+  }
+  .registration__title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.28;
+  }
+  .return-back {
+    width: 89px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .btn-back {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.55;
+  }
+  .form-block {
+    padding: 24px 24px;
+  }
+  .form-block:first-child::after {
+    top: 45px;
+    width: 66px;
+    height: 117px;
+  }
+  .form-block--checkbox {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .form-block + .form-block {
+    margin-top: 8px;
+  }
+  .form-group__input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group__input-wrapper .input-row {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .form-group__input-wrapper .input {
+    width: 100%;
+  }
+  .form-group__title, .form-block__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+  .form-register__buttons {
+    padding-left: 24px;
+    padding-right: 24px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 16px;
+  }
+  .form-register__buttons > * {
+    flex: 1;
+  }
+  .btn-cancel {
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
