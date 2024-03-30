@@ -2147,7 +2147,6 @@ body {
     font-size: 40px;
   }
   .clip-section::after {
-    width: 768px;
     -webkit-clip-path: polygon(0% 14%, 100% 0%, 100% 65%, 0 80%);
             clip-path: polygon(0% 14%, 100% 0%, 100% 65%, 0 80%);
   }
