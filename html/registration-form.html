@@ -77,39 +77,44 @@
                     <!-- block -->
                     <div class="form-block">
                         <p class="form-block__title">Участники</p>
-                        <fieldset class="form-group">
-                            <legend class="form-group__title form-group__title--less">Участник 1</legend>
 
-                            <div class="input-row">
-                                <label classs="input-row__label">ФИО</label>
-                                <input type="text" class="input">
-                            </div>
-
-                            <div class="input-row">
-                                <label classs="input-row__label">Должность</label>
-                                <input type="text" class="input">
-                            </div>
-
-                            <div class="input-row">
-                                <label classs="input-row__label">Телефон</label>
-                                <input type="phone" class="input input-phone input--less">
-                            </div>
-
-                            <div class="input-row">
-                                <label classs="input-row__label">Эл. почта</label>
-                                <input type="text" class="input input--less">
-                            </div>
-                          
-                            <!-- btn -->
-                            <div class="form-register__btn">
-                                <button class="btn-outline">
-                                    <img src="./../img/icons/plus.svg" alt="Добавить">
-                                    Добавить участника
-                                </button>
-                            </div>
-                            <!--// btn -->
-                        </fieldset>
-                        <!--// fieldset-->
+                        <!-- template -->
+                        <template id="add-person-template">
+                            <fieldset class="form-group" id="form-group-template">
+                                    <legend class="form-group__title form-group__title--less">Участник <span id="person-count"></span></legend>
+        
+                                    <div class="input-row">
+                                        <label classs="input-row__label">ФИО</label>
+                                        <input type="text" class="input">
+                                    </div>
+        
+                                    <div class="input-row">
+                                        <label classs="input-row__label">Должность</label>
+                                        <input type="text" class="input">
+                                    </div>
+        
+                                    <div class="input-row">
+                                        <label classs="input-row__label">Телефон</label>
+                                        <input type="phone" class="input input-phone input--less">
+                                    </div>
+        
+                                    <div class="input-row">
+                                        <label classs="input-row__label">Эл. почта</label>
+                                        <input type="text" class="input input--less">
+                                    </div>
+                            </fieldset>
+                            <!--// fieldset-->
+                        </template>
+                        <!-- template -->  
+                        
+                        <!-- btn -->
+                        <div class="form-register__btn">
+                            <button class="btn-outline">
+                                <img src="./../img/icons/plus.svg" alt="Добавить">
+                                Добавить участника
+                            </button>
+                        </div>
+                        <!--// btn -->
                     </div>
                     <!-- block -->
 
@@ -252,8 +257,14 @@
         </section>
     </main>
 
-    <!-- libs -->
+    <!--=== Libs ===-->
+    <!-- jquery -->
+    <script src="./../libs/jquery/jquery-3.7.1.min.js"></script>
+
+    <!-- input mask -->
     <script src="./../libs/inputmask/inputmask.min.js"></script>
+
+    <!--=== Custom code ===-->
     <script src="./../js/main.js"></script>
 </body>
 </html>

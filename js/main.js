@@ -11,6 +11,10 @@ $(document).ready(function () {
     const costTimer = document.querySelector(".cost__timer");
     const costList = document.querySelector(".cost-list-wrapper");
 
+    //form template
+    const formTemplate = document.querySelector("#add-person-template").content;
+    const templateBlock = formTemplate.querySelector("#form-group-template");
+
     // Обходим колексиб кнопок аккордеона чрез foreach
     titlesAccordeon.forEach(function(item){
         item.addEventListener('click', function(){
@@ -273,11 +277,7 @@ $(document).ready(function () {
     }
     /* swiper sliders */
 
-// phone mask
-// if (document.querySelectorAll('#phone').length > 0) {
-//     const input = document.querySelector('#phone');
-//     const mask = new Inputmask('+7 (999) 999-99-99');
-//     mask.mask(input);
-// }
-
+    // form template cloning
+    const clonedFormTemplate = templateBlock.clodeNode(true);
+    clonedFormTemplate.children[0].textContent= 1;
 });
