@@ -11,9 +11,11 @@ $(document).ready(function () {
     const costTimer = document.querySelector(".cost__timer");
     const costList = document.querySelector(".cost-list-wrapper");
 
-    //form template
-    const formTemplate = document.querySelector("#add-person-template").content;
-    const templateBlock = formTemplate.querySelector("#form-group-template");
+    // Контейнер 
+    const formMultiBlock = document.querySelector("#form-group-template");
+    // Получаем шаблон
+    const templateBlock = document.querySelector('#add-person-template').content;
+    const element = templateBlock.querySelector('#person-count');
 
     // Обходим колексиб кнопок аккордеона чрез foreach
     titlesAccordeon.forEach(function(item){
@@ -278,6 +280,9 @@ $(document).ready(function () {
     /* swiper sliders */
 
     // form template cloning
-    const clonedFormTemplate = templateBlock.clodeNode(true);
-    clonedFormTemplate.children[0].textContent= 1;
+    for (let i = 1; i <= 10; i++) {
+        const clonedFormTemplate = templateBlock.clodeNode(true);
+        clonedFormTemplate.children[0].textContent= i;
+        SecurityPolicyViolationEvent.appendChild(clonedFormTemplate);
+    }
 });
