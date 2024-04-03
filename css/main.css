@@ -807,6 +807,10 @@ body {
   margin-top: 0;
 }
 
+.add-person-template + .form-register__btn {
+  margin-top: 32px;
+}
+
 * + .form-group__input-wrapper {
   margin-top: 24px;
 }

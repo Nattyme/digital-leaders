@@ -282,6 +282,10 @@ $(document).ready(function () {
     const templateCopy = templateBlock.querySelector('.form-group');
 
     // form template cloning
-    const clonedFormTemplate = templateCopy.cloneNode(true);
-    formAddBlock.appendChild(clonedFormTemplate);
+    for (let i = 1;  i <= 10; i++) {
+        const clonedFormTemplate = templateCopy.cloneNode(true);
+        formAddBlock.appendChild(clonedFormTemplate);
+        clonedFormTemplate.children[0].textContent = 'Участник ' + i;
+    }
+  
 });
