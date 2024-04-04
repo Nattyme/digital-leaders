@@ -280,12 +280,16 @@ $(document).ready(function () {
     // Получаем шаблон
     const templateBlock = document.querySelector('.add-person-template').content;
     const templateCopy = templateBlock.querySelector('.form-group');
+    const btnAddPerson = document.querySelector('#button-add-person');
 
     // form template cloning
-    for (let i = 1;  i <= 10; i++) {
-        const clonedFormTemplate = templateCopy.cloneNode(true);
-        formAddBlock.appendChild(clonedFormTemplate);
-        clonedFormTemplate.children[0].textContent = 'Участник ' + i;
-    }
-  
+    btnAddPerson.addEventListener('click', function(){
+    
+        for (let i = 1;  i <= 10; i++) {
+            const clonedFormTemplate = templateCopy.cloneNode(true);
+            formAddBlock.appendChild(clonedFormTemplate);
+            clonedFormTemplate.children[0].textContent = 'Участник ' + i;
+        }
+        
+    })
 });
