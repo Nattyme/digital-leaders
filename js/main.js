@@ -277,19 +277,24 @@ $(document).ready(function () {
 
     // Контейнер 
     const formAddBlock = document.querySelector("#form-group-template");
+    const copiedTemplates = formAddBlock.children;
     // Получаем шаблон
     const templateBlock = document.querySelector('.add-person-template').content;
     const templateCopy = templateBlock.querySelector('.form-group');
-    const btnAddPerson = document.querySelector('#button-add-person');
+    
 
     // form template cloning
-    btnAddPerson.addEventListener('click', function(){
-    
-        for (let i = 1;  i <= 10; i++) {
-            const clonedFormTemplate = templateCopy.cloneNode(true);
+    const addPerson = function (item) {
+        const btnAddPerson = document.querySelector('#button-add-person');
+        const clonedFormTemplate = templateCopy.cloneNode(true);
+        btnAddPerson.addEventListener('click', function(){
             formAddBlock.appendChild(clonedFormTemplate);
             clonedFormTemplate.children[0].textContent = 'Участник ' + i;
-        }
-        
-    })
+        });
+    };
+
+    for (let i = 1;  i <= copiedTemplates.length; i++) {
+        addPerson(copiedTemplates[i]);
+    }
+ 
 });
