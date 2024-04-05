@@ -1954,6 +1954,13 @@ body {
   margin-top: 57px;
 }
 
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .partners__list li {
   padding: 32px 32px;
   width: 256px;
@@ -1970,12 +1977,6 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   overflow: hidden;
-}
-
-.partners__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .partners__name {
@@ -3084,6 +3085,12 @@ body {
   .slider-press-about__name {
     font-size: 15px;
     line-height: 1.6;
+  }
+  .partners__list {
+    gap: 24px;
+  }
+  .partners__btn .btn-solid {
+    width: 320px;
   }
   .place {
     padding-top: 76px;
